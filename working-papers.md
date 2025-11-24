@@ -135,6 +135,9 @@ title: Posted Working Papers
       const author = paper['Full Name (Presenting Author)'] || paper['Authors'] || 
                     paper['Author'] || paper['Author Name'] || paper['author'] || 
                     paper['Your Name'] || paper['Name'] || 'Unknown';
+      const affiliation = paper['Affiliation / University'] || paper['Affiliation'] || 
+                         paper['University'] || paper['Institution'] || paper['affiliation'] || 
+                         paper['Organization'] || '';
       const abstract = paper['Abstract'] || paper['Description'] || paper['abstract'] || 
                       paper['Summary'] || '';
       const date = paper['Marca temporal'] || paper['Timestamp'] || paper['Date Submitted'] || 
@@ -184,7 +187,7 @@ title: Posted Working Papers
 
       paperItem.innerHTML = `
         <div class="paper-title">${titleHtml}</div>
-        <div class="paper-author">${escapeHtml(author)}</div>
+        <div class="paper-author">${escapeHtml(author)}${affiliation ? `, ${escapeHtml(affiliation)}` : ''}</div>
         ${dateDisplay ? `<div class="paper-date">Submitted: ${dateDisplay}</div>` : ''}
         ${abstract ? `<div class="paper-abstract">${escapeHtml(abstract)}</div>` : ''}
       `;

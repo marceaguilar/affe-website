@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1 class="page-title">Working Papers</h1>
+
+<div id="working-papers-container" class="working-papers-container" data-sheets-url="{{ site.google_sheets.working_papers_url }}">
+  <div class="papers-loading">Loading working papers...</div>
+</div>
+
+{{ content }}
+
+<script src="{{ '/assets/js/working-papers.js' | relative_url }}"></script>
+

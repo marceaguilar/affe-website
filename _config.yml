@@ -24,9 +24,7 @@ google_sheets:
 
 # Navigation
 navigation:
-  - title: "Home"
-    url: "/"
-  - title: "Posted Working Papers"
+  - title: "Working Papers"
     url: "/working-papers"
   - title: "Announcements"
     url: "/announcements"

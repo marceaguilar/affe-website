@@ -12,8 +12,8 @@ layout: default
   <div class="about-section">
     <h2>Organizing Committee</h2>
     
-    {% if site.data.team %}
-      {% for member in site.data.team %}
+    {% if page.team %}
+      {% for member in page.team %}
         <div class="team-member">
           <div class="team-member-name">{{ member.name }}</div>
           <div class="team-member-role">{{ member.role }}</div>

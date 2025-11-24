@@ -6,8 +6,8 @@ layout: default
 
 <div class="conferences-container">
   
-  {% if site.data.conferences %}
-    {% for conference in site.data.conferences %}
+  {% if page.conferences %}
+    {% for conference in page.conferences %}
       <div class="conference-card">
         <div class="conference-title">{{ conference.title }}</div>
         <div class="conference-date">{{ conference.date }}</div>

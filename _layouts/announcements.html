@@ -7,8 +7,8 @@ layout: default
 <div class="announcements-container">
   <div class="timeline">
     
-    {% if site.data.announcements %}
-      {% for announcement in site.data.announcements %}
+    {% if page.announcements %}
+      {% for announcement in page.announcements %}
         <div class="timeline-item">
           <div class="announcement-card">
             <div class="announcement-date">{{ announcement.date }}</div>

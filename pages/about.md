@@ -2,6 +2,13 @@
 layout: about
 title: About
 permalink: /about
+team:
+  - name: "Organizing Committee Member"
+    role: "Professor"
+    institution: "University Name"
+  - name: "Another Member"
+    role: "Associate Professor"
+    institution: "Another University"
 ---
 
 ## Our Mission

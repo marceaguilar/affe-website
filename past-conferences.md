@@ -36,7 +36,7 @@ title: Past Conferences
   {% endif %}
 </div>
 
-<div style="margin-top: 2rem; padding: 1rem; background-color: var(--color-parchment); border-radius: 4px;">
+<!-- <div style="margin-top: 2rem; padding: 1rem; background-color: var(--color-parchment); border-radius: 4px;">
   <p><strong>Note:</strong> To add past conferences, create a <code>_data/past_conferences.yml</code> file with the following format:</p>
   <pre><code>- title: "Conference Name"
   date: "March 2024"
@@ -47,4 +47,4 @@ title: Past Conferences
   location: "Another Location"
   link: "https://another-link.com"</code></pre>
 </div>
-
+ -->

@@ -1,11 +1,11 @@
 # Example announcements data
 # Uncomment and modify these examples, or add your own
 
-# - date: "January 15, 2025"
-#   title: "Welcome to WEFIDEV"
-#   content: "We're excited to launch our new website. Check back regularly for updates on upcoming webinars, conference postings, and working papers."
-#
-# - date: "February 1, 2025"
-#   title: "Next Webinar Announcement"
-#   content: "Join us for our next webinar featuring distinguished speakers discussing current topics in finance and development."
+- date: "January 15, 2025"
+  title: "Welcome to WEFIDEV"
+  content: "We're excited to launch our new website. Check back regularly for updates on upcoming webinars, conference postings, and working papers."
+
+- date: "February 1, 2025"
+  title: "Next Webinar Announcement"
+  content: "Join us for our next webinar featuring distinguished speakers discussing current topics in finance and development."
 

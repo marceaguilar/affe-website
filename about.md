@@ -45,7 +45,7 @@ title: About
   </div>
 </div>
 
-<div style="margin-top: 2rem; padding: 1rem; background-color: var(--color-parchment); border-radius: 4px;">
+<!-- <div style="margin-top: 2rem; padding: 1rem; background-color: var(--color-parchment); border-radius: 4px;">
   <p><strong>Note:</strong> To add team members, create a <code>_data/team.yml</code> file with the following format:</p>
   <pre><code>- name: "Name"
   role: "Role/Title"
@@ -53,5 +53,5 @@ title: About
 - name: "Another Name"
   role: "Another Role"
   institution: "Another Institution"</code></pre>
-</div>
+</div> -->
 

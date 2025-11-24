@@ -35,7 +35,7 @@ title: Announcements
   </div>
 </div>
 
-<div style="margin-top: 2rem; padding: 1rem; background-color: var(--color-parchment); border-radius: 4px;">
+<!-- <div style="margin-top: 2rem; padding: 1rem; background-color: var(--color-parchment); border-radius: 4px;">
   <p><strong>Note:</strong> To add announcements, create a <code>_data/announcements.yml</code> file with the following format:</p>
   <pre><code>- date: "January 15, 2025"
   title: "Announcement Title"
@@ -43,5 +43,5 @@ title: Announcements
 - date: "January 20, 2025"
   title: "Another Announcement"
   content: "More content here"</code></pre>
-</div>
+</div> -->
 

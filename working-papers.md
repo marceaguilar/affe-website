@@ -40,10 +40,23 @@ title: Posted Working Papers
         return response.text();
       })
       .then(csvText => {
-        const papers = parseCSV(csvText);
-        displayPapers(papers, container);
+        try {
+          console.log('CSV received, length:', csvText.length);
+          const papers = parseCSV(csvText);
+          console.log('Parsed papers:', papers.length);
+          displayPapers(papers, container);
+        } catch (error) {
+          console.error('Error parsing or displaying papers:', error);
+          container.innerHTML = `
+            <div class="papers-error">
+              <p>Error processing working papers: ${error.message}</p>
+              <p>Please check the browser console for more details.</p>
+            </div>
+          `;
+        }
       })
       .catch(error => {
+        console.error('Error fetching papers:', error);
         container.innerHTML = `
           <div class="papers-error">
             <p>Error loading working papers: ${error.message}</p>
@@ -102,41 +115,66 @@ title: Posted Working Papers
   }
 
   function displayPapers(papers, container) {
-    if (papers.length === 0) {
-      container.innerHTML = '<div class="papers-loading">No working papers found.</div>';
-      return;
-    }
+    try {
+      if (papers.length === 0) {
+        container.innerHTML = '<div class="papers-loading">No working papers found.</div>';
+        return;
+      }
 
-    const papersList = document.createElement('ul');
-    papersList.className = 'papers-list';
+      const papersList = document.createElement('ul');
+      papersList.className = 'papers-list';
 
-    papers.forEach(paper => {
+      papers.forEach(paper => {
+        try {
       const paperItem = document.createElement('li');
       paperItem.className = 'paper-item';
       
       // Flexible field matching
       const title = paper['Paper Title'] || paper['Title'] || paper['title'] || 
                    paper['Name'] || paper['Paper Name'] || 'Untitled';
-      const author = paper['Author'] || paper['Author Name'] || paper['author'] || 
+      const author = paper['Full Name (Presenting Author)'] || paper['Authors'] || 
+                    paper['Author'] || paper['Author Name'] || paper['author'] || 
                     paper['Your Name'] || paper['Name'] || 'Unknown';
       const abstract = paper['Abstract'] || paper['Description'] || paper['abstract'] || 
                       paper['Summary'] || '';
-      const date = paper['Timestamp'] || paper['Date Submitted'] || paper['timestamp'] || 
-                  paper['Submit Time'] || '';
-      const link = paper['Link'] || paper['Paper Link'] || paper['URL'] || 
+      const date = paper['Marca temporal'] || paper['Timestamp'] || paper['Date Submitted'] || 
+                  paper['timestamp'] || paper['Submit Time'] || '';
+      const link = paper['PDF Upload'] || paper['Link'] || paper['Paper Link'] || paper['URL'] || 
                   paper['Download Link'] || paper['PDF Link'] || '';
       
       let dateDisplay = '';
-      if (date) {
+      if (date && date.trim()) {
         try {
-          const dateObj = new Date(date);
-          dateDisplay = dateObj.toLocaleDateString('en-US', { 
-            year: 'numeric', 
-            month: 'long', 
-            day: 'numeric' 
-          });
+          let dateObj;
+          const trimmedDate = date.trim();
+          // Handle Spanish date format: DD/MM/YYYY HH:MM:SS
+          // Match DD/MM/YYYY pattern (with optional leading/trailing spaces)
+          if (trimmedDate.includes('/') && trimmedDate.match(/\d{2}\/\d{2}\/\d{4}/)) {
+            const parts = trimmedDate.split(' ');
+            const datePart = parts[0]; // "22/11/2025"
+            const timePart = parts[1] || ''; // "1:40:20"
+            const [day, month, year] = datePart.split('/');
+            // Create date in ISO format (YYYY-MM-DD) which is reliably parsed
+            const isoDate = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}${timePart ? 'T' + timePart : ''}`;
+            dateObj = new Date(isoDate);
+          } else {
+            // Try standard Date parsing for other formats
+            dateObj = new Date(trimmedDate);
+          }
+          
+          // Check if date is valid
+          if (isNaN(dateObj.getTime())) {
+            dateDisplay = trimmedDate; // Fallback to original string
+          } else {
+            dateDisplay = dateObj.toLocaleDateString('en-US', { 
+              year: 'numeric', 
+              month: 'long', 
+              day: 'numeric' 
+            });
+          }
         } catch (e) {
-          dateDisplay = date;
+          console.warn('Date parsing error for:', date, e);
+          dateDisplay = date.trim();
         }
       }
 
@@ -152,10 +190,23 @@ title: Posted Working Papers
       `;
 
       papersList.appendChild(paperItem);
+        } catch (error) {
+          console.error('Error processing paper:', error, paper);
+          // Continue with next paper even if one fails
+        }
     });
 
     container.innerHTML = '';
     container.appendChild(papersList);
+    } catch (error) {
+      console.error('Error in displayPapers:', error);
+      container.innerHTML = `
+        <div class="papers-error">
+          <p>Error displaying working papers: ${error.message}</p>
+          <p>Please check the browser console for more details.</p>
+        </div>
+      `;
+    }
   }
 
   function escapeHtml(text) {

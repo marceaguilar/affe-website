@@ -13,7 +13,7 @@ plugins:
 
 # Google Sheets integration
 google_sheets:
-  working_papers_url: "https://docs.google.com/spreadsheets/d/1KKZ8sRgFhAdHa19ew_CuzA6tt9mig7K9KrjcfoMrjV4/edit?gid=599187931#gid=599187931" # Add your Google Sheets published CSV URL here
+  working_papers_url: "https://docs.google.com/spreadsheets/d/1KKZ8sRgFhAdHa19ew_CuzA6tt9mig7K9KrjcfoMrjV4/export?format=csv&gid=599187931"
   # Format: https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid=0
 
 # Navigation

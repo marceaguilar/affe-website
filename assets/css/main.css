@@ -348,7 +348,6 @@ body {
   border-radius: 8px;
   border: 1px solid rgba(143, 168, 143, 0.2);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
   width: 100%;
   position: relative;
 }
@@ -362,12 +361,6 @@ body {
   width: 4px;
   background: var(--color-sage);
   border-radius: 8px 0 0 8px;
-}
-
-.announcement-card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-  transform: translateX(4px);
-  border-color: rgba(143, 168, 143, 0.4);
 }
 
 .announcement-date {

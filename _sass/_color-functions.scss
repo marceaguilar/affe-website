@@ -1,0 +1,15 @@
+// Override deprecated color functions with modern equivalents
+// This suppresses deprecation warnings from the minima theme
+
+@use "sass:color" as *;
+
+// Redefine lighten() using the new color module
+@function lighten($color, $amount) {
+  @return color.adjust($color, $lightness: $amount);
+}
+
+// Redefine darken() using the new color module
+@function darken($color, $amount) {
+  @return color.adjust($color, $lightness: -$amount);
+}
+

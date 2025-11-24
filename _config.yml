@@ -11,6 +11,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Sass configuration
+sass:
+  style: compressed
+  load_paths:
+    - _sass
+
 # Google Sheets integration
 google_sheets:
   working_papers_url: "https://docs.google.com/spreadsheets/d/1KKZ8sRgFhAdHa19ew_CuzA6tt9mig7K9KrjcfoMrjV4/export?format=csv&gid=599187931"

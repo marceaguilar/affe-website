@@ -1,0 +1,9 @@
+---
+---
+
+// Import custom color functions first to override deprecated ones
+@use "color-functions" as *;
+
+// The minima theme will be loaded automatically by Jekyll
+// Our color function overrides will be used instead of the deprecated ones
+

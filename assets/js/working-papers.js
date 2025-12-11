@@ -1,58 +1,34 @@
+// Static working papers data
+const staticPapers = [
+  {
+    'Title': 'Artificial Intelligence and the Restructuring of the Organizational Architecture',
+    'Authors': 'Jasmijn C. Bol (Tulane University), Dennis Campbell (Harvard University), Jake Krupa (Tulane University), Wenxin Wang (Harvard University)',
+    'Link': '/assets/pdf/BCKW.pdf'
+  },
+  {
+    'Title': 'Paid Tax Preparers and Social Benefit Take-up: Evidence from a Field Experiment',
+    'Authors': 'Andrew Belnap (University of Texas at Austin), Anthony Welsch (University of Chicago), Jeffrey Gramlich (Washington State University), Braden Williams (University of Texas at Austin)',
+    'Link': '/assets/pdf/BGWW.pdf'
+  },
+  {
+    'Title': 'Pills, Powders, and Proof',
+    'Authors': 'Anna Costello (University of Chicago Booth), Christian Friedrich (University of Mannheim), Gerrit von Zedlitz (University of Mannheim)',
+    'Link': '/assets/pdf/CostelloFriedrichvonZedlitz.pdf'
+  },
+  {
+    'Title': 'Racial and Gender Favoritism in Crowdfunding—Evidence from the Field',
+    'Authors': 'Ha Diep-Nguyen (Purdue University), Michael Price (University of Alabama, NBER, ANU), Jun Yang (Nanyang Technological University & Indiana University)',
+    'Link': '/assets/pdf/DPY.pdf'
+  }
+];
+
 // Load working papers on page load
 document.addEventListener('DOMContentLoaded', function() {
   const container = document.getElementById('working-papers-container');
   if (!container) return;
   
-  const sheetsUrl = container.getAttribute('data-sheets-url');
-  
-  if (!sheetsUrl || sheetsUrl.trim() === '') {
-    container.innerHTML = `
-      <div class="papers-error">
-        <p><strong>Google Sheets URL not configured.</strong></p>
-        <p>To display working papers from your Google Form:</p>
-        <ol>
-          <li>Open your Google Sheet (linked to the form)</li>
-          <li>Go to File → Share → Publish to web</li>
-          <li>Select "CSV" format and click "Publish"</li>
-          <li>Copy the generated URL</li>
-          <li>Add it to <code>_config.yml</code> under <code>google_sheets.working_papers_url</code></li>
-        </ol>
-        <p>Expected columns in your Google Sheet: Title, Author, Abstract, Link, Timestamp</p>
-      </div>
-    `;
-    return;
-  }
-
-  fetch(sheetsUrl)
-    .then(response => {
-      if (!response.ok) throw new Error('Failed to fetch data');
-      return response.text();
-    })
-    .then(csvText => {
-      try {
-        console.log('CSV received, length:', csvText.length);
-        const papers = parseCSV(csvText);
-        console.log('Parsed papers:', papers.length);
-        displayPapers(papers, container);
-      } catch (error) {
-        console.error('Error parsing or displaying papers:', error);
-        container.innerHTML = `
-          <div class="papers-error">
-            <p>Error processing working papers: ${error.message}</p>
-            <p>Please check the browser console for more details.</p>
-          </div>
-        `;
-      }
-    })
-    .catch(error => {
-      console.error('Error fetching papers:', error);
-      container.innerHTML = `
-        <div class="papers-error">
-          <p>Error loading working papers: ${error.message}</p>
-          <p>Please check your Google Sheets URL and ensure the sheet is published to the web.</p>
-        </div>
-      `;
-    });
+  // Use static papers
+  displayPapers(staticPapers, container);
 });
 
 function parseCSV(csvText) {

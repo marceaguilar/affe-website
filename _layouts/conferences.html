@@ -8,29 +8,61 @@ layout: default
   
   {% if page.conferences %}
     {% for conference in page.conferences %}
-      <div class="conference-card">
-        <div class="conference-title">{{ conference.title }}</div>
-        <div class="conference-date">{{ conference.date }}</div>
+      <article class="conference-card">
+        <div class="conference-header">
+          <h2 class="conference-title">{{ conference.title }}</h2>
+          <div class="conference-date">
+            <svg class="date-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2H4C2.89543 2 2 2.89543 2 4V12C2 13.1046 2.89543 14 4 14H12C13.1046 14 14 13.1046 14 12V4C14 2.89543 13.1046 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 6H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M5 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>{{ conference.date }}</span>
+          </div>
+        </div>
         <div class="conference-description">{{ conference.description | markdownify }}</div>
-        {% if conference.link %}
-          <a href="{{ conference.link }}" target="_blank" rel="noopener noreferrer" class="conference-link">
-            {% if conference.link_text %}{{ conference.link_text }}{% else %}Learn More{% endif %}
-          </a>
-        {% endif %}
         {% if conference.deadline %}
-          <p style="margin-top: 1rem; color: var(--color-bark);"><strong>Deadline:</strong> {{ conference.deadline }}</p>
+          <div class="conference-deadline">
+            <svg class="deadline-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 4V8L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span>{{ conference.deadline }}</span>
+          </div>
         {% endif %}
-      </div>
+        {% if conference.link %}
+          <div class="conference-actions">
+            <a href="{{ conference.link }}" target="_blank" rel="noopener noreferrer" class="conference-link">
+              {% if conference.link_text %}{{ conference.link_text }}{% else %}Learn More{% endif %}
+              <svg class="link-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10L10 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6H10V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        {% endif %}
+      </article>
     {% endfor %}
   {% else %}
     <!-- Default example -->
-    <div class="conference-card">
-      <div class="conference-title">Upcoming Conference</div>
-      <div class="conference-date">TBD</div>
+    <article class="conference-card">
+      <div class="conference-header">
+        <h2 class="conference-title">Upcoming Conference</h2>
+        <div class="conference-date">
+          <svg class="date-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2H4C2.89543 2 2 2.89543 2 4V12C2 13.1046 2.89543 14 4 14H12C13.1046 14 14 13.1046 14 12V4C14 2.89543 13.1046 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 6H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>TBD</span>
+        </div>
+      </div>
       <div class="conference-description">
         <p>Details about upcoming conferences will be posted here. Check back soon for updates.</p>
       </div>
-    </div>
+    </article>
   {% endif %}
 
 </div>

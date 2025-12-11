@@ -1,6 +1,6 @@
-# WEFIDEV Website
+# AFFE Website
 
-A Jekyll-based GitHub Pages website for the WEFIDEV (Webinar Series in Finance and Development) conference group.
+A Jekyll-based GitHub Pages website for AFFE (Accounting and Finance Field Experiments) conference group.
 
 ## Features
 

@@ -11,10 +11,10 @@ layout: default
         <li class="past-conference-item">
           {% if conference.link %}
             <a href="{{ conference.link }}" target="_blank" rel="noopener noreferrer">
-              {{ conference.title }} - {{ conference.date }}
+              {{ conference.title }}
             </a>
           {% else %}
-            {{ conference.title }} - {{ conference.date }}
+            {{ conference.title }}
           {% endif %}
           {% if conference.location %}
             <span style="color: var(--color-text-light);"> ({{ conference.location }})</span>
@@ -26,10 +26,10 @@ layout: default
     <!-- Default example -->
     <ul class="past-conferences-list">
       <li class="past-conference-item">
-        <a href="#">2024 WEFIDEV Conference - Example</a>
+        <a href="#">2024 AFFE Conference - Example</a>
       </li>
       <li class="past-conference-item">
-        <a href="#">2023 WEFIDEV Conference - Example</a>
+        <a href="#">2023 AFFE Conference - Example</a>
       </li>
     </ul>
   {% endif %}

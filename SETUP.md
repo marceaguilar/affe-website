@@ -1,6 +1,6 @@
 # Quick Setup Guide
 
-This guide will help you quickly set up your WEFIDEV website on GitHub Pages.
+This guide will help you quickly set up your AFFE website on GitHub Pages.
 
 ## Step 1: Install Dependencies
 

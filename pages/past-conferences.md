@@ -3,12 +3,10 @@ layout: past-conferences
 title: Past Conferences
 permalink: /past-conferences
 past_conferences:
-  - title: "2024 WEFIDEV Conference"
-    date: "March 2024"
-    location: "Virtual"
-    link: "https://example.com/2024-conference"
-  - title: "2023 WEFIDEV Conference"
-    date: "September 2023"
-    location: "City, Country"
-    link: "https://example.com/2023-conference"
+  - title: "2025 - Second Conference on Field Experiments in Accounting"
+    location: "Georgetown University, Washington, DC"
+    link: "https://field-experiments-acctg-conf.squarespace.com/"
+  - title: "2024 - Conference on Field Experiments in Accounting and Finance"
+    location: "Georgetown University, Washington, DC"
+    link: "https://sites.google.com/view/gilleshilary/conference-on-field-experiments"
 ---

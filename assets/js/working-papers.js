@@ -97,11 +97,15 @@ function displayPapers(papers, container) {
     // Flexible field matching
     const title = paper['Paper Title'] || paper['Title'] || paper['title'] || 
                  paper['Name'] || paper['Paper Name'] || 'Untitled';
-    const author = paper['Full Name (Presenting Author)'] || paper['Authors'] || 
-                  paper['Author'] || paper['Author Name'] || paper['author'] || 
-                  paper['Your Name'] || paper['Name'] || 'Unknown';
-    const affiliation = paper['Affiliation / University'] || paper['Affiliation'] || 
-                       paper['University'] || paper['Institution'] || paper['affiliation'] || 
+    const author = paper['Authors'] || paper['Author'] || 
+                  paper['Full Name (Presenting Author)'] || paper['Author Name'] || 
+                  paper['author'] || paper['authors'] || paper['Your Name'] || 
+                  paper['Name'] || 'Unknown';
+    const affiliation = paper['Universities'] || paper['University'] || 
+                       paper['Universities/Affiliations'] || paper['Affiliation / University'] || 
+                       paper['Affiliation'] || paper['Affiliations'] || 
+                       paper['Institution'] || paper['Institutions'] || 
+                       paper['affiliation'] || paper['University/Affiliation'] || 
                        paper['Organization'] || '';
     const abstract = paper['Abstract'] || paper['Description'] || paper['abstract'] || 
                     paper['Summary'] || '';

@@ -2,21 +2,26 @@
 layout: default
 ---
 
-<h1 class="page-title">Register for Updates</h1>
+<h1 class="page-title">Submit Work in Progress</h1>
 
 <div class="registration-container">
   {{ content }}
   
   {% if page.google_form_url %}
-    <iframe src="{{ page.google_form_url }}" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid var(--color-olive); border-radius: 4px;">Loading…</iframe>
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="{{ page.google_form_url }}" target="_blank" rel="noopener noreferrer" class="google-form-button" style="display: inline-block; background-color: var(--color-olivewood); color: var(--color-parchment); padding: 1rem 2rem; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 1.1rem; transition: background-color 0.3s ease; border: 2px solid var(--color-olivewood);">
+        Open Submission Form
+      </a>
+    </div>
+    <iframe src="{{ page.google_form_url }}" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid var(--color-olive); border-radius: 4px; margin-top: 1rem;">Loading…</iframe>
   {% else %}
     <!-- Placeholder form -->
     <div class="registration-form" style="background-color: var(--color-parchment); padding: 2rem; border-radius: 4px; border: 1px solid var(--color-olive);">
       <div style="text-align: center; padding: 2rem;">
-        <h2 style="color: var(--color-olivewood); margin-bottom: 1rem;">Registration Form</h2>
-        <p>To set up the registration form:</p>
+        <h2 style="color: var(--color-olivewood); margin-bottom: 1rem;">Submission Form</h2>
+        <p>To set up the submission form:</p>
         <ol style="text-align: left; max-width: 600px; margin: 1rem auto;">
-          <li>Create a Google Form for registration</li>
+          <li>Create a Google Form for submissions</li>
           <li>Click "Send" → Click the "<>" (embed) icon</li>
           <li>Copy the iframe src URL</li>
           <li>Edit <code>pages/register.md</code> and add <code>google_form_url: "YOUR_URL"</code> to the front matter</li>
@@ -26,4 +31,11 @@ layout: default
     </div>
   {% endif %}
 </div>
+
+<style>
+  .google-form-button:hover {
+    background-color: var(--color-olive);
+    border-color: var(--color-olive);
+  }
+</style>
 

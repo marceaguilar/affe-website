@@ -6,32 +6,56 @@ layout: default
 
 <div class="conferences-container">
   {% if page.past_conferences %}
-    <ul class="past-conferences-list">
-      {% for conference in page.past_conferences %}
-        <li class="past-conference-item">
-          {% if conference.link %}
-            <a href="{{ conference.link }}" target="_blank" rel="noopener noreferrer">
-              {{ conference.title }}
+    {% for conference in page.past_conferences %}
+      <article class="conference-card">
+        <div class="conference-header">
+          <h2 class="conference-title">{{ conference.title }}</h2>
+          {% if conference.date %}
+            <div class="conference-date">
+              <svg class="date-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2H4C2.89543 2 2 2.89543 2 4V12C2 13.1046 2.89543 14 4 14H12C13.1046 14 14 13.1046 14 12V4C14 2.89543 13.1046 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 6H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M5 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>{{ conference.date }}</span>
+            </div>
+          {% endif %}
+        </div>
+        {% if conference.location %}
+          <div class="conference-description">
+            <p style="margin: 0; color: var(--color-text);">
+              <svg style="display: inline-block; vertical-align: middle; margin-right: 0.5rem; width: 16px; height: 16px;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2.5 6.5C2.5 9.5 8 13.5 8 13.5C8 13.5 13.5 9.5 13.5 6.5C13.5 4.01472 11.4853 2 9 2C6.51472 2 4.5 4.01472 4.5 6.5H2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{ conference.location }}
+            </p>
+          </div>
+        {% endif %}
+        {% if conference.link %}
+          <div class="conference-actions">
+            <a href="{{ conference.link }}" target="_blank" rel="noopener noreferrer" class="conference-link">
+              Visit Conference Website
+              <svg class="link-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 10L10 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6H10V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </a>
-          {% else %}
-            {{ conference.title }}
-          {% endif %}
-          {% if conference.location %}
-            <span style="color: var(--color-text-light);"> ({{ conference.location }})</span>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
   {% else %}
     <!-- Default example -->
-    <ul class="past-conferences-list">
-      <li class="past-conference-item">
-        <a href="#">2024 AFFE Conference - Example</a>
-      </li>
-      <li class="past-conference-item">
-        <a href="#">2023 AFFE Conference - Example</a>
-      </li>
-    </ul>
+    <article class="conference-card">
+      <div class="conference-header">
+        <h2 class="conference-title">Past Conference</h2>
+      </div>
+      <div class="conference-description">
+        <p>Past conferences will be listed here.</p>
+      </div>
+    </article>
   {% endif %}
 </div>
 

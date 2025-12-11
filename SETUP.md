@@ -10,14 +10,15 @@ bundle install
 
 ## Step 2: Configure Google Sheets for Working Papers
 
-1. **Create a Google Form** for paper submissions with fields like:
-   - Paper Title
-   - Author Name
-   - Abstract
-   - Link (optional)
-   - Timestamp (auto-filled)
+1. **Create a Google Form** for paper submissions with fields:
+   - Paper Title (required)
+   - Authors (required - for multiple authors)
+   - Universities/Affiliations (required - for multiple universities)
+   - Abstract (optional)
+   - PDF Upload (required - file upload)
+   - Timestamp (auto-generated)
 
-2. **Link it to a Google Sheet**
+2. **Link it to a Google Sheet** (Responses tab → Link to Sheets)
 
 3. **Publish the Sheet to the web:**
    - Open your Google Sheet
@@ -31,6 +32,16 @@ bundle install
    google_sheets:
      working_papers_url: "YOUR_GOOGLE_SHEETS_CSV_URL"
    ```
+
+5. **Set up the Submission Form Page:**
+   - In your Google Form, click **"Send"** → Click the **"<>"** (embed) icon
+   - Copy the iframe `src` URL
+   - Edit `pages/submit-working-paper.md` and add:
+     ```yaml
+     google_form_url: "YOUR_GOOGLE_FORM_EMBED_URL"
+     ```
+
+**For detailed step-by-step instructions, see `WORKING_PAPERS_SETUP.md`**
 
 ## Step 3: Set Up Registration Form
 

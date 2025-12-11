@@ -26,6 +26,8 @@ google_sheets:
 navigation:
   - title: "Working Papers"
     url: "/working-papers"
+  - title: "Submit Working Paper"
+    url: "/submit-working-paper"
   - title: "Announcements"
     url: "/announcements"
   - title: "Conference Postings"
@@ -43,4 +45,5 @@ exclude:
   - node_modules
   - vendor
   - README.md
+  - affe-website
 

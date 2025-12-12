@@ -30,8 +30,6 @@ navigation:
     url: "/submit-working-paper"
   - title: "Announcements"
     url: "/announcements"
-  - title: "Conference Postings"
-    url: "/conferences"
   - title: "Register"
     url: "/register"
   - title: "About"

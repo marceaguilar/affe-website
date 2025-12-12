@@ -32,8 +32,6 @@ navigation:
     url: "/submit-working-paper"
   - title: "Announcements"
     url: "/announcements"
-  - title: "Register"
-    url: "/register"
   - title: "Conferences"
     url: "/past-conferences"
 

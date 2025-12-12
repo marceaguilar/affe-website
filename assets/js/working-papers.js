@@ -1,19 +1,9 @@
 // Static working papers data
 const staticPapers = [
   {
-    'Title': 'Artificial Intelligence and the Restructuring of the Organizational Architecture',
-    'Authors': 'Jasmijn C. Bol (Tulane University), Dennis Campbell (Harvard University), Jake Krupa (Tulane University), Wenxin Wang (Harvard University)',
-    'Link': '/assets/pdf/BCKW.pdf'
-  },
-  {
     'Title': 'Paid Tax Preparers and Social Benefit Take-up: Evidence from a Field Experiment',
     'Authors': 'Andrew Belnap (University of Texas at Austin), Anthony Welsch (University of Chicago), Jeffrey Gramlich (Washington State University), Braden Williams (University of Texas at Austin)',
     'Link': '/assets/pdf/BGWW.pdf'
-  },
-  {
-    'Title': 'Pills, Powders, and Proof',
-    'Authors': 'Anna Costello (University of Chicago Booth), Christian Friedrich (University of Mannheim), Gerrit von Zedlitz (University of Mannheim)',
-    'Link': '/assets/pdf/CostelloFriedrichvonZedlitz.pdf'
   },
   {
     'Title': 'Racial and Gender Favoritism in Crowdfunding—Evidence from the Field',

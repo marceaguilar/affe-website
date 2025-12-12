@@ -24,6 +24,8 @@ google_sheets:
 
 # Navigation
 navigation:
+  - title: "About"
+    url: "/about"
   - title: "Working Papers"
     url: "/working-papers"
   - title: "Submit Working Paper"
@@ -32,8 +34,6 @@ navigation:
     url: "/announcements"
   - title: "Register"
     url: "/register"
-  - title: "About"
-    url: "/about"
   - title: "Conferences"
     url: "/past-conferences"
 

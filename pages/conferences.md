@@ -3,6 +3,12 @@ layout: conferences
 title: Conference Postings
 permalink: /conferences
 conferences:
+  - title: "2026-CUHK Shenzhen/UCSD/Waseda Joint Conference on Field Experiments in Accounting and Economics"
+    date: "20 Mar 2026 - 21 Mar 2026"
+    description: |
+      **Location**
+      Waseda University, Tokyo, Japan
+    link: "https://www.ssrn.com/index.cfm/en/janda/announcement/?id=18206"
   - title: "CUHK Shenzhen/UCSD/Waseda Joint Conference on Field Experiments in Accounting and Economics"
     date: "20 Mar 2026 - 21 Mar 2026"
     description: |

@@ -34,7 +34,7 @@ navigation:
     url: "/register"
   - title: "About"
     url: "/about"
-  - title: "Past Conferences"
+  - title: "Conferences"
     url: "/past-conferences"
 
 exclude:

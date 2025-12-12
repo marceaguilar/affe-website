@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<h1 class="page-title">Webinars</h1>
+
+<div class="webinars-container">
+  {{ content }}
+  
+  <div class="webinars-intro" style="background-color: var(--color-parchment); padding: 3rem 2.5rem; border-radius: 8px; border: 1px solid var(--color-olive); text-align: center; max-width: 900px; margin: 2rem auto; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <h2 style="color: var(--color-olivewood); margin-bottom: 1.5rem; font-size: 2rem; font-weight: 600;">Share Your Experimental Design</h2>
+    <p style="color: var(--color-text); margin-bottom: 2.5rem; line-height: 1.9; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+      Are you working on an experimental design and would like to discuss it with the AFFE community before running your experiments? Submit your early work through the form below, and we'll organize a webinar to discuss your experimental design together. This is a great opportunity to refine your approach and get valuable feedback from peers.
+    </p>
+    
+    {% if page.google_form_url %}
+      <div style="text-align: center; margin-top: 1rem;">
+        <a href="{{ page.google_form_url }}" target="_blank" rel="noopener noreferrer" class="webinar-form-button" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; font-size: 1.2rem; font-weight: 600; padding: 1.4rem 3rem; background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-olive) 100%); color: var(--color-white); text-decoration: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(143, 168, 143, 0.4); transition: all 0.3s ease; border: none; cursor: pointer;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>Submit Your Experimental Design</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    {% else %}
+      <div style="text-align: center; margin-top: 1rem;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSflc6OcOjbd8IJxGfpUZZfz0MLUOmUH4PWv83YwOX6bIeJTdA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="webinar-form-button" style="display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; font-size: 1.2rem; font-weight: 600; padding: 1.4rem 3rem; background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-olive) 100%); color: var(--color-white); text-decoration: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(143, 168, 143, 0.4); transition: all 0.3s ease; border: none; cursor: pointer;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>Submit Your Experimental Design</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    {% endif %}
+  </div>
+  
+  {% if page.google_form_url %}
+    <iframe src="{{ page.google_form_url }}" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" style="border: 1px solid var(--color-olive); border-radius: 8px; margin-top: 2rem; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Loading…</iframe>
+  {% endif %}
+</div>
+
+<style>
+.webinar-form-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(143, 168, 143, 0.5);
+  background: linear-gradient(135deg, var(--color-bark) 0%, var(--color-olivewood) 100%);
+}
+
+.webinar-form-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(143, 168, 143, 0.3);
+}
+
+.webinar-form-button svg:first-child {
+  animation: none;
+}
+
+.webinar-form-button:hover svg:last-child {
+  transform: translate(3px, -3px);
+  transition: transform 0.3s ease;
+}
+</style>
+

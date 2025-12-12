@@ -781,18 +781,24 @@ body {
   margin-bottom: 2rem;
 }
 
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
 .team-member {
   background-color: var(--color-parchment);
-  padding: 1.5rem;
-  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 4px;
-  border-left: 4px solid var(--color-sage);
+  border-left: 1px solid var(--color-sage);
 }
 
 .team-member-name {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--color-olivewood);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .team-member-role {

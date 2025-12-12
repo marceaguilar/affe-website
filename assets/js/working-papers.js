@@ -92,7 +92,7 @@ function displayPapers(papers, container) {
     papers.forEach(paper => {
       try {
     const paperItem = document.createElement('li');
-    paperItem.className = 'paper-item';
+    paperItem.className = 'paper-card';
     
     // Flexible field matching
     const title = paper['Paper Title'] || paper['Title'] || paper['title'] || 
@@ -120,23 +120,19 @@ function displayPapers(papers, container) {
         let dateObj;
         const trimmedDate = date.trim();
         // Handle Spanish date format: DD/MM/YYYY HH:MM:SS
-        // Match DD/MM/YYYY pattern (with optional leading/trailing spaces)
         if (trimmedDate.includes('/') && trimmedDate.match(/\d{2}\/\d{2}\/\d{4}/)) {
           const parts = trimmedDate.split(' ');
-          const datePart = parts[0]; // "22/11/2025"
-          const timePart = parts[1] || ''; // "1:40:20"
+          const datePart = parts[0]; 
+          const timePart = parts[1] || ''; 
           const [day, month, year] = datePart.split('/');
-          // Create date in ISO format (YYYY-MM-DD) which is reliably parsed
           const isoDate = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}${timePart ? 'T' + timePart : ''}`;
           dateObj = new Date(isoDate);
         } else {
-          // Try standard Date parsing for other formats
           dateObj = new Date(trimmedDate);
         }
         
-        // Check if date is valid
         if (isNaN(dateObj.getTime())) {
-          dateDisplay = trimmedDate; // Fallback to original string
+          dateDisplay = trimmedDate; 
         } else {
           dateDisplay = dateObj.toLocaleDateString('en-US', { 
             year: 'numeric', 
@@ -150,15 +146,43 @@ function displayPapers(papers, container) {
       }
     }
 
+    // Title Link Logic
     const titleHtml = link ? 
       `<a href="${link}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>` : 
       escapeHtml(title);
 
+    // Download Button Icon (SVG)
+    const downloadIcon = `
+      <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="downloadIconTitle" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <title id="downloadIconTitle">Download</title>
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+    `;
+
     paperItem.innerHTML = `
-      <div class="paper-title">${titleHtml}</div>
-      <div class="paper-author">${escapeHtml(author)}${affiliation ? `, ${escapeHtml(affiliation)}` : ''}</div>
-      ${dateDisplay ? `<div class="paper-date">Submitted: ${dateDisplay}</div>` : ''}
+      <div class="paper-header">
+        <div class="paper-title">${titleHtml}</div>
+        ${dateDisplay ? `<div class="paper-date">Submitted: ${dateDisplay}</div>` : ''}
+      </div>
+      
+      <div class="paper-authors">
+        <div class="author-block">
+          <span class="author-name">${escapeHtml(author)}</span>
+          ${affiliation ? `<span class="author-affiliation"> — ${escapeHtml(affiliation)}</span>` : ''}
+        </div>
+      </div>
+      
       ${abstract ? `<div class="paper-abstract">${escapeHtml(abstract)}</div>` : ''}
+      
+      ${link ? `
+      <div class="paper-actions">
+        <a href="${link}" class="button-download" target="_blank" rel="noopener noreferrer">
+          ${downloadIcon}
+          Download Paper
+        </a>
+      </div>` : ''}
     `;
 
     papersList.appendChild(paperItem);

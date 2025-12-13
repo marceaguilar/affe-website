@@ -48,7 +48,7 @@ announcements:
       <div style="background: #e8f4e8; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; text-align: center;">
         <h3 style="margin-top: 0; color: #5A4A3A; font-size: 1.2em; margin-bottom: 1rem;">Registration</h3>
         <p style="margin: 1rem 0; line-height: 1.7;">To register your interest in attending the Joint Conference in March, please provide your name, affiliation, and email:</p>
-        <p style="margin: 1rem 0;"><a href="https://forms.gle/5mpkt2V7g6PL3ZG2A" style="display: inline-block; background-color: #8FA88F; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s;">Register Here</a></p>
+        <p style="margin: 1rem 0;"><a href="https://docs.google.com/forms/d/e/1FAIpQLScb0TEiLUFQYNpPE4yaU2_ugfTEYZoTTC6XrfnKXLLrbhPH9w/viewform?usp=header" style="display: inline-block; background-color: #8FA88F; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: background-color 0.3s;">Register Here</a></p>
       </div>
 
       <div style="margin: 1.5rem 0; padding: 1rem; border-top: 2px solid #e0e0e0; border-bottom: 2px solid #e0e0e0;">

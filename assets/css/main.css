@@ -47,6 +47,49 @@ body {
   z-index: 1000;
 }
 
+/* Community Banner - Button above navigation */
+.community-banner {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(143, 168, 143, 0.4) 0%, rgba(184, 183, 148, 0.5) 100%);
+  padding: 0.5rem 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(143, 168, 143, 0.3);
+  border-top: 1px solid rgba(143, 168, 143, 0.2);
+}
+
+.community-button {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, var(--color-sand) 0%, var(--color-parchment) 100%);
+  color: var(--color-olivewood);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.3px;
+  border: 1px solid rgba(143, 168, 143, 0.3);
+  white-space: nowrap;
+}
+
+.community-button:hover {
+  background: linear-gradient(135deg, var(--color-parchment) 0%, var(--color-sand) 100%);
+  color: var(--color-bark);
+  box-shadow: 0 4px 12px rgba(143, 168, 143, 0.4);
+  transform: translateY(-1px);
+  border-color: var(--color-sage);
+}
+
+.community-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -205,8 +248,7 @@ body {
 }
 
 .next-event,
-.mission-section,
-.quick-links {
+.mission-section {
   margin: 2rem 0;
   padding: 1.5rem;
   background-color: var(--color-parchment);
@@ -215,8 +257,7 @@ body {
 }
 
 .next-event h2,
-.mission-section h2,
-.quick-links h2 {
+.mission-section h2 {
   color: var(--color-olivewood);
   margin-bottom: 1rem;
 }
@@ -277,25 +318,6 @@ body {
   font-weight: 500;
 }
 
-.quick-links ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.quick-links li {
-  margin: 0.5rem 0;
-}
-
-.quick-links a {
-  color: var(--color-bark);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.quick-links a:hover {
-  color: var(--color-sage);
-  text-decoration: underline;
-}
 
 /* Page Headings */
 .page-title {
@@ -781,6 +803,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.about-section h2#contact {
+  margin-top: 2rem;
+}
+
 .team-members-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -895,6 +921,15 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .community-banner {
+    padding: 0.5rem 20px;
+  }
+
+  .community-button {
+    padding: 0.55rem 1.25rem;
+    font-size: 0.85rem;
+  }
+
   .main-nav {
     padding: 0.5rem 20px;
     position: relative;

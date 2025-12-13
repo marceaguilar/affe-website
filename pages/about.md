@@ -9,7 +9,7 @@ team:
   - name: "Yael Hochberg"
     institution: "Rice University"
     link: "http://yael-hochberg.com/"
-  - name: "Anna M Costello"
+  - name: "Anna Costello"
     institution: "University of Chicago"
     link: "http://annamcostello.com/"
   - name: "Michael Price"

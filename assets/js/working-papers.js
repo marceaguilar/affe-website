@@ -1,6 +1,11 @@
 // Static working papers data
 const staticPapers = [
   {
+    'Title': 'Learning to Quit? A Multi-Year, Multi-Site Field Experiment with Innovation-Driven Entrepreneurs',
+    'Authors': 'Esther Bailey, Daniel Fehder, Eric Floyd, Yael Hochberg, Daniel J. Lee',
+    'Link': '/assets/pdf/BFFHL.pdf'
+  },
+  {
     'Title': 'Paid Tax Preparers and Social Benefit Take-up: Evidence from a Field Experiment',
     'Authors': 'Andrew Belnap (University of Texas at Austin), Anthony Welsch (University of Chicago), Jeffrey Gramlich (Washington State University), Braden Williams (University of Texas at Austin)',
     'Link': '/assets/pdf/BGWW.pdf'

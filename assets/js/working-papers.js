@@ -7,12 +7,12 @@ const staticPapers = [
   },
   {
     'Title': 'Paid Tax Preparers and Social Benefit Take-up: Evidence from a Field Experiment',
-    'Authors': 'Andrew Belnap (University of Texas at Austin), Anthony Welsch (University of Chicago), Jeffrey Gramlich (Washington State University), Braden Williams (University of Texas at Austin)',
+    'Authors': 'Andrew Belnap, Anthony Welsch , Jeffrey Gramlich, Braden Williams',
     'Link': '/assets/pdf/BGWW.pdf'
   },
   {
     'Title': 'Racial and Gender Favoritism in Crowdfunding—Evidence from the Field',
-    'Authors': 'Ha Diep-Nguyen (Purdue University), Michael Price (University of Alabama, NBER, ANU), Jun Yang (Nanyang Technological University & Indiana University)',
+    'Authors': 'Ha Diep-Nguyen, Michael Price, Jun Yang',
     'Link': '/assets/pdf/DPY.pdf'
   }
 ];
@@ -102,6 +102,8 @@ function displayPapers(papers, container) {
                        paper['Institution'] || paper['Institutions'] || 
                        paper['affiliation'] || paper['University/Affiliation'] || 
                        paper['Organization'] || '';
+    // Display only author names (strip parenthetical affiliations e.g. " (University of X)")
+    const authorDisplay = author.replace(/\s*\([^)]*\)/g, '').replace(/\s*,\s*,/g, ', ').trim();
     const abstract = paper['Abstract'] || paper['Description'] || paper['abstract'] || 
                     paper['Summary'] || '';
     const date = paper['Marca temporal'] || paper['Timestamp'] || paper['Date Submitted'] || 
@@ -164,8 +166,7 @@ function displayPapers(papers, container) {
       
       <div class="paper-authors">
         <div class="author-block">
-          <span class="author-name">${escapeHtml(author)}</span>
-          ${affiliation ? `<span class="author-affiliation"> — ${escapeHtml(affiliation)}</span>` : ''}
+          <span class="author-name">${escapeHtml(authorDisplay)}</span>
         </div>
       </div>
       

@@ -25,7 +25,7 @@ team:
     institution: "Rice University"
     link: "https://marceaguilar.com/"
   - name: "Joon Sang Yoon"
-    institution: "CUHK, Shenzhen"
+    institution: "CUHK Shenzhen"
     link: "https://www.jun-yoon.com/home"
 ---
 

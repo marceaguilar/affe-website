@@ -14,7 +14,7 @@ Join our virtual webinar series for periodic methodological webinars on field ex
     <img src="/assets/img/david_mckenzie.jpg" alt="David McKenzie" loading="lazy">
   </div>
   <div class="webinar-details">
-    <div class="webinar-date">Friday, April 3, 2026 – 9:00 AM (Central Standard Time, US)</div>
+    <div class="webinar-date">Friday, April 3, 2026 – 9:00 AM (Central Daylight Time, US)</div>
     <h3 class="webinar-title">Advantages and Limitations of Small-Sample Evidence in Developing Economies</h3>
     <p class="webinar-meta"><strong>Paper:</strong> <a href="https://www.econometricsociety.org/publications/econometrica/2025/09/01/Bayesian-Impact-Evaluation-with-Informative-Priors-An-Application-to-a-Colombian-Management-and-Export-Improvement-Program" target="_blank" rel="noopener noreferrer">Bayesian Impact Evaluation with Informative Priors: An Application to a Colombian Management and Export Improvement Program</a></p>
     <p class="webinar-meta"><strong>Speaker:</strong> David McKenzie, Development Research Group, The World Bank</p>

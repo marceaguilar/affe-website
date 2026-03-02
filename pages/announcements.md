@@ -3,6 +3,11 @@ layout: announcements
 title: Announcements
 permalink: /announcements
 announcements:
+  - date: "March 2, 2026"
+    title: "AFFE Virtual Workshops 2026 Are Starting"
+    content: |
+      <p style="font-size: 1.1em; margin-bottom: 1rem; line-height: 1.7; color: #333;">We are excited to announce the start of our <strong>Virtual Workshops for 2026</strong>. Our first workshop will take place on <strong>April 3, 2026</strong>.</p>
+      <p style="margin: 0.75rem 0 0; line-height: 1.7;">For details on the workshop schedule, speaker, and paper, please visit the <a href="/webinars" style="color: #5A4A3A; text-decoration: underline; font-weight: 600;">Webinars</a> tab.</p>
   - date: "December 15, 2024"
     title: "CUHK Shenzhen/UCSD/Waseda Joint Conference on Field Experiments in Accounting and Economics"
     content: |

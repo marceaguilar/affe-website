@@ -1,6 +1,11 @@
 // Static working papers data
 const staticPapers = [
   {
+    'Title': 'Equity Crowdfunding "Rules": Compliance with Mandated Ongoing Financial Reporting in an Unenforced Environment',
+    'Authors': 'Gregory Burke, Riley League',
+    'Link': '/assets/pdf/Rules_2025.09.09%20-%20Greg%20Burke.pdf'
+  },
+  {
     'Title': 'Learning to Quit? A Multi-Year, Multi-Site Field Experiment with Innovation-Driven Entrepreneurs',
     'Authors': 'Esther Bailey, Daniel Fehder, Eric Floyd, Yael Hochberg, Daniel J. Lee',
     'Link': '/assets/pdf/BFFHL.pdf'

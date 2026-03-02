@@ -1,6 +1,11 @@
 // Static working papers data
 const staticPapers = [
   {
+    'Title': 'AI Mentorship and the Language of Business: Building Financial Capability among Microenterprises in Developing Economies',
+    'Authors': 'Marcela Aguilar',
+    'Link': '/assets/pdf/JMP_Marcela_Aguilar.pdf'
+  },
+  {
     'Title': 'Equity Crowdfunding "Rules": Compliance with Mandated Ongoing Financial Reporting in an Unenforced Environment',
     'Authors': 'Gregory Burke, Riley League',
     'Link': '/assets/pdf/Rules_2025.09.09%20-%20Greg%20Burke.pdf'

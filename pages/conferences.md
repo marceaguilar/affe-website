@@ -8,7 +8,8 @@ conferences:
     description: |
       **Location**
       Waseda University, Tokyo, Japan
-    link: "https://www.ssrn.com/index.cfm/en/janda/announcement/?id=18206"
+    link: "/conference-2026"
+    link_text: "View Conference Details"
   - title: "CUHK Shenzhen/UCSD/Waseda Joint Conference on Field Experiments in Accounting and Economics"
     date: "20 Mar 2026 - 21 Mar 2026"
     description: |

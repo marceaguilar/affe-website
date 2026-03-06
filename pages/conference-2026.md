@@ -22,7 +22,7 @@ permalink: /conference-2026
   <section class="conference-section-card">
     <h2>Conference Schedule</h2>
     <p>The full conference program is available here:</p>
-    <a href="{{ '/assets/pdf/Japan_Final%20Schedule.pdf' | relative_url }}" class="conference-link" target="_blank" rel="noopener noreferrer">
+    <a href="{{ '/assets/pdf/Final_Schedule_Japan.pdf' | relative_url }}" class="conference-link" target="_blank" rel="noopener noreferrer">
       View Japan Final Schedule (PDF)
     </a>
   </section>

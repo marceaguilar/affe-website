@@ -1,6 +1,26 @@
 // Static working papers data
 const staticPapers = [
   {
+    'Title': 'Investor Ethnicity and Investor Relations Responsiveness: A Field Experiment',
+    'Authors': 'Nerissa C. Brown, Mark E. Peecher, Sebastian Stirnkorb, Isaac L. Yamoah',
+    'Link': '/assets/pdf/Japan%20Conference%20Papers%20(Public)/%5BMini%20Session%20-%20Disc%5D%20BPSY.pdf'
+  },
+  {
+    'Title': 'Statistical Discrimination in Two-sided Matching Markets: Experimental and Theoretical Evidence',
+    'Authors': 'Junlong Feng, Ofir Gefen, Ye Zhang, Weijie Zhong',
+    'Link': '/assets/pdf/Japan%20Conference%20Papers%20(Public)/%5BMini%20Session%20-%20Disc%5D%20FGZZ.pdf'
+  },
+  {
+    'Title': 'Discrimination in Access to Corporate Insiders: Evidence from a Field Experiment',
+    'Authors': 'Austin Moss, Roshan K. Sinha, David Volant, Donald Young',
+    'Link': '/assets/pdf/Japan%20Conference%20Papers%20(Public)/%5BMini%20Session%20-%20Disc%5D%20MVSY.pdf'
+  },
+  {
+    'Title': 'The Effect of Private Pressure on Corporate Disclosures: Evidence from a Randomized Field Experiment.',
+    'Authors': 'Mary Adenle, Fred Asante, Tendai Masaya, David Park',
+    'Link': '/assets/pdf/Japan%20Conference%20Papers%20(Public)/%5BSession%204%5D%20AAMP.pdf'
+  },
+  {
     'Title': 'AI Mentorship and the Language of Business: Building Financial Capability among Microenterprises in Developing Economies',
     'Authors': 'Marcela Aguilar',
     'Link': '/assets/pdf/JMP_Marcela_Aguilar.pdf'
@@ -8,7 +28,7 @@ const staticPapers = [
   {
     'Title': 'Equity Crowdfunding "Rules": Compliance with Mandated Ongoing Financial Reporting in an Unenforced Environment',
     'Authors': 'Gregory Burke, Riley League',
-    'Link': '/assets/pdf/Rules_2025.09.09%20-%20Greg%20Burke.pdf'
+    'Link': '/assets/pdf/Rules_Greg%20Burke.pdf'
   },
   {
     'Title': 'Learning to Quit? A Multi-Year, Multi-Site Field Experiment with Innovation-Driven Entrepreneurs',

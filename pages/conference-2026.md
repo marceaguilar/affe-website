@@ -53,7 +53,7 @@ permalink: /conference-2026
       <div class="participant-item"><strong>Kanyuan Huang</strong><span>CUHK Shenzhen, Accounting</span></div>
       <div class="participant-item"><strong>Katie Zheng</strong><span>CUHK Shenzhen, Accounting</span></div>
       <div class="participant-item"><strong>Kristian Rotaru</strong><span>Department of Accounting, Monash University</span></div>
-      <div class="participant-item"><strong>Marcela Aguilar</strong><span>Rice</span></div>
+      <div class="participant-item"><strong>Marcela Aguilar</strong><span>University of Chicago</span></div>
       <div class="participant-item"><strong>Maximilian Muhn</strong><span>Chicago Booth</span></div>
       <div class="participant-item"><strong>Michael Price</strong><span>Alabama</span></div>
       <div class="participant-item"><strong>Mireille Jacobson</strong><span>USC</span></div>

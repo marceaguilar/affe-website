@@ -328,6 +328,13 @@ body {
   border-bottom: 3px solid var(--color-sage);
 }
 
+.page-intro {
+  margin: -0.5rem 0 2rem;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+}
+
 /* Working Papers Page */
 .working-papers-container {
   margin: 3rem 0;
@@ -560,6 +567,41 @@ body {
 .announcement-content p {
   margin: 0;
   color: var(--color-text-light);
+}
+
+.announcement-content--collapsible .announcement-summary p {
+  margin-bottom: 0;
+}
+
+.announcement-details {
+  margin-top: 1.5rem;
+}
+
+.announcement-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-bark);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.announcement-toggle:hover {
+  color: var(--color-olivewood);
+}
+
+.announcement-toggle-icon {
+  transition: transform 0.2s ease;
+}
+
+.announcement-toggle[aria-expanded="true"] .announcement-toggle-icon {
+  transform: rotate(180deg);
 }
 
 /* Conference Postings */

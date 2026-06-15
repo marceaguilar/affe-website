@@ -22,14 +22,18 @@ google_sheets:
   working_papers_url: "https://docs.google.com/spreadsheets/d/1KKZ8sRgFhAdHa19ew_CuzA6tt9mig7K9KrjcfoMrjV4/export?format=csv&gid=599187931"
   # Format: https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid=0
 
+google_forms:
+  working_paper_url: "https://docs.google.com/forms/d/e/1FAIpQLSdnFCJteChTWFhGnpC1tAnOYUZOBLvVumn5srz2-gf9TztFsQ/viewform?usp=header"
+  experimental_design_url: "https://docs.google.com/forms/d/e/1FAIpQLSflc6OcOjbd8IJxGfpUZZfz0MLUOmUH4PWv83YwOX6bIeJTdA/viewform?usp=header"
+
 # Navigation
 navigation:
   - title: "About"
     url: "/about"
   - title: "Working Papers"
     url: "/working-papers"
-  - title: "Submit Working Paper"
-    url: "/submit-working-paper"
+  - title: "Experimental Designs"
+    url: "/submit-experimental-design"
   - title: "Webinars"
     url: "/webinars"
   - title: "Announcements"

@@ -38,5 +38,41 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+
+  document.querySelectorAll('.announcement-toggle').forEach(function(button) {
+    button.addEventListener('click', function() {
+      const details = button.previousElementSibling;
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      const label = button.querySelector('.announcement-toggle-label');
+
+      if (isExpanded) {
+        details.hidden = true;
+        button.setAttribute('aria-expanded', 'false');
+        if (label) label.textContent = 'Read more';
+      } else {
+        details.hidden = false;
+        button.setAttribute('aria-expanded', 'true');
+        if (label) label.textContent = 'Show less';
+      }
+    });
+  });
+
+  document.querySelectorAll('.webinar-abstract-toggle').forEach(function(button) {
+    button.addEventListener('click', function() {
+      const abstract = button.previousElementSibling;
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      const label = button.querySelector('.webinar-abstract-toggle-label');
+
+      if (isExpanded) {
+        abstract.classList.add('is-collapsed');
+        button.setAttribute('aria-expanded', 'false');
+        if (label) label.textContent = 'Read abstract';
+      } else {
+        abstract.classList.remove('is-collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        if (label) label.textContent = 'Show less';
+      }
+    });
+  });
 });
 

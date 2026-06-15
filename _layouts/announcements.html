@@ -13,7 +13,22 @@ layout: default
           <div class="announcement-card">
             <div class="announcement-date">{{ announcement.date }}</div>
             <div class="announcement-title">{{ announcement.title }}</div>
-            <div class="announcement-content">{{ announcement.content | markdownify }}</div>
+            {% if announcement.collapsible %}
+              <div class="announcement-content announcement-content--collapsible">
+                <div class="announcement-summary">{{ announcement.summary | markdownify }}</div>
+                <div class="announcement-details" hidden>
+                  {{ announcement.content | markdownify }}
+                </div>
+                <button type="button" class="announcement-toggle" aria-expanded="false">
+                  <span class="announcement-toggle-label">Read more</span>
+                  <svg class="announcement-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+              </div>
+            {% else %}
+              <div class="announcement-content">{{ announcement.content | markdownify }}</div>
+            {% endif %}
           </div>
         </div>
       {% endfor %}

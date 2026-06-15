@@ -22,7 +22,7 @@ team:
     institution: "Duke University"
     link: "https://www.fuqua.duke.edu/faculty/henry-eyring"
   - name: "Marcela Aguilar"
-    institution: "Rice University"
+    institution: "University of Chicago"
     link: "https://marceaguilar.com/"
   - name: "Joon Sang Yoon"
     institution: "CUHK Shenzhen"
@@ -35,4 +35,4 @@ We launched AFFE to support researchers in sharing their work and fostering prod
 
 ## Contact
 
-For questions or inquiries, please contact us at: [info@accfinfe.com](mailto:info@accfinfe.com)
+For questions or inquiries, please contact us at: [affe-committee@googlegroups.com](mailto:affe-committee@googlegroups.com)

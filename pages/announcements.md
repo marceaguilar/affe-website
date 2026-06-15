@@ -3,6 +3,12 @@ layout: announcements
 title: Announcements
 permalink: /announcements
 announcements:
+  - date: "June 15, 2026"
+    title: "AFFE Design Workshop Series Now Open"
+    content: |
+      <p style="font-size: 1.1em; margin-bottom: 1rem; line-height: 1.7; color: #333;">We are launching the <strong>AFFE Design Workshop Series</strong>, short online workshops for early feedback on field experiment designs before data collection begins.</p>
+      <p style="margin: 0.75rem 0 0; line-height: 1.7;">We are currently looking for presenters for our first two sessions. Each session runs about one hour on Zoom, with a 10–15 minute presentation and open discussion. A research question and an active design is enough — no paper or preliminary results required.</p>
+      <p style="margin: 0.75rem 0 0; line-height: 1.7;">For details and to submit your design, visit the <a href="/submit-experimental-design" style="color: #5A4A3A; text-decoration: underline; font-weight: 600;">Experimental Designs</a> tab.</p>
   - date: "March 2, 2026"
     title: "AFFE Virtual Workshops 2026 Are Starting"
     content: |
@@ -10,9 +16,10 @@ announcements:
       <p style="margin: 0.75rem 0 0; line-height: 1.7;">For details on the workshop schedule, speaker, and paper, please visit the <a href="/webinars" style="color: #5A4A3A; text-decoration: underline; font-weight: 600;">Webinars</a> tab.</p>
   - date: "December 15, 2024"
     title: "CUHK Shenzhen/UCSD/Waseda Joint Conference on Field Experiments in Accounting and Economics"
+    collapsible: true
+    summary: |
+      <p style="font-size: 1.1em; margin-bottom: 0; line-height: 1.7; color: #333;">We are pleased to announce the <strong>call for papers</strong> for the CUHK Shenzhen/UCSD/Waseda joint conference on field experiments in Accounting and Economics, to be held in Tokyo, Japan, on <strong>March 21, 2026</strong>.</p>
     content: |
-      <p style="font-size: 1.1em; margin-bottom: 2rem; line-height: 1.7; color: #333;">We are pleased to announce the <strong>call for papers</strong> for the CUHK Shenzhen/UCSD/Waseda joint conference on field experiments in Accounting and Economics, to be held in Tokyo, Japan, on <strong>March 21, 2026</strong>.</p>
-
       <div style="background: #f8f8f6; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid #8FA88F;">
         <h3 style="margin-top: 0; color: #5A4A3A; font-size: 1.2em; margin-bottom: 1rem;">Conference Details</h3>
         <ul style="margin: 0.75rem 0; padding-left: 1.5rem; line-height: 1.8;">

@@ -10,6 +10,27 @@ Join our virtual webinar series for periodic methodological webinars on field ex
 
 <div class="webinar-featured">
   <div class="webinar-speaker-photo">
+    <img src="/assets/img/john_list.png" alt="John A. List" loading="lazy">
+  </div>
+  <div class="webinar-details">
+    <div class="webinar-date">Friday, November 20, 2026 – 9:00 AM (Central Standard Time, US)</div>
+    <h3 class="webinar-title">Experimental Economics: Theory and Practice</h3>
+    <p class="webinar-meta"><strong>Book:</strong> <em>Experimental Economics: Theory and Practice</em></p>
+    <p class="webinar-meta"><strong>Speaker:</strong> John A. List, Kenneth C. Griffin Distinguished Service Professor in Economics, University of Chicago</p>
+    <div class="webinar-abstract-wrap">
+      <p class="webinar-abstract is-collapsed"><strong>Abstract:</strong> Experimental economics has become a central tool for understanding human decisions, motivations, and outcomes, offering researchers a powerful way to identify causal effects in both laboratory and real-world settings. Drawing on more than three decades of experience designing and conducting experiments, John A. List discusses the ideas behind his new book, <em>Experimental Economics: Theory and Practice</em>. The book provides a practical framework for developing, implementing, and interpreting economic experiments, covering topics from experimental design and execution to administrative and ethical considerations. Combining methodological guidance with lessons from field and laboratory research, List highlights what researchers can learn from both successful experiments and the challenges that arise along the way.</p>
+      <button type="button" class="webinar-abstract-toggle" aria-expanded="false">
+        <span class="webinar-abstract-toggle-label">Read abstract</span>
+        <svg class="webinar-abstract-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="webinar-featured">
+  <div class="webinar-speaker-photo">
     <img src="/assets/img/david_mckenzie.jpg" alt="David McKenzie" loading="lazy">
   </div>
   <div class="webinar-details">

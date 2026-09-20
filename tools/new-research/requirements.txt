@@ -1,0 +1,6 @@
+# Feed builder dependencies.
+# Everything else it needs is in the Python standard library.
+PyYAML>=6.0
+
+# Only required when running with --summaries llm.
+# anthropic>=0.40

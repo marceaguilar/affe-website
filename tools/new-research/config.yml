@@ -1,0 +1,267 @@
+# ---------------------------------------------------------------------------
+# AFFE "New Research" feed configuration
+#
+# This file is the ONLY place you should need to edit to change what the
+# /new-research page tracks. After editing, re-run:
+#
+#     python3 tools/new-research/build.py
+#
+# ---------------------------------------------------------------------------
+
+# Contact address sent to the OpenAlex and Crossref "polite pools". Using a
+# real address gets us faster, more reliable rate limits. Do not remove.
+contact_email: "affe-committee@googlegroups.com"
+
+# How far back to look on each run, in days.
+# Journals are slower to index than SSRN, so we use a wider window and then
+# de-duplicate against whatever is already in the feed.
+lookback_days:
+  journals: 400
+  ssrn: 120
+
+# Maximum number of entries kept in the published feed.
+max_items: 300
+
+# Entries older than this (by year) are dropped even if they are still inside
+# the lookback window. Set to null to disable.
+min_year: 2024
+
+# ---------------------------------------------------------------------------
+# Detection: what counts as a field experiment
+# ---------------------------------------------------------------------------
+# A paper is only kept if its title or abstract contains one of these exact
+# phrases (case-insensitive, matched on word boundaries). Keep these tight:
+# loosening them is the fastest way to fill the page with noise.
+field_experiment_phrases:
+  - "field experiment"
+  - "field experiments"
+  - "randomized controlled trial"
+  - "randomised controlled trial"
+  - "randomized control trial"
+  - "randomized field trial"
+  - "randomized evaluation"
+  - "randomised evaluation"
+  - "cluster randomized"
+  - "cluster randomised"
+  - "natural field experiment"
+  - "framed field experiment"
+  - "audit study"
+  - "correspondence study"
+  - "correspondence experiment"
+  - "randomized experiment"
+  - "randomised experiment"
+  - "rct"
+
+# Phrases that, when matched ALONE, are too weak to keep a paper. They must be
+# accompanied by one of the strong phrases above plus a discipline signal.
+weak_phrases:
+  - "rct"
+  - "randomized experiment"
+  - "randomised experiment"
+
+# ---------------------------------------------------------------------------
+# Discipline gate
+# ---------------------------------------------------------------------------
+# SSRN hosts every discipline, and "field experiment" is standard vocabulary in
+# agronomy, ecology and engineering. A non-journal paper must match at least
+# one discipline keyword and must not match the exclusion vocabulary.
+discipline_keywords:
+  accounting:
+    - "accounting"
+    - "auditor"
+    - "audit fee"
+    - "audit quality"
+    - "financial reporting"
+    - "disclosure"
+    - "earnings"
+    - "tax compliance"
+    - "tax filing"
+    - "taxpayer"
+    - "internal control"
+    - "management control"
+    - "investor relations"
+    - "analyst"
+    - "bookkeeping"
+    - "xbrl"
+  finance:
+    - "finance"
+    - "financial"
+    - "investor"
+    - "investment"
+    - "bank"
+    - "banking"
+    - "credit"
+    - "loan"
+    - "lending"
+    - "borrower"
+    - "microfinance"
+    - "insurance"
+    - "savings"
+    - "portfolio"
+    - "stock market"
+    - "equity"
+    - "crowdfunding"
+    - "fintech"
+    - "mortgage"
+    - "remittance"
+    - "debt"
+    - "financial literacy"
+    - "retirement"
+    - "pension"
+  economics:
+    - "economic"
+    - "economics"
+    - "labor market"
+    - "labour market"
+    - "wage"
+    - "employment"
+    - "unemployment"
+    - "household"
+    - "poverty"
+    - "welfare"
+    - "development economics"
+    - "public policy"
+    - "tax"
+    - "subsidy"
+    - "voucher"
+    - "cash transfer"
+    - "willingness to pay"
+    - "price"
+    - "demand"
+    - "productivity"
+    - "microenterprise"
+    - "entrepreneur"
+    - "discrimination"
+    - "behavioral economics"
+    - "behavioural economics"
+  management:
+    - "management"
+    - "manager"
+    - "firm"
+    - "firms"
+    - "organization"
+    - "organisation"
+    - "workplace"
+    - "employee"
+    - "worker"
+    - "hiring"
+    - "recruitment"
+    - "marketing"
+    - "consumer"
+    - "customer"
+    - "advertising"
+    - "e-commerce"
+    - "platform"
+    - "supply chain"
+    - "operations management"
+    - "strategy"
+    - "startup"
+    - "gig economy"
+    - "human resource"
+
+# Any paper whose title or abstract matches one of these is dropped outright.
+# These are the recurring false positives from SSRN's science preprints.
+exclusion_keywords:
+  - "soil"
+  - "crop"
+  - "maize"
+  - "wheat"
+  - "soybean"
+  - "rice yield"
+  - "fertilizer"
+  - "fertiliser"
+  - "irrigation"
+  - "agronomic"
+  - "agronomy"
+  - "intercropping"
+  - "tillage"
+  - "cultivar"
+  - "seedling"
+  - "livestock feed"
+  - "photosynthesis"
+  - "biochar"
+  - "groundwater"
+  - "aquifer"
+  - "wastewater"
+  - "combustion"
+  - "gasifier"
+  - "concrete"
+  - "asphalt"
+  - "corrosion"
+  - "turbine"
+  - "photovoltaic"
+  - "nanoparticle"
+  - "catalyst"
+  - "polymer"
+  - "protein expression"
+  - "in vitro"
+  - "in vivo"
+  - "mice"
+  - "rats"
+  - "clinical trial protocol"
+  - "placebo-controlled"
+  - "chemotherapy"
+  - "vaccine efficacy"
+  - "antibiotic"
+  - "surgical"
+  - "kelp"
+  - "reservoir simulation"
+  - "seismic"
+
+# ---------------------------------------------------------------------------
+# Journals tracked. ISSNs below were resolved and verified against OpenAlex.
+# `issn` must be the ISSN-L (the linking ISSN), not the print or online ISSN.
+# ---------------------------------------------------------------------------
+journals:
+  # --- Economics -----------------------------------------------------------
+  - { short: "AER",        name: "American Economic Review",                      issn: "0002-8282", discipline: economics }
+  - { short: "AER:I",      name: "American Economic Review: Insights",            issn: "2640-205X", discipline: economics }
+  - { short: "ECMA",       name: "Econometrica",                                  issn: "0012-9682", discipline: economics }
+  - { short: "JPE",        name: "Journal of Political Economy",                  issn: "0022-3808", discipline: economics }
+  - { short: "JPE Micro",  name: "Journal of Political Economy Microeconomics",   issn: "2832-9368", discipline: economics }
+  - { short: "QJE",        name: "The Quarterly Journal of Economics",            issn: "0033-5533", discipline: economics }
+  - { short: "REStud",     name: "The Review of Economic Studies",                issn: "0034-6527", discipline: economics }
+  - { short: "AEJ: Applied", name: "American Economic Journal: Applied Economics", issn: "1945-7782", discipline: economics }
+  - { short: "AEJ: Policy",  name: "American Economic Journal: Economic Policy",   issn: "1945-7731", discipline: economics }
+  - { short: "JPubE",      name: "Journal of Public Economics",                   issn: "0047-2727", discipline: economics }
+  - { short: "JDE",        name: "Journal of Development Economics",              issn: "0304-3878", discipline: economics }
+  - { short: "JOLE",       name: "Journal of Labor Economics",                    issn: "0734-306X", discipline: economics }
+  - { short: "REStat",     name: "The Review of Economics and Statistics",        issn: "0034-6535", discipline: economics }
+  - { short: "EJ",         name: "The Economic Journal",                          issn: "0013-0133", discipline: economics }
+  - { short: "JEEA",       name: "Journal of the European Economic Association",  issn: "1542-4766", discipline: economics }
+  - { short: "JHR",        name: "The Journal of Human Resources",                issn: "0022-166X", discipline: economics }
+  - { short: "ExpEcon",    name: "Experimental Economics",                        issn: "1386-4157", discipline: economics }
+
+  # --- Finance -------------------------------------------------------------
+  - { short: "JF",         name: "The Journal of Finance",                        issn: "0022-1082", discipline: finance }
+  - { short: "JFE",        name: "Journal of Financial Economics",                issn: "0304-405X", discipline: finance }
+  - { short: "RFS",        name: "The Review of Financial Studies",               issn: "0893-9454", discipline: finance }
+  - { short: "JFQA",       name: "Journal of Financial and Quantitative Analysis", issn: "0022-1090", discipline: finance }
+  - { short: "RF",         name: "Review of Finance",                             issn: "1572-3097", discipline: finance }
+  - { short: "JFI",        name: "Journal of Financial Intermediation",           issn: "1042-9573", discipline: finance }
+  - { short: "JBF",        name: "Journal of Banking & Finance",                  issn: "0378-4266", discipline: finance }
+  - { short: "JCF",        name: "Journal of Corporate Finance",                  issn: "0929-1199", discipline: finance }
+
+  # --- Accounting ----------------------------------------------------------
+  - { short: "TAR",        name: "The Accounting Review",                         issn: "0001-4826", discipline: accounting }
+  - { short: "JAR",        name: "Journal of Accounting Research",                issn: "0021-8456", discipline: accounting }
+  - { short: "JAE",        name: "Journal of Accounting and Economics",           issn: "0165-4101", discipline: accounting }
+  - { short: "RAST",       name: "Review of Accounting Studies",                  issn: "1380-6653", discipline: accounting }
+  - { short: "CAR",        name: "Contemporary Accounting Research",              issn: "0823-9150", discipline: accounting }
+  - { short: "AOS",        name: "Accounting, Organizations and Society",         issn: "0361-3682", discipline: accounting }
+  - { short: "JAPP",       name: "Journal of Accounting and Public Policy",       issn: "0278-4254", discipline: accounting }
+  - { short: "MAR",        name: "Management Accounting Research",                issn: "1044-5005", discipline: accounting }
+
+  # --- Management, marketing and operations --------------------------------
+  - { short: "MgmtSci",    name: "Management Science",                            issn: "0025-1909", discipline: management }
+  - { short: "OrgSci",     name: "Organization Science",                          issn: "1047-7039", discipline: management }
+  - { short: "SMJ",        name: "Strategic Management Journal",                  issn: "0143-2095", discipline: management }
+  - { short: "AMJ",        name: "Academy of Management Journal",                 issn: "0001-4273", discipline: management }
+  - { short: "ASQ",        name: "Administrative Science Quarterly",              issn: "0001-8392", discipline: management }
+  - { short: "JMR",        name: "Journal of Marketing Research",                 issn: "0022-2437", discipline: management }
+  - { short: "JM",         name: "Journal of Marketing",                          issn: "0022-2429", discipline: management }
+  - { short: "MktSci",     name: "Marketing Science",                             issn: "0732-2399", discipline: management }
+  - { short: "JCR",        name: "Journal of Consumer Research",                  issn: "0093-5301", discipline: management }
+  - { short: "M&SOM",      name: "Manufacturing & Service Operations Management", issn: "1523-4614", discipline: management }
+  - { short: "POM",        name: "Production and Operations Management",          issn: "1059-1478", discipline: management }
+  - { short: "JBV",        name: "Journal of Business Venturing",                 issn: "0883-9026", discipline: management }

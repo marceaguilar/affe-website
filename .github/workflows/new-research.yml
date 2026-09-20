@@ -1,0 +1,67 @@
+# Refreshes assets/data/new-research.json, the feed behind the /new-research
+# page. Runs on a schedule, and can be triggered by hand from the Actions tab.
+#
+# The job commits the regenerated JSON straight to main. The site's existing
+# "Build and deploy Jekyll site to Pages" workflow then picks up that push and
+# republishes the site, so no extra deploy step is needed here.
+
+name: Refresh New Research feed
+
+on:
+  schedule:
+    # 06:15 UTC every Monday and Thursday.
+    - cron: "15 6 * * 1,4"
+  workflow_dispatch:
+    inputs:
+      summaries:
+        description: "How to write the one-line descriptions"
+        required: false
+        default: "abstract"
+        type: choice
+        options:
+          - abstract
+          - llm
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "new-research-feed"
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r tools/new-research/requirements.txt
+
+      - name: Build feed
+        env:
+          # Only needed when running with summaries=llm. Add the secret under
+          # Settings -> Secrets and variables -> Actions if you want it.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 tools/new-research/build.py \
+            --summaries "${{ inputs.summaries || 'abstract' }}"
+
+      - name: Commit if the feed changed
+        run: |
+          if git diff --quiet -- assets/data/new-research.json; then
+            echo "Feed unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/new-research.json
+          COUNT=$(python3 -c "import json;print(json.load(open('assets/data/new-research.json'))['count'])")
+          git commit -m "Refresh New Research feed (${COUNT} verified papers)"
+          git push

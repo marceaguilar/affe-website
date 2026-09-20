@@ -1,0 +1,4636 @@
+{
+ "generated": "2026-09-20T22:58:43+00:00",
+ "count": 186,
+ "sources": {
+  "journals": "OpenAlex",
+  "working_papers": "Crossref (SSRN, DOI prefix 10.2139)",
+  "verification": "Every entry resolves in both OpenAlex and Crossref with matching titles."
+ },
+ "journals_tracked": [
+  {
+   "short": "AER",
+   "name": "American Economic Review",
+   "discipline": "economics"
+  },
+  {
+   "short": "AER:I",
+   "name": "American Economic Review: Insights",
+   "discipline": "economics"
+  },
+  {
+   "short": "ECMA",
+   "name": "Econometrica",
+   "discipline": "economics"
+  },
+  {
+   "short": "JPE",
+   "name": "Journal of Political Economy",
+   "discipline": "economics"
+  },
+  {
+   "short": "JPE Micro",
+   "name": "Journal of Political Economy Microeconomics",
+   "discipline": "economics"
+  },
+  {
+   "short": "QJE",
+   "name": "The Quarterly Journal of Economics",
+   "discipline": "economics"
+  },
+  {
+   "short": "REStud",
+   "name": "The Review of Economic Studies",
+   "discipline": "economics"
+  },
+  {
+   "short": "AEJ: Applied",
+   "name": "American Economic Journal: Applied Economics",
+   "discipline": "economics"
+  },
+  {
+   "short": "AEJ: Policy",
+   "name": "American Economic Journal: Economic Policy",
+   "discipline": "economics"
+  },
+  {
+   "short": "JPubE",
+   "name": "Journal of Public Economics",
+   "discipline": "economics"
+  },
+  {
+   "short": "JDE",
+   "name": "Journal of Development Economics",
+   "discipline": "economics"
+  },
+  {
+   "short": "JOLE",
+   "name": "Journal of Labor Economics",
+   "discipline": "economics"
+  },
+  {
+   "short": "REStat",
+   "name": "The Review of Economics and Statistics",
+   "discipline": "economics"
+  },
+  {
+   "short": "EJ",
+   "name": "The Economic Journal",
+   "discipline": "economics"
+  },
+  {
+   "short": "JEEA",
+   "name": "Journal of the European Economic Association",
+   "discipline": "economics"
+  },
+  {
+   "short": "JHR",
+   "name": "The Journal of Human Resources",
+   "discipline": "economics"
+  },
+  {
+   "short": "ExpEcon",
+   "name": "Experimental Economics",
+   "discipline": "economics"
+  },
+  {
+   "short": "JF",
+   "name": "The Journal of Finance",
+   "discipline": "finance"
+  },
+  {
+   "short": "JFE",
+   "name": "Journal of Financial Economics",
+   "discipline": "finance"
+  },
+  {
+   "short": "RFS",
+   "name": "The Review of Financial Studies",
+   "discipline": "finance"
+  },
+  {
+   "short": "JFQA",
+   "name": "Journal of Financial and Quantitative Analysis",
+   "discipline": "finance"
+  },
+  {
+   "short": "RF",
+   "name": "Review of Finance",
+   "discipline": "finance"
+  },
+  {
+   "short": "JFI",
+   "name": "Journal of Financial Intermediation",
+   "discipline": "finance"
+  },
+  {
+   "short": "JBF",
+   "name": "Journal of Banking & Finance",
+   "discipline": "finance"
+  },
+  {
+   "short": "JCF",
+   "name": "Journal of Corporate Finance",
+   "discipline": "finance"
+  },
+  {
+   "short": "TAR",
+   "name": "The Accounting Review",
+   "discipline": "accounting"
+  },
+  {
+   "short": "JAR",
+   "name": "Journal of Accounting Research",
+   "discipline": "accounting"
+  },
+  {
+   "short": "JAE",
+   "name": "Journal of Accounting and Economics",
+   "discipline": "accounting"
+  },
+  {
+   "short": "RAST",
+   "name": "Review of Accounting Studies",
+   "discipline": "accounting"
+  },
+  {
+   "short": "CAR",
+   "name": "Contemporary Accounting Research",
+   "discipline": "accounting"
+  },
+  {
+   "short": "AOS",
+   "name": "Accounting, Organizations and Society",
+   "discipline": "accounting"
+  },
+  {
+   "short": "JAPP",
+   "name": "Journal of Accounting and Public Policy",
+   "discipline": "accounting"
+  },
+  {
+   "short": "MAR",
+   "name": "Management Accounting Research",
+   "discipline": "accounting"
+  },
+  {
+   "short": "MgmtSci",
+   "name": "Management Science",
+   "discipline": "management"
+  },
+  {
+   "short": "OrgSci",
+   "name": "Organization Science",
+   "discipline": "management"
+  },
+  {
+   "short": "SMJ",
+   "name": "Strategic Management Journal",
+   "discipline": "management"
+  },
+  {
+   "short": "AMJ",
+   "name": "Academy of Management Journal",
+   "discipline": "management"
+  },
+  {
+   "short": "ASQ",
+   "name": "Administrative Science Quarterly",
+   "discipline": "management"
+  },
+  {
+   "short": "JMR",
+   "name": "Journal of Marketing Research",
+   "discipline": "management"
+  },
+  {
+   "short": "JM",
+   "name": "Journal of Marketing",
+   "discipline": "management"
+  },
+  {
+   "short": "MktSci",
+   "name": "Marketing Science",
+   "discipline": "management"
+  },
+  {
+   "short": "JCR",
+   "name": "Journal of Consumer Research",
+   "discipline": "management"
+  },
+  {
+   "short": "M&SOM",
+   "name": "Manufacturing & Service Operations Management",
+   "discipline": "management"
+  },
+  {
+   "short": "POM",
+   "name": "Production and Operations Management",
+   "discipline": "management"
+  },
+  {
+   "short": "JBV",
+   "name": "Journal of Business Venturing",
+   "discipline": "management"
+  }
+ ],
+ "run_report": {
+  "harvested_journals": 180,
+  "harvested_ssrn": 2817,
+  "rejected_not_field_experiment": 2661,
+  "rejected_out_of_scope": 117,
+  "rejected_excluded_topic": 29,
+  "rejected_unverified": 4,
+  "rejected_too_old": 0,
+  "published": 186,
+  "published_by_source": {
+   "journal": 151,
+   "ssrn": 35
+  },
+  "published_by_discipline": {
+   "economics": 72,
+   "management": 82,
+   "finance": 18,
+   "accounting": 14
+  },
+  "published_without_summary": 0
+ },
+ "papers": [
+  {
+   "doi": "10.1093/ej/ueag098",
+   "url": "https://doi.org/10.1093/ej/ueag098",
+   "title": "Intergroup Contact, Empathy Education, and Refugee-Native Integration in Lebanon",
+   "authors": [
+    "Salma Mousa",
+    "Lennard Naumann",
+    "Alexandra Scacco"
+   ],
+   "year": 2026,
+   "date": "2026-09-17",
+   "summary": "We test contact and empathy education in Lebanon, where Syrian refugees comprise a quarter of the population.",
+   "summary_source": "abstract",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/orsc.2023.18043",
+   "url": "https://doi.org/10.1287/orsc.2023.18043",
+   "title": "Feel Free to Chat About Your Kids? Exploring the Effects of Workplace Parenting Conversations",
+   "authors": [
+    "Yuxin Lin",
+    "Allison S. Gabriel",
+    "Katina Sawyer",
+    "Zhengguang Liu"
+   ],
+   "year": 2026,
+   "date": "2026-09-11",
+   "summary": "We then explore the underlying micro-mechanisms connecting workplace parenting conversations to the mechanisms in our model through additional interviews (Study 2A) and a field experiment (Study 2B).",
+   "summary_source": "abstract",
+   "venue": "Organization Science",
+   "venue_short": "OrgSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1162/rest.a.1867",
+   "url": "https://doi.org/10.1162/rest.a.1867",
+   "title": "Gender Discrimination in Access to Capital: A Field Experiment in Ethiopia",
+   "authors": [
+    "Ketki Sheth",
+    "Shanthi Manian",
+    "Shibiru Ayalew"
+   ],
+   "year": 2026,
+   "date": "2026-09-08",
+   "summary": "We test whether loan officers discriminate against female business owners in capital decisions affecting real businesses in an Ethiopian… Randomizing owner gender across 3,696 evaluations, by 84 loan officers, for 916 businesses, we find no effect on prize scores or consideration for a loan.",
+   "summary_source": "abstract",
+   "venue": "The Review of Economics and Statistics",
+   "venue_short": "REStat",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7435475",
+   "url": "https://doi.org/10.2139/ssrn.7435475",
+   "title": "Are Lower-Income Passengers More Fare Elastic?,Evidence from a Randomized Fare-Discount Experiment in Greater Oslo",
+   "authors": [
+    "Fredrik Alexander Gregersen",
+    "Andreas Kokkvoll Tveit",
+    "Paal Wangsness"
+   ],
+   "year": 2026,
+   "date": "2026-09-08",
+   "summary": "We test whether lower-income adults are more fare elastic using a randomized field experiment in… For transport policymakers, the results suggest that the equity case for fare reductions cannot rely heavily on the assumption that lower-income groups exhibit larger ridership responses to lower fares.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/00018392261473620",
+   "url": "https://doi.org/10.1177/00018392261473620",
+   "title": "Legitimizing the Regulatory State: How Institutional Intermediaries Facilitate Inclusive and Effective Co-creation in Emerging Economies",
+   "authors": [
+    "Allen Hicken",
+    "Edmund Malesky",
+    "Songkhun Nillasithanukroh",
+    "Markus Taussig"
+   ],
+   "year": 2026,
+   "date": "2026-09-07",
+   "summary": "We hypothesize and find evidence through a field experiment in Thailand that this institutional intermediation improves firms’ perceptions of state legitimacy and observable engagement in regulatory co-creation.",
+   "summary_source": "abstract",
+   "venue": "Administrative Science Quarterly",
+   "venue_short": "ASQ",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2021.00481",
+   "url": "https://doi.org/10.1287/mnsc.2021.00481",
+   "title": "Do Job Applicants Consider Founder Race and Gender? Evidence from a Field Experiment",
+   "authors": [
+    "Kaisa Snellman",
+    "Peter Younkin"
+   ],
+   "year": 2026,
+   "date": "2026-09-03",
+   "summary": "In this study, we examine how the gender and race of the employer shape the willingness of prospective employees to apply for a job. We find that job candidates were less likely to apply to a job when they learn that the founders are Black, and, when they did apply, they requested 10% higher salary.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103921",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103921",
+   "title": "Fostering institutional trust and organ donation: Evidence from a randomized informational intervention in Tunisia",
+   "authors": [
+    "Christina Sarah Hauser",
+    "Maleke Fourati"
+   ],
+   "year": 2026,
+   "date": "2026-09-01",
+   "summary": "In a randomized controlled trial at a Tunisian university, we evaluate an expert-led intervention designed to inform about organ donation… We find that the intervention significantly increases deceased donor registration, with suggestive evidence of positive spillover effects on the control group.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/aer.20241087",
+   "url": "https://doi.org/10.1257/aer.20241087",
+   "title": "Manipulation-Robust Prediction",
+   "authors": [
+    "Daniel Björkegren",
+    "Blumenstock Joshua E.",
+    "Samsun Knight"
+   ],
+   "year": 2026,
+   "date": "2026-08-28",
+   "summary": "We stress-test this approach through a large field experiment in Kenya. When implemented, linear strategy-robust decision rules outperform standard linear models such as LASSO.",
+   "summary_source": "abstract",
+   "venue": "American Economic Review",
+   "venue_short": "AER",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103906",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103906",
+   "title": "Supporting learning in and out of school: Experimental evidence from India",
+   "authors": [
+    "Martina Björkman Nyqvist",
+    "Andrea Guariso"
+   ],
+   "year": 2026,
+   "date": "2026-08-21",
+   "summary": "Our results show that standalone implementation of either component has no significant effect on learning outcomes, but when the components are combined in the full program they improve children’s test scores in mathematics and language by 0.11 and 0.09 standard deviations, respectively.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/orsc.2024.18802",
+   "url": "https://doi.org/10.1287/orsc.2024.18802",
+   "title": "Can Task Motivation Backfire? The Roles of Perceived Task Interdependence and Interaction Avoidance",
+   "authors": [
+    "Dan Ni",
+    "Hansen Zhou",
+    "Xin Qin",
+    "Jie Zhong",
+    "Xiaoming Zheng"
+   ],
+   "year": 2026,
+   "date": "2026-08-21",
+   "summary": "Across an online experiment with a U.S. sample, a field experiment with a Chinese sample, and a survey with a Chinese sample, our hypotheses are supported.",
+   "summary_source": "abstract",
+   "venue": "Organization Science",
+   "venue_short": "OrgSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2025.00669",
+   "url": "https://doi.org/10.1287/mnsc.2025.00669",
+   "title": "An Analysis of Heritability in Preferences Using Behavioral Models of Decision Making",
+   "authors": [
+    "Nathan Kettlewell",
+    "Agnieszka Tymula",
+    "Hong Il Yoo"
+   ],
+   "year": 2026,
+   "date": "2026-08-20",
+   "summary": "We investigate the heritability of risk, uncertainty, and time preferences using a large-scale field experiment with adult twins, complemented by a comprehensive meta-analysis of prior studies.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/orsc.2024.19407",
+   "url": "https://doi.org/10.1287/orsc.2024.19407",
+   "title": "Filtering the labor pool: How digitalization redistributes hiring costs",
+   "authors": [
+    "Moshe Barach"
+   ],
+   "year": 2026,
+   "date": "2026-08-19",
+   "summary": "A randomized field experiment in a large online labor market confirms that filters redistribute hiring costs. The experiment shows that employers with access to filters interview 3.4% fewer applicants.",
+   "summary_source": "abstract",
+   "venue": "Organization Science",
+   "venue_short": "OrgSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/orsc.2024.18859",
+   "url": "https://doi.org/10.1287/orsc.2024.18859",
+   "title": "Women’s Approachability Premium in Sales: A Field Experiment among Microentrepreneurs",
+   "authors": [
+    "Solène Delecourt",
+    "Laura Doering",
+    "Odyssia Ng"
+   ],
+   "year": 2026,
+   "date": "2026-08-18",
+   "summary": "To overcome these constraints and test our theory, we conducted a field experiment in two face-to-face markets in India.",
+   "summary_source": "abstract",
+   "venue": "Organization Science",
+   "venue_short": "OrgSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7231711",
+   "url": "https://doi.org/10.2139/ssrn.7231711",
+   "title": "Overcoming Financial Barriers to Community-Based Health Insurance: Evidence from a Randomized Controlled Trial in Urban Ethiopia",
+   "authors": [
+    "Alebel Bayrau Weldesilassie",
+    "Jemal Mohamed Adem",
+    "Shibiru Ayalew Melesse"
+   ],
+   "year": 2026,
+   "date": "2026-08-14",
+   "summary": "We conducted a randomized controlled trial involving poor and vulnerable households in Addis Ababa, Ethiopia, randomly… Under the intention-to-treat framework, the subsidy increased enrollment by 9 percentage points, while the combined intervention increased enrollment by 21 percentage points.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7272436",
+   "url": "https://doi.org/10.2139/ssrn.7272436",
+   "title": "Do Saving Nudges Work? A Pre-registered Field Experiment on Message Framing",
+   "authors": [
+    "Kinga Barrafrem",
+    "Gustav Tinghög",
+    "Daniel Västfjäll"
+   ],
+   "year": 2026,
+   "date": "2026-08-12",
+   "summary": "In a large-scale pre-registered field experiment involving 8,546 users, participants were randomly assigned to receive one of five in‐app messages varying along two dimensions: gain versus loss framing and monetary… We find no consistent differences in behavioral responses across framing types.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2024.08448",
+   "url": "https://doi.org/10.1287/mnsc.2024.08448",
+   "title": "The Impact of Relative Performance Information on Employees’ Persistence in Voluntary Training",
+   "authors": [
+    "Philip Autenrieth",
+    "Christoph Feichter",
+    "Mischa Seiter",
+    "Markus Wabnegg"
+   ],
+   "year": 2026,
+   "date": "2026-08-11",
+   "summary": "We investigate whether providing employees with information about their relative training performance affects their persistence in voluntary training. We show that RPI significantly increases employees’ persistence in the training.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103898",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103898",
+   "title": "Career guidance and investments in education: Experimental evidence from Cambodia",
+   "authors": [
+    "Esther Gehrke",
+    "Friederike Lenel",
+    "Claudia Schupp"
+   ],
+   "year": 2026,
+   "date": "2026-08-07",
+   "summary": "We report on a randomized field experiment conducted with 1715 students in rural Cambodia and show that a half-day career guidance workshop designed to support adolescents in developing occupational… We document substantial heterogeneity in treatment effects by baseline student performance.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7202241",
+   "url": "https://doi.org/10.2139/ssrn.7202241",
+   "title": "Eco-salience Cues and Online Apparel Purchases: A Randomized A/B Field Experiment",
+   "authors": [
+    "Soliel Curtin"
+   ],
+   "year": 2026,
+   "date": "2026-08-07",
+   "summary": "The results indicate that increasing eco salience shifted both product viewing and purchase composition toward eco-designated alternatives, while evidence for increasing the absolute number of eco items per order remained uncertain.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7211281",
+   "url": "https://doi.org/10.2139/ssrn.7211281",
+   "title": "To Share or Not to Share? The Role of Visible Share Counts in Driving Sharing Behavior: Evidence from a Randomized Experiment",
+   "authors": [
+    "Jia Gao",
+    "Qiaodan (Jordan) He",
+    "Jinqi Men",
+    "Yuliang Yao"
+   ],
+   "year": 2026,
+   "date": "2026-08-07",
+   "summary": "In collaboration with a music-based social media platform, we conduct a blocked randomized field experiment that exogenously increases the… Analyzing 73,665 recordings posted over a two-month period, we find that increasing publicly visible share counts significantly reduces subsequent sharing.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7199898",
+   "url": "https://doi.org/10.2139/ssrn.7199898",
+   "title": "Wrong and more Confident: A Field Experiment on Language Models Taking a Graduate",
+   "authors": [
+    "Piyush Akimitsu"
+   ],
+   "year": 2026,
+   "date": "2026-08-06",
+   "summary": "The clean problems (the control group) are already hard, with the models answering fewer than three of every five correctly on average. The red herring lowers the probability of a correct final answer by 12.3 percentage points, about a quarter of the models' mean accuracy of 0.525.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7177998",
+   "url": "https://doi.org/10.2139/ssrn.7177998",
+   "title": "<div> Risk Preference, Investment Decision, and Household Welfare: </div> <div> Evidence From a Microcredit Experiment in Bangladesh </div>",
+   "authors": [
+    "Md Amzad Hossain",
+    "Sherry Xin Li",
+    "Malek Mohammad Abdul"
+   ],
+   "year": 2026,
+   "date": "2026-08-05",
+   "summary": "In </div> <div> a randomized field experiment in Bangladesh, we find that, in response to a microcredit </div> <div> intervention, household risk preference is significantly associated with microcredit uptake </div> <div> and its outcomes.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7200059",
+   "url": "https://doi.org/10.2139/ssrn.7200059",
+   "title": "Wrong and More Confident: A Field Experiment on Language Models Taking a Graduate&nbsp;Economics Exam",
+   "authors": [
+    "Piyush Akimitsu"
+   ],
+   "year": 2026,
+   "date": "2026-08-05",
+   "summary": "The clean problems (the control group) are already hard, with the models answering fewer than three of every five correctly on average. The red herring lowers the probability of a correct final answer by 12.3 percentage points, about a quarter of the models' mean accuracy of 0.525.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7165620",
+   "url": "https://doi.org/10.2139/ssrn.7165620",
+   "title": "Clinical Efficacy and Neurobiological Correlates of Action Observation and Imitation Training in Early-Stage Parkinson’s Disease with Postural Instability and Gait Difficulty: A Randomized Controlled Trial",
+   "authors": [
+    "Junyi Wang",
+    "Yu Shi",
+    "Deyu Wang",
+    "Jun Pang",
+    "Jian Zhang",
+    "Xiaodong Zhu",
+    "Lin Meng",
+    "Dong Ming"
+   ],
+   "year": 2026,
+   "date": "2026-08-05",
+   "summary": "Action observation and imitation training (AOIT) may enhance motor relearning, but its clinical efficacy and underlying mechanisms in early-stage PIGD remain unclear.<br><br>Methods: In this assessor-blinded, parallel-group randomized controlled trial, patients with early-stage PIGD were randomly…",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1002/smj.70117",
+   "url": "https://doi.org/10.1002/smj.70117",
+   "title": "Entrepreneurship training and entrepreneurs' perceptions of ability: A randomized control trial in Tanzania",
+   "authors": [
+    "Francesca Bacco",
+    "Andrea Coali",
+    "Audra Wormald"
+   ],
+   "year": 2026,
+   "date": "2026-08-04",
+   "summary": "Results show that entrepreneurs who learn to develop a theory‐of‐value before engaging in experimentation experience a larger increase in self‐perceived ability compared to those who experiment without such a theory‐of‐value, and this effect persists for longer.",
+   "summary_source": "abstract",
+   "venue": "Strategic Management Journal",
+   "venue_short": "SMJ",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103896",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103896",
+   "title": "Building infrastructure and cohesion through locally embedded institutions: Evidence from a field experiment in War-torn Eastern Congo",
+   "authors": [
+    "Eric Mvukiyehe",
+    "Julie Bousquet",
+    "Marijke Verpoorten"
+   ],
+   "year": 2026,
+   "date": "2026-08-04",
+   "summary": "Field experiment in economics, published in Journal of Development Economics. No abstract is openly available, so no description could be extracted.",
+   "summary_source": "metadata",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7223298",
+   "url": "https://doi.org/10.2139/ssrn.7223298",
+   "title": "Unpacking Treatment Effect Heterogeneity in a Large-Scale Dropout-Prevention Experiment",
+   "authors": [
+    "Thomas Dee",
+    "Chloe Gibbs",
+    "Rebecca Margolit-Chan",
+    "Lillian Morrell",
+    "James X. Sullivan"
+   ],
+   "year": 2026,
+   "date": "2026-08-04",
+   "summary": "This randomized controlled trial, deployed in two urban, disadvantaged school districts, tests the effectiveness of a mature and comprehensive student-support program on an unusually large scale (n=2,528).",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7226098",
+   "url": "https://doi.org/10.2139/ssrn.7226098",
+   "title": "Linking Customers to Firm-managed Assets: Evidence from a Randomized Field Experiment on Symbolic Adoption",
+   "authors": [
+    "Ziwei Zhu",
+    "Jiaxuan Zhang",
+    "Chenxi Xu"
+   ],
+   "year": 2026,
+   "date": "2026-08-04",
+   "summary": "We examine whether symbolic adoption, an emerging service practice that links customers to existing service assets while firms retain ownership and operational responsibility, can… Treated customers were linked to specific strawberry-plant units, whereas control customers did not receive access.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7198832",
+   "url": "https://doi.org/10.2139/ssrn.7198832",
+   "title": "Early Support after Exposure to Trauma (EASE): An internal pilot study of a multicenter randomized controlled trial",
+   "authors": [
+    "Espen Lassen",
+    "Marianne Skogbrott Birkeland",
+    "Karina Egeland",
+    "Lise Eilin Stene",
+    "Sverre Urnes Johnson",
+    "Harald Bækkelund"
+   ],
+   "year": 2026,
+   "date": "2026-08-03",
+   "summary": "This two-arm parallel internal pilot randomized adults receiving psychosocial crisis-team follow-up after a potentially traumatic event within the past seven weeks (N = 18) to treatment as usual (TAU) or CIPE + TAU.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jacceco.2026.101935",
+   "url": "https://doi.org/10.1016/j.jacceco.2026.101935",
+   "title": "Knowledge is power: A field experiment in the Chinese and US stock markets",
+   "authors": [
+    "Sonia M.L. Wong",
+    "Xue Yuan",
+    "Bohui Zhang",
+    "Xiaofeng Zhao"
+   ],
+   "year": 2026,
+   "date": "2026-08-01",
+   "summary": "Field experiment in accounting, published in Journal of Accounting and Economics. No abstract is openly available, so no description could be extracted.",
+   "summary_source": "metadata",
+   "venue": "Journal of Accounting and Economics",
+   "venue_short": "JAE",
+   "venue_kind": "journal",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7210669",
+   "url": "https://doi.org/10.2139/ssrn.7210669",
+   "title": "Too Much Choice? A Lab-in-the-Field Experiment on Choice Overload, Cognitive Constraints, and Consumer Welfare in Electricity Contracts Decisions",
+   "authors": [
+    "Steve Heinke",
+    "Sebastian Olschewski",
+    "Catherine Roux"
+   ],
+   "year": 2026,
+   "date": "2026-07-31",
+   "summary": "We address these challenges in a pre‐registered lab‐in‐the‐field experiment in which 284 German households make incentivized electricity contract choices. While both manipulations lead to more dominated choices, only cognitive load reduces choice consistency and welfare.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/pol.20240361",
+   "url": "https://doi.org/10.1257/pol.20240361",
+   "title": "Alcohol, Labor, and Agriculture",
+   "authors": [
+    "David M. A. Murphy"
+   ],
+   "year": 2026,
+   "date": "2026-07-30",
+   "summary": "At 16 months post-intervention, the program decreased the likelihood of positive spot breathalyzer tests among men by 14 percentage points (pp), the likelihood of heavy drinking by 19 points, and increased household real annual harvest values by 32 percent.",
+   "summary_source": "abstract",
+   "venue": "American Economic Journal: Economic Policy",
+   "venue_short": "AEJ: Policy",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/pol.20240212",
+   "url": "https://doi.org/10.1257/pol.20240212",
+   "title": "Perils of the Paperwork: The Impact of Information and Application Assistance on Social Benefit Take-Up in India",
+   "authors": [
+    "Sarika Gupta"
+   ],
+   "year": 2026,
+   "date": "2026-07-30",
+   "summary": "In a randomized experiment with eligible women, providing program information alone increased applications only among the literate. These results suggest that application ordeals can limit take-up by those with high need.",
+   "summary_source": "abstract",
+   "venue": "American Economic Journal: Economic Policy",
+   "venue_short": "AEJ: Policy",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6095166",
+   "url": "https://doi.org/10.2139/ssrn.6095166",
+   "title": "The Effect of Large Language Models on Audit Quality: Causal Evidence from a Randomized Field Experiment",
+   "authors": [
+    "Markus Jezierski",
+    "Sascha Kaltenpoth",
+    "Oliver Müller",
+    "Barbara E. Weißenberger"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "We study how access to a firm-specific LLM influences auditor performance using a preregistered randomized field experiment with 100 professional auditors at a global audit… We find that access to the firm-specific LLM significantly improves audit output quality and reduces task completion time.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6167247",
+   "url": "https://doi.org/10.2139/ssrn.6167247",
+   "title": "Learning to Quit? A Multi-Year, Multi-Site Field Experiment with Innovation-Driven Entrepreneurs",
+   "authors": [
+    "Esther Bailey",
+    "Daniel Fehder",
+    "Eric Floyd",
+    "Yael V. Hochberg",
+    "Daniel Lee"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "We use a randomized experiment with 553 science- and technology-based startups in 12 co-working spaces across the US to evaluate the effects of intensive, short-term entrepreneurial training… Treated startups are more likely to shut down their businesses and do so sooner than control startups.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6646158",
+   "url": "https://doi.org/10.2139/ssrn.6646158",
+   "title": "Managing Creator Dependence on Follower-Targeted Recommendation: Evidence from a Field Experiment",
+   "authors": [
+    "Yicheng Feng",
+    "Yan Cheng",
+    "Zuo-Jun Max Shen"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "This paper studies how platforms should manage this allocation problem when creators differ in their dependence on follower… The experiment reveals an aggregate exploitation--exploration pattern that restricting follower-feed reduces engagement on average but increases new follower acquisition.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6798122",
+   "url": "https://doi.org/10.2139/ssrn.6798122",
+   "title": "Campaign Donations, Judicial Recusal, and Disclosure: A Field Experiment",
+   "authors": [
+    "Dane Thorley",
+    "Donald P. Green",
+    "Jonathan S. Krasno",
+    "Costas Panagopoulos",
+    "Michael Schwam-Baird"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "This article reports results from a field experiment exploring how judicial behavior is affected by… We find that highlighting the potential conflict and asking judges to recuse sharply increases the rate at which judges disclose this relationship in court records but does not lead them to recuse.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6812422",
+   "url": "https://doi.org/10.2139/ssrn.6812422",
+   "title": "Heterogeneous Effects of Loss Versus Gain Framing on Retirement Savings: Evidence from Two Randomized Field Experiments Using Causal Machine Learning",
+   "authors": [
+    "Kevin Bösch",
+    "Oliver Müller",
+    "Markus Weinmann",
+    "Stefan Feuerriegel"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "In a largescale randomized field experiment (N = 22,919) with a European retirement savings company, individuals were… Using causal machine learning, we estimate heterogeneous treatment effects across socioeconomic characteristics and validate them in a second, independent experiment (N = 18,288).",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6832858",
+   "url": "https://doi.org/10.2139/ssrn.6832858",
+   "title": "Mitigating Delays in the Criminal Investigations: A Field Experiment in India",
+   "authors": [
+    "Vivek Choudhary",
+    "Anandasivam Gopal",
+    "Dhruv Gupta"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "These findings show that subtle, scalable information interventions can improve complex government organization performance and that their effectiveness depends on the motivational logics they activate within specific organizational contexts.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6884282",
+   "url": "https://doi.org/10.2139/ssrn.6884282",
+   "title": "Engineering Accountability into Autonomous AI Agents: A 70-Day Pre-Registered Field Experiment Under Live Adversarial Conditions",
+   "authors": [
+    "Sara Husk"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "This paper reports a 70-day pre-registered field experiment of Judgement Architecture (JA), a formal operating discipline for making human Judgement explicit, assigned, and enforceable at the points in AI-enabled workflows where decisions become consequential.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6954398",
+   "url": "https://doi.org/10.2139/ssrn.6954398",
+   "title": "Don't Give Up on Lab Experiments: Why the Field Still Needs the Lab",
+   "authors": [
+    "John A. List"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "Recent enthusiasm for field experiments, and especially for natural field experiments (NFEs), in which subjects go about their daily activities unaware that any study is taking place, has sometimes been read as a verdict against the laboratory.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7048139",
+   "url": "https://doi.org/10.2139/ssrn.7048139",
+   "title": "Navigating the Waste-Markdown Tradeoff: A Field Experiment Comparing Price and Information Interventions",
+   "authors": [
+    "George Knox",
+    "Frans Cruijssen",
+    "Arjen van Lin",
+    "Joris Wagenaar"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "We ask which reduces waste, and how.&nbsp; <div> Methodology/results: We conduct a field experiment at a European supermarket chain. Using store-week data on markdowns, sales, deliveries, and waste, we estimate difference-in-differences effects relative to control stores.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7091058",
+   "url": "https://doi.org/10.2139/ssrn.7091058",
+   "title": "From Configuration to Conversion: Evidence from a Large-Scale Field Experiment",
+   "authors": [
+    "Ragıp Gürlek",
+    "Paolo Letizia",
+    "Diwas Singh KC"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "We address this gap using a large-scale field experiment conducted in collaboration with a global reseller of luxury accessories. Configurator use increases purchase likelihood by 1.6 percentage points, corresponding to a 27% increase relative to the baseline conversion rate.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7144838",
+   "url": "https://doi.org/10.2139/ssrn.7144838",
+   "title": "Business Plan Feedback and New Venture Performance: A Randomized Field Experiment",
+   "authors": [
+    "Francisca Perez",
+    "Rodrigo Andres Wagner"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "This paper&nbsp;</span><span>provides causal evidence on the effects of business plan feedback on venture outcomes,</span></p> <p>using a randomized field… Feedback increased the likelihood of securing external&nbsp;</span><span>funding by 7 percentage points and helped raise more external funds.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6670078",
+   "url": "https://doi.org/10.2139/ssrn.6670078",
+   "title": "The Effects of Hope-based Interventions on Vaccine Adoption: Outcomes From Two Longitudinal Randomized Controlled Trials",
+   "authors": [
+    "Mehdi Hossain",
+    "Jessica Cless"
+   ],
+   "year": 2026,
+   "date": "2026-07-29",
+   "summary": "The current research utilized two longitudinal randomized controlled trials in explicating the effects of hope-based interventions on consumers' vaccination decisions.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jpubeco.2026.105733",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105733",
+   "title": "Do ultra-poor graduation programs build women’s resilience to weather shocks? Evidence from rural Ethiopia",
+   "authors": [
+    "Kalle Hirvonen",
+    "Daniel O. Gilligan",
+    "Jessica Leight",
+    "Heleene Tambet",
+    "Victor Villa"
+   ],
+   "year": 2026,
+   "date": "2026-07-24",
+   "summary": "Using panel data from a large cluster-randomized trial matched with detailed weather records, we identify community-level exposure to dryness shocks.",
+   "summary_source": "abstract",
+   "venue": "Journal of Public Economics",
+   "venue_short": "JPubE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7154300",
+   "url": "https://doi.org/10.2139/ssrn.7154300",
+   "title": "Decide or Default? How Defaults, Information, and Financial Incentives Influence Sustainable Delivery Choices in a Field Experiment",
+   "authors": [
+    "Sanne Wolf",
+    "Paul Buijs",
+    "Dirk Pieter van Donk"
+   ],
+   "year": 2026,
+   "date": "2026-07-22",
+   "summary": "This study reports a large-scale field experiment with an e-commerce retailer, in which three commonly studied interventions are varied: (i) the preselection of a delivery option (default), (ii) the provision… The results show that the sustainable default is by far the most effective intervention.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/qje/qjag040",
+   "url": "https://doi.org/10.1093/qje/qjag040",
+   "title": "Clause and Effect: Theory and Field Experimental Evidence on Noncompete Clauses",
+   "authors": [
+    "Bo Cowgill",
+    "Brandon Freiberg",
+    "Evan Starr"
+   ],
+   "year": 2026,
+   "date": "2026-07-18",
+   "summary": "We study worker noncompete clauses in a large field experiment with two finance firms. Removing a noncompete increases mobility between competing employers by 36–52% and raises workers’ total earnings from the two firms by 12–17%.",
+   "summary_source": "abstract",
+   "venue": "The Quarterly Journal of Economics",
+   "venue_short": "QJE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7126359",
+   "url": "https://doi.org/10.2139/ssrn.7126359",
+   "title": "Supportive Control, Distracted Work: Evidence from a Field Experiment on Workplace Health-Tracking Wearables",
+   "authors": [
+    "Yaxuan Chen",
+    "Yutong Chen",
+    "Timo Vogelsang"
+   ],
+   "year": 2026,
+   "date": "2026-07-16",
+   "summary": "<p><span>We examine how a workplace health-oriented initiative built around a health-tracking smartwatch affects worker productivity in a field experiment at a large… We find that the initiative significantly reduces crane operators’ productivity, lowering weekly throughput by approximately 10%.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2022.01864",
+   "url": "https://doi.org/10.1287/mnsc.2022.01864",
+   "title": "Scalable Bundle Recommendations: A Large-Scale Field Experiment",
+   "authors": [
+    "Madhav Kumar",
+    "Dean Eckles",
+    "Sinan Aral"
+   ],
+   "year": 2026,
+   "date": "2026-07-15",
+   "summary": "Subsequently, we use the heuristics to create multiple bundle recommendations for each of 4,500 focal products and test their performance using a field experiment with a large retailer.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2024.06909",
+   "url": "https://doi.org/10.1287/mnsc.2024.06909",
+   "title": "The Uneven Impact of Generative Artificial Intelligence on Entrepreneurial Performance: Evidence from a Field Experiment in Kenya",
+   "authors": [
+    "Nicholas G. Otis",
+    "Rowan Philip Clarke",
+    "Solène Delecourt",
+    "David Holtz",
+    "Rembrand Koning"
+   ],
+   "year": 2026,
+   "date": "2026-07-10",
+   "summary": "Although we are unable to reject the null hypothesis of no average treatment effect on firm revenues and profits, we find that the effect for entrepreneurs who were low performing at baseline is over 0.20-standard-deviations lower than for initial high performers.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7083997",
+   "url": "https://doi.org/10.2139/ssrn.7083997",
+   "title": "Green-Curious Investing and GenAI: A Field Experiment",
+   "authors": [
+    "Leslie A Boni",
+    "Amado Mabul",
+    "Georgia Acosta",
+    "Ray Johnson",
+    "Mary Anne Majadillas",
+    "Subhra B. Saha",
+    "Rachael Kehoe"
+   ],
+   "year": 2026,
+   "date": "2026-07-09",
+   "summary": "We find that most students who receive the greenwashing or return tradeoff cues reference the concept in their initial prompts with GenAI and are more likely to report learning about the concept from the GenAI interaction.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/ej/ueag087",
+   "url": "https://doi.org/10.1093/ej/ueag087",
+   "title": "Formalizing Dispute Resolution: Effects of Village Courts in Bangladesh",
+   "authors": [
+    "Martin Mattsson",
+    "Ahmed Mushfiq Mobarak"
+   ],
+   "year": 2026,
+   "date": "2026-07-06",
+   "summary": "We evaluate the effects of “Village Courts” (VCs) in rural Bangladesh using a large-scale field experiment. The introduction of VCs more than doubles the share of disputes resolved in state-sanctioned courts, but an informal institution called shalish remains dominant.",
+   "summary_source": "abstract",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/jcr/ucag018",
+   "url": "https://doi.org/10.1093/jcr/ucag018",
+   "title": "The Final Countdown: Temporal Frames of Environmental Threats",
+   "authors": [
+    "Özlem Tetik",
+    "David Faro"
+   ],
+   "year": 2026,
+   "date": "2026-07-06",
+   "summary": "However, across eight online studies and a field experiment, the authors find that referring instead to the amount of time left until the threat (e.g., “Water… Consequently, using time-left frames increases consumer engagement with environmental issues and support for pro-environmental causes.",
+   "summary_source": "abstract",
+   "venue": "Journal of Consumer Research",
+   "venue_short": "JCR",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.7040939",
+   "url": "https://doi.org/10.2139/ssrn.7040939",
+   "title": "Clinical and Cost-Effectiveness of Intelligent Digital Cognitive Behavioral Therapy for Insomnia: A Multicenter Pragmatic Randomized Controlled Trial",
+   "authors": [
+    "Yanan Zhang",
+    "Yaru Wang",
+    "Qingqing Sun",
+    "Junfang Zhou",
+    "Ning Zhang",
+    "Hua Hu",
+    "Yao Zhou",
+    "Hongju Zhang",
+    "Lijia Cai",
+    "Ruiqi Wang",
+    "An Yan",
+    "Lihua Bai",
+    "Pengzheng Yu",
+    "Hangting He",
+    "Zan Wang"
+   ],
+   "year": 2026,
+   "date": "2026-07-06",
+   "summary": "Objectives: Insomnia is a highly prevalent disorder; however, access to its first-line treatment, cognitive behavioral therapy for insomnia (CBT-I) remains highly limited.&nbsp;We aimed to… These findings suggest its potential for implementation as a first-line treatment for insomnia disorder.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/00222429261466668",
+   "url": "https://doi.org/10.1177/00222429261466668",
+   "title": "How Closely Should You Follow a Trend? Atypicality and Engagement on Social Media",
+   "authors": [
+    "Marc Bravin",
+    "Melanie Clegg",
+    "Reto Hofstetter",
+    "Marc Pouly",
+    "Jonah Berger"
+   ],
+   "year": 2026,
+   "date": "2026-06-29",
+   "summary": "Follow-up experiments, including a content-creator field experiment, manipulate atypicality and confirm its causal impact.",
+   "summary_source": "abstract",
+   "venue": "Journal of Marketing",
+   "venue_short": "JM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/app.20240153",
+   "url": "https://doi.org/10.1257/app.20240153",
+   "title": "Dominated Pension Investments: The Role of Search Frictions and Unawareness",
+   "authors": [
+    "Karin Kinnerud",
+    "Louise Lorentzon"
+   ],
+   "year": 2026,
+   "date": "2026-06-26",
+   "summary": "We conduct a large-scale field experiment in the Swedish pension system to examine to what extent information and search frictions explain dominated high-fee index fund choices.",
+   "summary_source": "abstract",
+   "venue": "American Economic Journal: Applied Economics",
+   "venue_short": "AEJ: Applied",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6964880",
+   "url": "https://doi.org/10.2139/ssrn.6964880",
+   "title": "Careful What You Say to AI Ears: A Field Experiment",
+   "authors": [
+    "Yupeng Lin",
+    "Zhenghui Ni",
+    "Yichen Su",
+    "Nianhang Xu"
+   ],
+   "year": 2026,
+   "date": "2026-06-23",
+   "summary": "We run a large-scale randomized controlled trial (RCT) with 2,722 Chinese listed firms to examine how perceived AI bots shape managers' disclosures and market reactions. Using high-frequency data, we find that investors withhold trading during AI-question windows.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6970156",
+   "url": "https://doi.org/10.2139/ssrn.6970156",
+   "title": "Long-Run Effects of Mentors: Evidence from a Randomized Evaluation Linked to Tax Records",
+   "authors": [
+    "Alex Bell"
+   ],
+   "year": 2026,
+   "date": "2026-06-20",
+   "summary": "I analyze micro-data from a 1991randomized evaluation of the Big Brothers Big Sisters program, in which matches began when… Treated youth are 10 percentage points more likely to have ever attended college, with consistentimprovements across a range of behavioral outcomes including family formation.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 1
+  },
+  {
+   "doi": "10.1093/qje/qjag031",
+   "url": "https://doi.org/10.1093/qje/qjag031",
+   "title": "What Jobs Come to Mind? Stereotypes About Fields of Study",
+   "authors": [
+    "John J. Conlon",
+    "Dev Patel"
+   ],
+   "year": 2026,
+   "date": "2026-06-19",
+   "summary": "We test for stereotyping—the exaggeration of representative traits—in a high-stakes economic environment. We show that students greatly overestimate the likelihood that majors lead to their representative jobs (e.g., counselor for psychology, journalist for journalism).",
+   "summary_source": "abstract",
+   "venue": "The Quarterly Journal of Economics",
+   "venue_short": "QJE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jpubeco.2026.105696",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105696",
+   "title": "Can electric vehicles aid the renewable transition? Evidence from a field experiment incentivizing midday charging",
+   "authors": [
+    "Andrea La Nauze",
+    "Lana Friesen",
+    "Kai Li Lim",
+    "Flavio Menezes",
+    "Lionel Page",
+    "Thara Philip",
+    "Jake Whitehead"
+   ],
+   "year": 2026,
+   "date": "2026-06-18",
+   "summary": "In a field experiment tracking 390 electric vehicles minute-by-minute, we show that time-based charging incentives dramatically… We find stronger midday charging responses for commuters and those with fast home chargers, and suggestive evidence that commuters increase use of workplace charging.",
+   "summary_source": "abstract",
+   "venue": "Journal of Public Economics",
+   "venue_short": "JPubE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1111/jofi.70062",
+   "url": "https://doi.org/10.1111/jofi.70062",
+   "title": "Learning to Navigate a New Financial Technology",
+   "authors": [
+    "Emily Breza",
+    "Martin Kanz",
+    "LEORA KLAPPER"
+   ],
+   "year": 2026,
+   "date": "2026-06-17",
+   "summary": "We present results from a field experiment that introduced digital payroll accounts to unbanked factory workers to examine how inexperienced consumers… We find that exposure to payroll accounts leads to increased account use, accelerated learning, and avoidance of common consumer protection risks.",
+   "summary_source": "abstract",
+   "venue": "The Journal of Finance",
+   "venue_short": "JF",
+   "venue_kind": "journal",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6942060",
+   "url": "https://doi.org/10.2139/ssrn.6942060",
+   "title": "Don’t Give Up on Lab Experiments: Why the Field Still Needs the Lab",
+   "authors": [
+    "John A. List"
+   ],
+   "year": 2026,
+   "date": "2026-06-17",
+   "summary": "Recent enthusiasm for field experiments, and especially for natural field experiments (NFEs), in which subjects go about their daily activities unaware that any study is taking place, has sometimes been read as a verdict against the laboratory.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6960022",
+   "url": "https://doi.org/10.2139/ssrn.6960022",
+   "title": "Preference for Remote Tutoring: A Randomized Inquiry Experiment",
+   "authors": [
+    "Sofoklis Goulas"
+   ],
+   "year": 2026,
+   "date": "2026-06-17",
+   "summary": "This study examines tutors’ revealed preference for remote work using a randomized inquiry field experiment conducted by a nationwide online tutoring platform in Greece.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/orsc.2025.20702",
+   "url": "https://doi.org/10.1287/orsc.2025.20702",
+   "title": "The Cybernetic Teammate: A Field Experiment on Generative AI and Teamwork",
+   "authors": [
+    "Fabrizio Dell’Acqua",
+    "Charles Ayoubi",
+    "Hila Lifshitz‐Assaf",
+    "Raffaella Sadun",
+    "Ethan Mollick",
+    "Lilach Mollick",
+    "Yi Han",
+    "Jeff Goldman",
+    "Hari Nair",
+    "Stew Taub",
+    "Karim R. Lakhani"
+   ],
+   "year": 2026,
+   "date": "2026-06-12",
+   "summary": "We examine how artificial intelligence (AI) impacts three core pillars of… Our findings show that (1) AI significantly enhances performance: individuals with AI matched the performance of teams without AI, suggesting that AI can effectively replicate certain benefits of human collaboration.",
+   "summary_source": "abstract",
+   "venue": "Organization Science",
+   "venue_short": "OrgSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2024.04703",
+   "url": "https://doi.org/10.1287/mnsc.2024.04703",
+   "title": "Driving Merchant Adoption of Digital Payment Solutions Through Customer Success Management",
+   "authors": [
+    "Shreya Kankanhalli",
+    "Stephen J. Anderson",
+    "Leonardo Iacovone",
+    "Sridhar Narayanan"
+   ],
+   "year": 2026,
+   "date": "2026-06-12",
+   "summary": "We implement a randomized field experiment with 479 cash-only retailers in Mexico, testing interventions modeled on customer success management (CSM)—a… Relative to the control group (n = 158), long-term adoption increased by 21.4 percentage points in T1 and by an additional 13.4 points in T2.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6879745",
+   "url": "https://doi.org/10.2139/ssrn.6879745",
+   "title": "Youth Aware of Mental Health for Danish School Adolescents: A Cluster-Randomised Feasibility Pilot Trial",
+   "authors": [
+    "Lasse Kindler Harris",
+    "Michella Heinrichsen",
+    "Marie Petri",
+    "Hanne Elberling",
+    "Lene Skovgaard",
+    "Merete Nordentoft",
+    "Annette Erlangsen",
+    "Britt Morthorst"
+   ],
+   "year": 2026,
+   "date": "2026-06-08",
+   "summary": "Methods: A 2-armed, cluster-randomised feasibility pilot trial was conducted in 9 public schools between August 2024 and July 2025.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2026.01340",
+   "url": "https://doi.org/10.1287/mnsc.2026.01340",
+   "title": "Commentary on “My Advisor, Her AI, and Me: Evidence from a Field Experiment on Human-AI Collaboration and Investment Decisions”",
+   "authors": [
+    "Hans-Paul Bürkner"
+   ],
+   "year": 2026,
+   "date": "2026-06-05",
+   "summary": "Hans-Paul Bürkner (Global Chair Emeritus and former CEO of The Boston Consulting Group) on Yang, Bauer, Li, and Hinz (2025) “My Advisor, Her AI, and Me: Evidence from a Field Experiment on Human–AI Collaboration and Investment Decisions.”",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2139/ssrn.6816500",
+   "url": "https://doi.org/10.2139/ssrn.6816500",
+   "title": "Personalized Recommendation, Market Expansion, and Consumption Diversity: Evidence from a Randomized Field Experiment in Serialized Digital Content",
+   "authors": [
+    "Bongjin Sohn",
+    "Antino Kim",
+    "Gunwoong Lee"
+   ],
+   "year": 2026,
+   "date": "2026-06-04",
+   "summary": "We test these arguments through a large-scale randomized field experiment on a… Our findings show how personalized recommendations can operate as a positive-sum mechanism that simultaneously expands aggregate consumption and broadens its distribution across titles in serialized digital content.",
+   "summary_source": "abstract",
+   "venue": "SSRN working paper",
+   "venue_short": "SSRN",
+   "venue_kind": "ssrn",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/restud/rdag051",
+   "url": "https://doi.org/10.1093/restud/rdag051",
+   "title": "Pigovian Transport Pricing in Practice",
+   "authors": [
+    "Beat Hintermann",
+    "Beaumont Schoeman",
+    "Joseph Molloy",
+    "Thomas Götschi",
+    "Alberto Castro",
+    "Christopher Tchervenkov",
+    "Uros Tomic",
+    "Kay W. Axhausen"
+   ],
+   "year": 2026,
+   "date": "2026-06-03",
+   "summary": "We implement Pigovian transport pricing in a field experiment in urban agglomerations of Switzerland over the course of 8 weeks. The treatment significantly reduces the external costs of transport during the course of the experiment.",
+   "summary_source": "abstract",
+   "venue": "The Review of Economic Studies",
+   "venue_short": "REStud",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103834",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103834",
+   "title": "Right-sizing incentives",
+   "authors": [
+    "Edward N. Okeke",
+    "Isa S. Abubakar"
+   ],
+   "year": 2026,
+   "date": "2026-05-30",
+   "summary": "This paper presents results from a field experiment in Nigeria in which expectant mothers were offered cash payments of N2500… We find highly non-linear effects of conditional payments-most of the incentive effect occurs on the extensive margin, with rapidly diminishing returns to incentive size.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jaccpubpol.2026.107440",
+   "url": "https://doi.org/10.1016/j.jaccpubpol.2026.107440",
+   "title": "The power and peril of nudging non-compliant firms: A field experiment on tax compliance",
+   "authors": [
+    "Fábio Motoki",
+    "Lucia Milena Murgia",
+    "Bruno Funchal"
+   ],
+   "year": 2026,
+   "date": "2026-05-29",
+   "summary": "Field experiment in accounting, published in Journal of Accounting and Public Policy. No abstract is openly available, so no description could be extracted.",
+   "summary_source": "metadata",
+   "venue": "Journal of Accounting and Public Policy",
+   "venue_short": "JAPP",
+   "venue_kind": "journal",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103838",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103838",
+   "title": "Digital skills for better jobs: Experimental evidence from a bootcamp training program in Peru",
+   "authors": [
+    "Rafael Novella",
+    "Richard Freund",
+    "David Rosas-Shady"
+   ],
+   "year": 2026,
+   "date": "2026-05-27",
+   "summary": "Using a randomized experiment and combining administrative records on formal employment with survey data, we find that the program significantly increases the probability of working in entry-level technology jobs two years post-training.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jbusvent.2026.106608",
+   "url": "https://doi.org/10.1016/j.jbusvent.2026.106608",
+   "title": "A romantic penalty? Female entrepreneurship and relationship initiation in online dating",
+   "authors": [
+    "Di Tong",
+    "Xiumei Li",
+    "Haemin Dennis Park"
+   ],
+   "year": 2026,
+   "date": "2026-05-24",
+   "summary": "Using two field experiments, supplemented by a survey experiment, we provide causal evidence that female entrepreneurs are on average penalized in romantic relationship initiation, but are preferred by male entrepreneurs.",
+   "summary_source": "abstract",
+   "venue": "Journal of Business Venturing",
+   "venue_short": "JBV",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/00222437261455302",
+   "url": "https://doi.org/10.1177/00222437261455302",
+   "title": "Where Should Firms Implement Differential Privacy in Targeting? Implications for Profitability",
+   "authors": [
+    "Gilian R. Ponte",
+    "Tom Boot",
+    "Thomas Reutterer",
+    "Jaap E. Wieringa"
+   ],
+   "year": 2026,
+   "date": "2026-05-18",
+   "summary": "Using a large-scale field experiment involving 747,975 customers and extensive simulations, the authors show that both strategies remain profitable under strong privacy protection.",
+   "summary_source": "abstract",
+   "venue": "Journal of Marketing Research",
+   "venue_short": "JMR",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103819",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103819",
+   "title": "Targeting social assistance in fragile settings: An experiment in community-based targeting",
+   "authors": [
+    "Kibrom A. Abay",
+    "Guush Berhane",
+    "Daniel O. Gilligan",
+    "Kibrom Tafere",
+    "Alemayehu Seyoum Taffesse"
+   ],
+   "year": 2026,
+   "date": "2026-05-14",
+   "summary": "We implemented a cluster-randomized controlled trial among community leaders in 180 villages in Ethiopia to evaluate how community leaders target and… We find that, when resources are limited, community leaders prefer to increase the number of beneficiaries by reducing the average transfer amounts.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/00222429261451752",
+   "url": "https://doi.org/10.1177/00222429261451752",
+   "title": "Cushioning the Blow: Reducing Customer Attrition in Response to Price Increase Notifications",
+   "authors": [
+    "Hoorsana Damavandi",
+    "Kersi D. Antia",
+    "Praveen K. Kopalle"
+   ],
+   "year": 2026,
+   "date": "2026-05-11",
+   "summary": "Study 1 is a randomized field experiment involving ten cohorts of 1,626 actual customers, demonstrating the effects of cost, market, and quality justifications on customer attrition and… Together, these studies provide important insights to firms seeking to cushion the blow of price increases.",
+   "summary_source": "abstract",
+   "venue": "Journal of Marketing",
+   "venue_short": "JM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103815",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103815",
+   "title": "Winsorizing and trimming in RCTs",
+   "authors": [
+    "Till Wicker"
+   ],
+   "year": 2026,
+   "date": "2026-05-09",
+   "summary": "A formal framework and Monte Carlo simulations of an RCT illustrate that Stratified Winsorizing/Trimming reduces the treatment effect bias and risk of Type II errors compared to the traditional approach, although at the cost of a greater likelihood of Type I errors.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1111/jofi.70040",
+   "url": "https://doi.org/10.1111/jofi.70040",
+   "title": "Learning in the Limit: Income Inference from Credit Extensions",
+   "authors": [
+    "Yin Xiao"
+   ],
+   "year": 2026,
+   "date": "2026-05-07",
+   "summary": "Combining a randomized controlled trial with administrative and survey data, this paper shows that credit limit extensions significantly increase total spending and income expectations.",
+   "summary_source": "abstract",
+   "venue": "The Journal of Finance",
+   "venue_short": "JF",
+   "venue_kind": "journal",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/msom.2024.1459",
+   "url": "https://doi.org/10.1287/msom.2024.1459",
+   "title": "Artificial Intelligence, Emotional Labor, and Service Operations",
+   "authors": [
+    "Zheng Fang",
+    "Yuqian Chang",
+    "Xueming Luo",
+    "Qingsheng Wu",
+    "Jaakko Aspara"
+   ],
+   "year": 2026,
+   "date": "2026-05-07",
+   "summary": "Methodology/results: We provide causal evidence from a pair of randomized field experiments conducted in partnership with a firm for loan… Results suggest that, compared with human employees, undisclosed AI service agents display the required emotions (both positive and negative) more accurately.",
+   "summary_source": "abstract",
+   "venue": "Manufacturing & Service Operations Management",
+   "venue_short": "M&SOM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mksc.2023.0002",
+   "url": "https://doi.org/10.1287/mksc.2023.0002",
+   "title": "Optimizing Reserve Prices in Display Advertising Auctions",
+   "authors": [
+    "Hana Choi",
+    "Carl F. Mela"
+   ],
+   "year": 2026,
+   "date": "2026-05-06",
+   "summary": "Conducting a field experiment to induce exogenous variation in reserve prices at a major publisher, we find that setting… Accounting for minimum impression constraints in setting reserve prices yields a profit increase of 9 percentage points over a solution that does not incorporate the constraint.",
+   "summary_source": "abstract",
+   "venue": "Marketing Science",
+   "venue_short": "MktSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/ej/ueag058",
+   "url": "https://doi.org/10.1093/ej/ueag058",
+   "title": "Campaigning to a Polarised Electorate: Emotions and Information in Real Election Campaigns",
+   "authors": [
+    "Cesi Cruz",
+    "Julien Labonne",
+    "Francesco Trebbi"
+   ],
+   "year": 2026,
+   "date": "2026-05-01",
+   "summary": "We partner with a mainstream opposition party to implement a field experiment during the 2019 Philippine Senatorial election to compare two common campaign strategies—direct… We find that, even in polarised contexts, in-person engagement providing policy information increases votes for the party.",
+   "summary_source": "abstract",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2024.08287",
+   "url": "https://doi.org/10.1287/mnsc.2024.08287",
+   "title": "Collaboration, Workplace Practice Adoption, and Performance: Evidence from a Field Experiment",
+   "authors": [
+    "Francisco Brahm",
+    "Jeanne Lafortune",
+    "Catherine Magelssen",
+    "Jose Tessada"
+   ],
+   "year": 2026,
+   "date": "2026-04-30",
+   "summary": "We conduct a field experiment involving 12,761 small- and medium-sized firms, encouraging collaboration between owners/managers and workers on workplace safety. We find that the treatment increases safety training and reduces the rate and severity of accidents.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/rof/rfag015",
+   "url": "https://doi.org/10.1093/rof/rfag015",
+   "title": "Behavioral messages and debt repayment",
+   "authors": [
+    "Giorgia Barboni",
+    "Juan-Camilo Cárdenas",
+    "Nicolás de Roux"
+   ],
+   "year": 2026,
+   "date": "2026-04-22",
+   "summary": "We conduct a randomized experiment involving 7,063 late-paying clients of a large Colombian bank to compare the effects of text messages that leverage different behavioral motives on loan… Our results show that receiving a message decreases the likelihood of borrowers being late by 4 percent.",
+   "summary_source": "abstract",
+   "venue": "Review of Finance",
+   "venue_short": "RF",
+   "venue_kind": "journal",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/orsc.2023.18153",
+   "url": "https://doi.org/10.1287/orsc.2023.18153",
+   "title": "A Platform Rating System and Vulnerable Workers: Evidence from Field Experiments in Singapore",
+   "authors": [
+    "Vanessa Burbano",
+    "Wesley Wu-Yi Koo",
+    "Jiao Luo"
+   ],
+   "year": 2026,
+   "date": "2026-04-21",
+   "summary": "To empirically examine participants’ reactions to a proposed platform rating system in the context of a substantial cross-side power differential, we conducted two field experiments in collaboration with a Singapore-based labor platform that connects foreign domestic workers with employers…",
+   "summary_source": "abstract",
+   "venue": "Organization Science",
+   "venue_short": "OrgSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/ej/ueag051",
+   "url": "https://doi.org/10.1093/ej/ueag051",
+   "title": "On the doorstep of adulthood: Entrepreneurship and fertility of young women in Tanzania",
+   "authors": [
+    "Lars Ivar Oppedal Berge",
+    "Kjetil Bjorvatn",
+    "Fortunata Makene",
+    "Linda Helgesson Sekei",
+    "Vincent Somville",
+    "Bertil Tungodden"
+   ],
+   "year": 2026,
+   "date": "2026-04-20",
+   "summary": "We report results from a large-scale randomized controlled trial aimed at empowering young women during the transition from secondary school.",
+   "summary_source": "abstract",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/ej/ueag049",
+   "url": "https://doi.org/10.1093/ej/ueag049",
+   "title": "Publicly targeting group identities impacts take-up of educational opportunities",
+   "authors": [
+    "Manuel Muñoz"
+   ],
+   "year": 2026,
+   "date": "2026-04-18",
+   "summary": "In a natural field experiment with a Colombian university, I target 4, 831 students and disclose to some that selection is based on… Three complementary online experiments with 1, 113 students suggest that identity-based selection raises image concerns, which discourage programme participation.",
+   "summary_source": "abstract",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1111/1475-679x.70052",
+   "url": "https://doi.org/10.1111/1475-679x.70052",
+   "title": "Human + AI in Accounting: Early Evidence from the Field",
+   "authors": [
+    "Jung Ho Choi",
+    "Chloe Xie"
+   ],
+   "year": 2026,
+   "date": "2026-04-16",
+   "summary": "A framed field experiment further shows that while AI assistance improves classification accuracy on average, reliance on non‐consensus AI recommendations can increase the risk of error.",
+   "summary_source": "abstract",
+   "venue": "Journal of Accounting Research",
+   "venue_short": "JAR",
+   "venue_kind": "journal",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/00222429261445436",
+   "url": "https://doi.org/10.1177/00222429261445436",
+   "title": "Automated Versus Human-Operated: Impact of AI-Driven Autonomous Stores on Prosocial Behavior",
+   "authors": [
+    "Xiaoyan (Jenny) Liu",
+    "Chi Hoang",
+    "Sharon Ng"
+   ],
+   "year": 2026,
+   "date": "2026-04-13",
+   "summary": "Across nine online and field experiments, this research demonstrates that consumers engage in less prosocial behavior after interacting with AI-driven autonomous (vs. human-operated) stores.",
+   "summary_source": "abstract",
+   "venue": "Journal of Marketing",
+   "venue_short": "JM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/10591478261445688",
+   "url": "https://doi.org/10.1177/10591478261445688",
+   "title": "Improving participation in digital feedback applications: Social norms appeals in technology management",
+   "authors": [
+    "Xue Guo",
+    "Guohou Shan",
+    "Michael Rivera",
+    "Liangfei Qiu"
+   ],
+   "year": 2026,
+   "date": "2026-04-13",
+   "summary": "Drawing on social norms theory and cognitive load theory, we examine how message framing and users’ cognitive states affect the quantity and… The results show that while social norms-based nudges increase feedback volume, they are associated with shorter reviews and reduced recognition and surprise.",
+   "summary_source": "abstract",
+   "venue": "Production and Operations Management",
+   "venue_short": "POM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/ej/ueag041",
+   "url": "https://doi.org/10.1093/ej/ueag041",
+   "title": "Self-affirmation and productivity: Backfiring among those who could benefit the most",
+   "authors": [
+    "Bettina Rockenbach",
+    "Sebastian Schneiders",
+    "Sebastian Tonke",
+    "Björn Vollan",
+    "Arne R. Weiss"
+   ],
+   "year": 2026,
+   "date": "2026-04-07",
+   "summary": "Thus, our study provides evidence that standard self-affirmation interventions should be treated with some caution, as they may be ineffective and even counterproductive for those who would most need a boost in self-image and productivity.",
+   "summary_source": "abstract",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/ej/ueag039",
+   "url": "https://doi.org/10.1093/ej/ueag039",
+   "title": "Reply to “Comment on ‘Telementoring and Homeschooling during School Closures: A Randomized Experiment in Rural Bangladesh’ by Hassan et al.”",
+   "authors": [
+    "Hashibul Hassan",
+    "Asad Islam",
+    "Liang C. Wang"
+   ],
+   "year": 2026,
+   "date": "2026-04-01",
+   "summary": "The data and codes for this paper are available on the Journal repository. They were checked for their ability to reproduce the results presented in the paper.",
+   "summary_source": "abstract",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2020.03837",
+   "url": "https://doi.org/10.1287/mnsc.2020.03837",
+   "title": "The Trade-Offs of Letting Local Managers Make Hiring Decisions",
+   "authors": [
+    "Hugh Xiaolong Wu",
+    "Shannon X. Liu"
+   ],
+   "year": 2026,
+   "date": "2026-04-01",
+   "summary": "To assess the impacts of LMH on employee recruitment, productivity, and firm performance, we partnered with a large Chinese firm… Results show that LMH leads to an increase in both the mean and variance of individual productivity, yielding a boost in store-level sales of approximately 7%–8%.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/ej/ueag040",
+   "url": "https://doi.org/10.1093/ej/ueag040",
+   "title": "Comment on “Telementoring and Homeschooling during School Closures: A Randomized Experiment in Rural Bangladesh” By Hassan et al.",
+   "authors": [
+    "Juan P Aparicio",
+    "Nikolai Cook",
+    "Derek Mikola",
+    "Ole Rogeberg",
+    "David Valenta",
+    "Michael Wiebe",
+    "Carl Bonander",
+    "Abel Brodeur"
+   ],
+   "year": 2026,
+   "date": "2026-03-31",
+   "summary": "Field experiment in economics, published in The Economic Journal. No abstract is openly available, so no description could be extracted.",
+   "summary_source": "metadata",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/00222437261440816",
+   "url": "https://doi.org/10.1177/00222437261440816",
+   "title": "Death or Muerte ? Effects of Sales Language Use on the Consumption of Death-Related Products and Services",
+   "authors": [
+    "Lexie Lan Huang",
+    "Xueni Li",
+    "Kimmy Wa Chan"
+   ],
+   "year": 2026,
+   "date": "2026-03-27",
+   "summary": "The findings from eight studies, including two field experiments and an eye-tracking study, indicate that DRPS sales messages that appear in consumers’ second (vs. native) language (e.g., using muerte , Spanish for death, when talking to a native English speaker whose second language is Spanish)…",
+   "summary_source": "abstract",
+   "venue": "Journal of Marketing Research",
+   "venue_short": "JMR",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1002/smj.70081",
+   "url": "https://doi.org/10.1002/smj.70081",
+   "title": "Social comparison and the value of performance trajectory information: A field experiment in the workplace",
+   "authors": [
+    "Hugh Xiaolong Wu",
+    "Y. Liang"
+   ],
+   "year": 2026,
+   "date": "2026-03-25",
+   "summary": "We study whether making performance trajectories visible improves retention and firm performance. The intervention reduces new‐worker attrition by 11–12% and increases revenue by 15% in stores with more new workers.",
+   "summary_source": "abstract",
+   "venue": "Strategic Management Journal",
+   "venue_short": "SMJ",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2308/tar-2023-0274",
+   "url": "https://doi.org/10.2308/tar-2023-0274",
+   "title": "Differential Communication and Local Information Advantage: Revelations from Translation Differences",
+   "authors": [
+    "Tina Lang",
+    "Lorien Stice-Lawrence",
+    "Yu Ting Forester Wong",
+    "T. J. Wong"
+   ],
+   "year": 2026,
+   "date": "2026-03-25",
+   "summary": "We validate our proxy using a field experiment and then use this proxy to document that differential communication is associated… It is also linked to decreases in the relative information quality of foreign analysts, even when foreign demand for information is high and communication costs are low.",
+   "summary_source": "abstract",
+   "venue": "The Accounting Review",
+   "venue_short": "TAR",
+   "venue_kind": "journal",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1017/s0022109026102749",
+   "url": "https://doi.org/10.1017/s0022109026102749",
+   "title": "Personal Financial Information Presentation and Consumer Spending",
+   "authors": [
+    "Yaron Levi"
+   ],
+   "year": 2026,
+   "date": "2026-03-24",
+   "summary": "We study whether information design influences consumer behavior in a randomized field… These findings show that minor variations in information presentation can significantly affect financial behavior, highlighting the power of design in promoting saving and informing policy and regulation.",
+   "summary_source": "abstract",
+   "venue": "Journal of Financial and Quantitative Analysis",
+   "venue_short": "JFQA",
+   "venue_kind": "journal",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103787",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103787",
+   "title": "It will rain: The effect of information on flood preparedness in urban Mozambique",
+   "authors": [
+    "Stefan Leeffers"
+   ],
+   "year": 2026,
+   "date": "2026-03-24",
+   "summary": "Using a randomized experiment across 300 urban communities in Mozambique, I show that providing information on flood risk increased the implementation of suggested mitigation strategies, measured objectively (using a machine learning-based algorithm to detect solid waste, a major flood hazard, in…",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jbankfin.2026.107687",
+   "url": "https://doi.org/10.1016/j.jbankfin.2026.107687",
+   "title": "The impact of sustainable finance literacy on investment decisions",
+   "authors": [
+    "Massimo Filippini",
+    "Markus Leippold",
+    "Tobias Wekhof"
+   ],
+   "year": 2026,
+   "date": "2026-03-21",
+   "summary": "The program also increased the probability of investing in a highly sustainable fund by 6 percentage points on the extensive margin and decreased allocations between 3.2% and 2.7% for the less sustainable funds on the intensive margin.",
+   "summary_source": "abstract",
+   "venue": "Journal of Banking & Finance",
+   "venue_short": "JBF",
+   "venue_kind": "journal",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jpubeco.2026.105617",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105617",
+   "title": "How do holistic wrap-around anti-poverty programs affect employment and individualized outcomes?",
+   "authors": [
+    "Javier Espinosa",
+    "William N. Evans",
+    "David C. Phillips",
+    "Timothy Spilde"
+   ],
+   "year": 2026,
+   "date": "2026-03-12",
+   "summary": "We conduct a randomized controlled trial of one such program, Bridges to Success. The measured treatment effect on employment three years after random assignment is 9 ± 9 percentage points (pp).",
+   "summary_source": "abstract",
+   "venue": "Journal of Public Economics",
+   "venue_short": "JPubE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/orsc.2025.20602",
+   "url": "https://doi.org/10.1287/orsc.2025.20602",
+   "title": "With a Little Help from My (Girl) Friends: Field Evidence on Gender Homophily and Women’s Training Outcomes in Remote Environments",
+   "authors": [
+    "Julia Lee Melin",
+    "Tiantian Yang",
+    "Sofoklis Goulas"
+   ],
+   "year": 2026,
+   "date": "2026-03-11",
+   "summary": "We test this argument in an 18-month randomized field experiment on a leading online career training platform… We find that women in all-women groups were significantly more likely to complete their training on time, earn professional certification within a year, and secure in-field employment.",
+   "summary_source": "abstract",
+   "venue": "Organization Science",
+   "venue_short": "OrgSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/00222437261433457",
+   "url": "https://doi.org/10.1177/00222437261433457",
+   "title": "Increasing App Engagement Behaviors via Goal-Enabling Technology Features: The Role of Goal Difficulty Dimensions",
+   "authors": [
+    "Jake An",
+    "André Bonfrer",
+    "Christine Eckert"
+   ],
+   "year": 2026,
+   "date": "2026-03-11",
+   "summary": "A field experiment confirms that subgoal difficulty causally drives in-app actions. These findings suggest that personalized guidance during GETF adoption can enhance sustained engagement.",
+   "summary_source": "abstract",
+   "venue": "Journal of Marketing Research",
+   "venue_short": "JMR",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/00222437261432198",
+   "url": "https://doi.org/10.1177/00222437261432198",
+   "title": "How Effective Is Suggested Pricing? Experimental Evidence from an E-Commerce Platform",
+   "authors": [
+    "Jessica Fong",
+    "Puneet Manchanda",
+    "Yu Song"
+   ],
+   "year": 2026,
+   "date": "2026-03-02",
+   "summary": "In collaboration with Mercari, a peer-to-peer e-commerce platform, the authors conduct a field experiment that varies whether a seller receives a suggested price—and, if so, the suggested price itself.",
+   "summary_source": "abstract",
+   "venue": "Journal of Marketing Research",
+   "venue_short": "JMR",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2025.00535",
+   "url": "https://doi.org/10.1287/mnsc.2025.00535",
+   "title": "The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers",
+   "authors": [
+    "Kevin Zheyuan Cui",
+    "Mert Demirer",
+    "Sonia Jaffe",
+    "Leon Musolff",
+    "Sida Peng",
+    "Tobias Salz"
+   ],
+   "year": 2026,
+   "date": "2026-02-27",
+   "summary": "This study evaluates the effect of generative artificial intelligence (AI) on software developer productivity via randomized controlled trials at Microsoft, Accenture, and an anonymous Fortune 100 company.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2024.05685",
+   "url": "https://doi.org/10.1287/mnsc.2024.05685",
+   "title": "Can Reward Uncertainty Encourage Social Referrals? Evidence from a Large-Scale Field Experiment",
+   "authors": [
+    "Andy Tao Li",
+    "Rodrigo Belo",
+    "Ting Li"
+   ],
+   "year": 2026,
+   "date": "2026-02-26",
+   "summary": "We run a randomized experiment involving more than 160,000 users of a telecommunications operator in China and examine the effectiveness of… We find that referral programs are most successful when senders are incentivized with uncertain rewards and recipients are guaranteed certain rewards.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mksc.2023.0178",
+   "url": "https://doi.org/10.1287/mksc.2023.0178",
+   "title": "How Do Content Producers Respond to Engagement on Social Media Platforms?",
+   "authors": [
+    "Simha Mummalaneni",
+    "Hema Yoganarasimhan",
+    "Varad V Pathak"
+   ],
+   "year": 2026,
+   "date": "2026-02-26",
+   "summary": "We examine how receiving engagement affects users’ subsequent behavior on social media platform, using a large-scale field experiment from Twitter.",
+   "summary_source": "abstract",
+   "venue": "Marketing Science",
+   "venue_short": "MktSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/aeri.20240509",
+   "url": "https://doi.org/10.1257/aeri.20240509",
+   "title": "Rational Inattention during a Randomized Controlled Trial",
+   "authors": [
+    "Bartosz Maćkowiak",
+    "Mirko Wiederholt"
+   ],
+   "year": 2026,
+   "date": "2026-02-25",
+   "summary": "We introduce an information provision experiment into a standard dynamic rational inattention model. We derive analytical results about how the treatment effect varies with characteristics of the environment and the individual.",
+   "summary_source": "abstract",
+   "venue": "American Economic Review: Insights",
+   "venue_short": "AER:I",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jpubeco.2026.105590",
+   "url": "https://doi.org/10.1016/j.jpubeco.2026.105590",
+   "title": "Violent discipline and parental behavior: Short- and medium-term effects of digital parenting support to caregivers",
+   "authors": [
+    "Lelys Dinarte-Diaz",
+    "Saravana Ravindran",
+    "Manisha Shah",
+    "Shawn Powers",
+    "Helen Baker-Henningham"
+   ],
+   "year": 2026,
+   "date": "2026-02-25",
+   "summary": "We study the impact of a digitally delivered intervention on positive parenting practices in Jamaica using a randomized… Results show that the intervention improves caregiver knowledge (0.52 SD), attitudes toward violence (0.2 SD), and reduces caregiver violence against children (0.12 SD).",
+   "summary_source": "abstract",
+   "venue": "Journal of Public Economics",
+   "venue_short": "JPubE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/msom.2024.1137",
+   "url": "https://doi.org/10.1287/msom.2024.1137",
+   "title": "How Forced Intervention Facilitates AI Adoption",
+   "authors": [
+    "Xinyu Cao",
+    "Chenshan Hu",
+    "J Sun",
+    "Dennis Zhang"
+   ],
+   "year": 2026,
+   "date": "2026-02-24",
+   "summary": "The company conducted a field experiment in which sales workers were forced to use or not use the… Experimental results show that forcing workers to use the algorithm during the experiment causally increases their algorithm usage over the month after the experiment by 15.8 percentage points.",
+   "summary_source": "abstract",
+   "venue": "Manufacturing & Service Operations Management",
+   "venue_short": "M&SOM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/10591478261429201",
+   "url": "https://doi.org/10.1177/10591478261429201",
+   "title": "Effects of Peer Voting and Followers on User Contribution to Online Knowledge Sharing Platforms: Evidence From a Field Experiment",
+   "authors": [
+    "Mengxia Zhang",
+    "Lan Luo"
+   ],
+   "year": 2026,
+   "date": "2026-02-20",
+   "summary": "To better understand the consequences of these platform design choices, we conduct a field experiment… We find that increasing upvotes significantly boosts users’ answer contributions (in volume, total length, and quality), while increasing followers has mostly no overall effect on contributions.",
+   "summary_source": "abstract",
+   "venue": "Production and Operations Management",
+   "venue_short": "POM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/10591478261429211",
+   "url": "https://doi.org/10.1177/10591478261429211",
+   "title": "Raise the Expectation Bar and Lower the Tolerance? Effects of Being Listed in a Restaurant Guide on Customers’ Online Rating Behavior",
+   "authors": [
+    "Hui Yang",
+    "Xianghua Lu",
+    "Xianghua Lu",
+    "Liangfei Qiu",
+    "Liangfei Qiu",
+    "Yicheng Zhang"
+   ],
+   "year": 2026,
+   "date": "2026-02-20",
+   "summary": "Evidence from both observational data and a randomized experiment further reveals the underlying mechanisms, showing that BLG increases customer involvement and raises desired expectations more dramatically than adequate ones.",
+   "summary_source": "abstract",
+   "venue": "Production and Operations Management",
+   "venue_short": "POM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1111/1475-679x.70043",
+   "url": "https://doi.org/10.1111/1475-679x.70043",
+   "title": "Accounting Rules and the Labor Market for Accountants",
+   "authors": [
+    "Anthony Le"
+   ],
+   "year": 2026,
+   "date": "2026-02-17",
+   "summary": "I supplement these analyses with a survey‐based field experiment and find that the salience of restrictiveness heightens students'… Overall, the findings suggest that restrictive regulation can shift the task content of occupations and reduce the pool of individuals interested in the profession.",
+   "summary_source": "abstract",
+   "venue": "Journal of Accounting Research",
+   "venue_short": "JAR",
+   "venue_kind": "journal",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103748",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103748",
+   "title": "C'est la vie!: Mixed impacts of an edutainment television series in West Africa",
+   "authors": [
+    "Malick Dione",
+    "Jessica Heckert",
+    "Mélissa Hidrobo",
+    "Agnes le Port",
+    "Amber Peterman",
+    "Moustapha Séye"
+   ],
+   "year": 2026,
+   "date": "2026-02-13",
+   "summary": "We examine impacts on violence against women and girls and sexual and reproductive health. Results show C’est la vie! improved knowledge on both domains three months after film clubs ended, as well as violence-related attitudes nine months later, however, had no impact on behaviors.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jbusvent.2026.106582",
+   "url": "https://doi.org/10.1016/j.jbusvent.2026.106582",
+   "title": "Debiasing entrepreneurial careers: A field experiment on female role model effects on entrepreneurial self-efficacy and early-stage career choices",
+   "authors": [
+    "Laura Bechthold",
+    "Laura Rosendahl Huber",
+    "Kimberly A. Eddleston"
+   ],
+   "year": 2026,
+   "date": "2026-02-10",
+   "summary": "To address this gap, we investigate whether introducing female entrepreneur role models in educational settings can shape young women's entrepreneurial… We find that exposure to social interactions with female entrepreneurs significantly boosts female students' entrepreneurial self-efficacy.",
+   "summary_source": "abstract",
+   "venue": "Journal of Business Venturing",
+   "venue_short": "JBV",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103750",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103750",
+   "title": "Social information, advice and altruistic behavior by underprivileged children: Experimental evidence from Colombia",
+   "authors": [
+    "Natalia Candelo",
+    "Jingping Gu",
+    "Sherry Xin Li"
+   ],
+   "year": 2026,
+   "date": "2026-02-08",
+   "summary": "We conduct a lab-in-the-field experiment to investigate how parents’, teachers’, and peers’ behavior and advice affect children’s altruism in disadvantaged neighborhoods in Colombia. We find that both information and advice from these sources enhance children’s willingness to share.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/restud/rdag012",
+   "url": "https://doi.org/10.1093/restud/rdag012",
+   "title": "Do The Effects of Nudges Persist? Theory and Evidence from 38 Natural Field Experiments",
+   "authors": [
+    "Alec Brandon",
+    "Paul J Ferraro",
+    "John A List",
+    "Robert D Metcalfe",
+    "Michael K Price",
+    "Florian Rundhammer"
+   ],
+   "year": 2026,
+   "date": "2026-01-31",
+   "summary": "Using data from 38 natural field experiments, we isolate the role of technology adoption by comparing treatment and control homes after… We find that fully half of energy reductions persist in the home after treatment ends and show this persistence is consonant with a technology adoption channel.",
+   "summary_source": "abstract",
+   "venue": "The Review of Economic Studies",
+   "venue_short": "REStud",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2025.00232",
+   "url": "https://doi.org/10.1287/mnsc.2025.00232",
+   "title": "Do Financial Advisors Charge Sustainable Investors a Premium?",
+   "authors": [
+    "Marten Laudi",
+    "Paul Smeets",
+    "Utz Weitzel"
+   ],
+   "year": 2026,
+   "date": "2026-01-23",
+   "summary": "In two controlled laboratory-in-the-field experiments with 415 professional financial advisors from Europe and the United States… Our findings suggest that advisors extract additional fees for sustainable investment mandates but avoid overcharging sustainable investors with high financial literacy.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/ej/ueag009",
+   "url": "https://doi.org/10.1093/ej/ueag009",
+   "title": "Polarise and Rule: Independent Media in Autocracy and the Role of Social Media",
+   "authors": [
+    "Ruben Enikolopov",
+    "Michael Rochlitz",
+    "Koen Schoors",
+    "Nikita Zakharov"
+   ],
+   "year": 2026,
+   "date": "2026-01-20",
+   "summary": "We carried out two complementary field experiments in Russia at the city and individual levels, randomising access to the country’s only independent TV channel before the 2016 parliamentary elections. In both experiments, we find that independent media foster polarisation.",
+   "summary_source": "abstract",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/qje/qjag003",
+   "url": "https://doi.org/10.1093/qje/qjag003",
+   "title": "(Not) Thinking About the Future: Financial Information and Maternal Labor Supply",
+   "authors": [
+    "Ana Costa-Ramón",
+    "Michaela Slotwinski",
+    "Ursina Schaede",
+    "Anne Brenøe"
+   ],
+   "year": 2026,
+   "date": "2026-01-20",
+   "summary": "In a large-scale field experiment in Switzerland, we randomly assign mothers working part-time as teachers to receive objective… The treatment increases both demand for financial information and future labor supply plans, in particular among women who underestimate the costs of part-time work.",
+   "summary_source": "abstract",
+   "venue": "The Quarterly Journal of Economics",
+   "venue_short": "QJE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/qje/qjag002",
+   "url": "https://doi.org/10.1093/qje/qjag002",
+   "title": "The Future in Mind: Aspirations and Long-Term Outcomes in Rural Ethiopia",
+   "authors": [
+    "Tanguy Bernard",
+    "Stefan Dercon",
+    "Kate Orkin",
+    "Giulio Schinaia",
+    "Alemayehu Seyoum Taffesse"
+   ],
+   "year": 2026,
+   "date": "2026-01-18",
+   "summary": "We run a randomized controlled trial in remote, rural Ethiopia to explore this and evaluate an intervention that aims to change how poor… Five years after the screening took place, the treated households had increased future-oriented investments in agriculture, children’s education, and assets.",
+   "summary_source": "abstract",
+   "venue": "The Quarterly Journal of Economics",
+   "venue_short": "QJE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2026.103724",
+   "url": "https://doi.org/10.1016/j.jdeveco.2026.103724",
+   "title": "The effects of cash and group therapy in the context of conflict: Evidence from a randomized evaluation in Ethiopia",
+   "authors": [
+    "Mélissa Hidrobo",
+    "Harold Alderman",
+    "Negussie Deyessa",
+    "Daniel O. Gilligan",
+    "Parthu Kalva",
+    "Jessica Leight",
+    "Michael Mulford",
+    "Heleene Tambet"
+   ],
+   "year": 2026,
+   "date": "2026-01-17",
+   "summary": "This paper reports on a randomized controlled trial conducted in rural Ethiopia assessing the effects of a psychological (group… Findings show that sixteen months post-baseline, there are no persistent positive effects of group therapy alone; cash alone improves time use and economic outcomes.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/qje/qjag001",
+   "url": "https://doi.org/10.1093/qje/qjag001",
+   "title": "Leveraging Virtual Contact and Social Networks to Foster Interethnic Harmony",
+   "authors": [
+    "Abu Siddique",
+    "Michael Vlassopoulos",
+    "Yves Zenou"
+   ],
+   "year": 2026,
+   "date": "2026-01-14",
+   "summary": "We find that a documentary film, designed to humanize the ethnic-minority Santals and evoke empathy among the ethnic majority Bengalis, increased the ethnic majority’s prosociality toward minorities, though the strength of the evidence varies by treatment arm and outcome.",
+   "summary_source": "abstract",
+   "venue": "The Quarterly Journal of Economics",
+   "venue_short": "QJE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1002/smj.70060",
+   "url": "https://doi.org/10.1002/smj.70060",
+   "title": "Beyond feasibility filters: How expertise heterogeneity enables innovation recognition",
+   "authors": [
+    "Jacqueline N. Lane",
+    "Zoe Szajnfarber",
+    "Jason Crusan",
+    "Michael Menietti"
+   ],
+   "year": 2026,
+   "date": "2026-01-13",
+   "summary": "This study examines how evaluator expertise influences innovation evaluation through a field experiment with National… These findings suggest effective innovation evaluation depends on strategically combining complementary expertise types rather than identifying optimal individual evaluators.",
+   "summary_source": "abstract",
+   "venue": "Strategic Management Journal",
+   "venue_short": "SMJ",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/00222429261417674",
+   "url": "https://doi.org/10.1177/00222429261417674",
+   "title": "From Owning to Connecting: Understanding and Leveraging the Effect of Internet Meme Marketing",
+   "authors": [
+    "Lu Wang",
+    "Xueni Li",
+    "Qiyuan Wang",
+    "Lei Su"
+   ],
+   "year": 2026,
+   "date": "2026-01-13",
+   "summary": "Six studies—including a large-scale secondary data analysis (N = 900,139 posts), a field experiment (N = 423,565 impressions), and four controlled experiments (N = 3,958 participants)—provide robust and converging evidence for these propositions.",
+   "summary_source": "abstract",
+   "venue": "Journal of Marketing",
+   "venue_short": "JM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.3368/jhr.1223-13300r3",
+   "url": "https://doi.org/10.3368/jhr.1223-13300r3",
+   "title": "Employers’ Language Proficiency Requirements and Hiring of Immigrants",
+   "authors": [
+    "Magnus Carlsson",
+    "S. Eriksson",
+    "Dan‐Olof Rooth"
+   ],
+   "year": 2026,
+   "date": "2026-01-12",
+   "summary": "We shed light on this question by conducting a large-scale field experiment, where we introduce common second-language features in immigrants’ resumes.",
+   "summary_source": "abstract",
+   "venue": "The Journal of Human Resources",
+   "venue_short": "JHR",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1086/740224",
+   "url": "https://doi.org/10.1086/740224",
+   "title": "The Macroeconomic Consequences of Early Childhood Development Policies",
+   "authors": [
+    "Diego Daruich"
+   ],
+   "year": 2026,
+   "date": "2026-01-07",
+   "summary": "A randomized controlled trial evaluation of a short-run small-scale early childhood program in the model predicts effects on children’s education and income… Key to this difference is that investing in a child not only improves her skills but also creates better ancestors for future generations.",
+   "summary_source": "abstract",
+   "venue": "Journal of Political Economy",
+   "venue_short": "JPE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.3982/ecta21180",
+   "url": "https://doi.org/10.3982/ecta21180",
+   "title": "Choosing Who Chooses: Selection‐Driven Targeting in Energy Rebate Programs",
+   "authors": [
+    "Takanori Ida",
+    "Takunori Ishihara",
+    "Koichiro Ito",
+    "Daido Kido",
+    "Toru Kitagawa",
+    "Shosei Sakaguchi",
+    "Shusaku Sasaki"
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "summary": "Applying this method to a randomized controlled trial on a residential energy rebate program, we find that targeting that optimally exploits both observable data and self‐selection outperforms conventional targeting.",
+   "summary_source": "abstract",
+   "venue": "Econometrica",
+   "venue_short": "ECMA",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.3982/ecta22524",
+   "url": "https://doi.org/10.3982/ecta22524",
+   "title": "Curtailing False News, Amplifying Truth",
+   "authors": [
+    "Sergei Guriev",
+    "Emeric Henry",
+    "Théo Marquis",
+    "Ekaterina Zhuravskaya"
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "summary": "Using a randomized experiment on Twitter and X during the 2022 and 2024 U.S. elections, we assess priming for misinformation awareness, fact‐checking, confirmation clicks, and content consideration prompts.",
+   "summary_source": "abstract",
+   "venue": "Econometrica",
+   "venue_short": "ECMA",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.3982/ecta18759",
+   "url": "https://doi.org/10.3982/ecta18759",
+   "title": "Promoting Women to Managerial Roles in the Bangladeshi Garment Sector",
+   "authors": [
+    "Rocco Macchiavello",
+    "Andreas Menzel",
+    "Atonu Rabbani",
+    "Christopher Woodruff"
+   ],
+   "year": 2026,
+   "date": "2026-01-01",
+   "summary": "We conduct a field experiment with 24 large garment factories in Bangladesh to test for inefficient representation of women among line supervisors.",
+   "summary_source": "abstract",
+   "venue": "Econometrica",
+   "venue_short": "ECMA",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2023.00149",
+   "url": "https://doi.org/10.1287/mnsc.2023.00149",
+   "title": "Forecasted vs. Actual Generosity in Image-Concern Interventions",
+   "authors": [
+    "Minah Jung",
+    "Silvia Saccardo",
+    "Ayelet Gneezy",
+    "Leif D. Nelson"
+   ],
+   "year": 2025,
+   "date": "2025-12-30",
+   "summary": "We test the impact of image-based interventions in consumer elective pricing (CEP), where individuals choose how much to pay for products or services. However, avoiding direct comparisons between experimental conditions—which can artificially amplify perceived differences—reduces overestimation.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1162/rest.a.1689",
+   "url": "https://doi.org/10.1162/rest.a.1689",
+   "title": "The Long-Term Impact of High School Financial Education: Evidence from Brazil",
+   "authors": [
+    "Miriam Bruhn",
+    "Gabriel Garber",
+    "Sergio Koyama",
+    "Bilal Zia"
+   ],
+   "year": 2025,
+   "date": "2025-12-18",
+   "summary": "In 2011, we studied the short-run impact of a comprehensive financial education program through a randomized controlled trial with 892 high schools in Brazil. We find that treatment students are less likely to borrow from expensive sources or to make delayed loan repayments than control students.",
+   "summary_source": "abstract",
+   "venue": "The Review of Economics and Statistics",
+   "venue_short": "REStat",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1162/rest.a.1684",
+   "url": "https://doi.org/10.1162/rest.a.1684",
+   "title": "My Neighbor Next Floor: The Built Environment and Social Preferences",
+   "authors": [
+    "Marco Castillo",
+    "Ragan Petrie",
+    "Rong Rong"
+   ],
+   "year": 2025,
+   "date": "2025-12-18",
+   "summary": "Using a natural field experiment of misdelivered mail, we test the causal effect of spatial proximity and the built environment on helping behavior. Living one floor apart reduces the willingness to help a neighbor by 16 percentage points, similar to adding one more apartment per floor.",
+   "summary_source": "abstract",
+   "venue": "The Review of Economics and Statistics",
+   "venue_short": "REStat",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2020.00902",
+   "url": "https://doi.org/10.1287/mnsc.2020.00902",
+   "title": "Commercializing the Package Flow: Cross-Sampling Physical Products Through E-Commerce Warehouses",
+   "authors": [
+    "Brian Rongqing Han",
+    "Leon Yang Chu",
+    "Tianshu Sun",
+    "Lixia Wu"
+   ],
+   "year": 2025,
+   "date": "2025-12-10",
+   "summary": "In close collaboration with Alibaba, we implement cross-sampling through a large-scale field experiment, in which more than 55,000 free samples are… First, we find significant increases in store visits and sales of the sampling brand both in the short term and long term up to 14 months afterward.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/10591478251408177",
+   "url": "https://doi.org/10.1177/10591478251408177",
+   "title": "Data-Driven Price Discrimination, Regulation, and Platform Compliance: Evidence From a Field Experiment and a Natural Experiment",
+   "authors": [
+    "Shanshan Quan",
+    "Zhiqiang (Eric) Zheng",
+    "Mingzheng Wang",
+    "Xiangpei Hu"
+   ],
+   "year": 2025,
+   "date": "2025-12-05",
+   "summary": "To this end, we conducted a field experiment with a leading e-retailing platform in China. The results reveal that customers for whom the platform possesses more data are subject to a higher level of price discrimination.",
+   "summary_source": "abstract",
+   "venue": "Production and Operations Management",
+   "venue_short": "POM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/jcr/ucaf064",
+   "url": "https://doi.org/10.1093/jcr/ucaf064",
+   "title": "Are Apologies Always the Best Policy? Apologies for Service Failures Backfire When Consumers Are Not Aware of the Failure",
+   "authors": [
+    "Mason R. Jenkins",
+    "Paul W. Fombelle",
+    "Mary Steffel"
+   ],
+   "year": 2025,
+   "date": "2025-12-02",
+   "summary": "Five experiments, including a large-scale field experiment, demonstrate that apologies backfire when consumers are not aware of the failure.",
+   "summary_source": "abstract",
+   "venue": "Journal of Consumer Research",
+   "venue_short": "JCR",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.mar.2025.100956",
+   "url": "https://doi.org/10.1016/j.mar.2025.100956",
+   "title": "Performance pay, monetary gifts, and the moderating role of wage level",
+   "authors": [
+    "Raoul Isselhard",
+    "Kathrin Manthei",
+    "Timo Vogelsang"
+   ],
+   "year": 2025,
+   "date": "2025-12-01",
+   "summary": "We conducted a field experiment to compare the effects of financial performance pay and monetary gifts… We randomly assigned store managers at a German discount supermarket chain to receive either performance pay based on profit increases or an unconditional gift in the form of a lump-sum payment.",
+   "summary_source": "abstract",
+   "venue": "Management Accounting Research",
+   "venue_short": "MAR",
+   "venue_kind": "journal",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jfi.2025.101184",
+   "url": "https://doi.org/10.1016/j.jfi.2025.101184",
+   "title": "Gender differences in reactions to loan collection mechanisms: A large-scale natural field experiment",
+   "authors": [
+    "Zhengyang Bao",
+    "Difang Huang"
+   ],
+   "year": 2025,
+   "date": "2025-11-28",
+   "summary": "We study gender differences in on-time loan payment responsiveness to collection mechanisms using randomized dunning text messages sent to 17,545 FinTech borrowers.",
+   "summary_source": "abstract",
+   "venue": "Journal of Financial Intermediation",
+   "venue_short": "JFI",
+   "venue_kind": "journal",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/aeri.20240476",
+   "url": "https://doi.org/10.1257/aeri.20240476",
+   "title": "Electric Vehicles and the Energy Transition: Unintended Consequences of Time-of-Use Pricing",
+   "authors": [
+    "Megan R. Bailey",
+    "David P. Brown",
+    "Erica Myers",
+    "Blake Shaffer",
+    "Frank A. Wolak"
+   ],
+   "year": 2025,
+   "date": "2025-11-25",
+   "summary": "We implement a field experiment to assess the effect of time-of-use (TOU) pricing and managed charging on EV charging behavior. We find that while TOU pricing is effective at shifting EV charging into off-peak hours, it unintentionally induces new and larger “shadow peaks” of simultaneous charging.",
+   "summary_source": "abstract",
+   "venue": "American Economic Review: Insights",
+   "venue_short": "AER:I",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/aeri.20240581",
+   "url": "https://doi.org/10.1257/aeri.20240581",
+   "title": "Long-Term and Lasting Impacts of Personal Initiative Training on Entrepreneurial Success",
+   "authors": [
+    "Francisco Campos Freire",
+    "Michael Fresé",
+    "Leonardo Iacovone",
+    "Hillary C. Johnson",
+    "David McKenzie",
+    "Mona Mensmann"
+   ],
+   "year": 2025,
+   "date": "2025-11-25",
+   "summary": "A randomized experiment in Togo found that personal initiative training for small businesses resulted in large and significant impacts for both men and women after two years.",
+   "summary_source": "abstract",
+   "venue": "American Economic Review: Insights",
+   "venue_short": "AER:I",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/aeri.20240452",
+   "url": "https://doi.org/10.1257/aeri.20240452",
+   "title": "The Consumer Welfare Effects of Online Ads: Evidence from a Nine-Year Experiment",
+   "authors": [
+    "Erik Brynjolfsson",
+    "Avinash Collis",
+    "Daniel Deisenroth",
+    "Haritz Garro",
+    "Daley Kutzman",
+    "Asad Liaqat",
+    "Nils Wernerfelt"
+   ],
+   "year": 2025,
+   "date": "2025-11-25",
+   "summary": "Research on the effects of online advertising on consumer welfare is limited due to… Using an incentive-compatible deactivation experiment, we find no significant differences in users’ valuation of Facebook across a representative sample of 53,083 Facebook users in the ads and no ads groups.",
+   "summary_source": "abstract",
+   "venue": "American Economic Review: Insights",
+   "venue_short": "AER:I",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jacceco.2025.101838",
+   "url": "https://doi.org/10.1016/j.jacceco.2025.101838",
+   "title": "Paying your fair share: Perceived fairness and tax compliance",
+   "authors": [
+    "Brad Nathan",
+    "Ricardo Pérez-Truglia",
+    "Alejandro Zentner"
+   ],
+   "year": 2025,
+   "date": "2025-11-20",
+   "summary": "We investigate this question with a natural field experiment in the context of U.S. property taxes. We find that higher perceived average tax rates increase perceptions of fairness and reduce the likelihood of tax appeals.",
+   "summary_source": "abstract",
+   "venue": "Journal of Accounting and Economics",
+   "venue_short": "JAE",
+   "venue_kind": "journal",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mksc.2023.0547",
+   "url": "https://doi.org/10.1287/mksc.2023.0547",
+   "title": "Novelty in Content Creation: Experimental Results Using Deep Learning–Based Image Recognition on a Large Social Network",
+   "authors": [
+    "Justin Huang",
+    "Rupali Kaul",
+    "Sridhar Narayanan"
+   ],
+   "year": 2025,
+   "date": "2025-11-19",
+   "summary": "Using a field experiment on a social network and machine learning methods, we investigate whether artists create more novel content after getting attention and recognition.",
+   "summary_source": "abstract",
+   "venue": "Marketing Science",
+   "venue_short": "MktSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/10591478251400469",
+   "url": "https://doi.org/10.1177/10591478251400469",
+   "title": "Give Me a Choice! A Field Experiment on Task Choice Enabled by Wearables",
+   "authors": [
+    "Daniel Kwasnitschka",
+    "Henrik Franke",
+    "Richard von Maydell",
+    "Torbjørn H. Netland"
+   ],
+   "year": 2025,
+   "date": "2025-11-12",
+   "summary": "This paper reports the results of a field experiment conducted with a manufacturer that uses wearable devices to distribute shop floor tasks. The results show that allowing workers to choose their next task shows no aggregate productivity difference but reveals heterogeneous behavioral effects.",
+   "summary_source": "abstract",
+   "venue": "Production and Operations Management",
+   "venue_short": "POM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/ej/ueaf122",
+   "url": "https://doi.org/10.1093/ej/ueaf122",
+   "title": "Wheels of Change: Transforming Girls’ Lives with Bicycles*",
+   "authors": [
+    "Nathan Fiala",
+    "Ana Garcia-Hernandez",
+    "Kritika Narula",
+    "Nishith Prakash"
+   ],
+   "year": 2025,
+   "date": "2025-11-06",
+   "summary": "Motivated by the persistent barriers to girls’ education—such as long travel distances and safety concerns—we evaluate the impact of a bicycle-distribution… One year after the intervention, we find a 34% reduction in commute time, a 66% improvement in punctuality and a 29% decrease in absenteeism.",
+   "summary_source": "abstract",
+   "venue": "The Economic Journal",
+   "venue_short": "EJ",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2025.103675",
+   "url": "https://doi.org/10.1016/j.jdeveco.2025.103675",
+   "title": "Right to stay? Long-run experimental evidence on land formalization and widows’ tenure security in Benin",
+   "authors": [
+    "Ioana Botea",
+    "Markus Goldstein",
+    "Kenneth Houngbedji",
+    "Florence Kondylis",
+    "Michael O’Sullivan",
+    "Harris Selod"
+   ],
+   "year": 2025,
+   "date": "2025-11-06",
+   "summary": "We study whether large-scale land formalization programs can improve widows’ tenure security, using data from a randomized controlled trial in rural Benin.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1017/eec.2026.10049",
+   "url": "https://doi.org/10.1017/eec.2026.10049",
+   "title": "Virtual currencies in online gaming increase the willingness to pay for loot boxes: an experimental analysis",
+   "authors": [
+    "Niccolò Toccafondi",
+    "Roberto Di Paolo",
+    "Sibilla Di Guida"
+   ],
+   "year": 2025,
+   "date": "2025-11-01",
+   "summary": "Our results show that WTP is significantly higher when transactions are conducted in virtual currencies with a 1:1 exchange rate compared to British pounds, contributing to the debate on the neutrality of virtual currencies and experimental currency units.",
+   "summary_source": "abstract",
+   "venue": "Experimental Economics",
+   "venue_short": "ExpEcon",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/aer.20240669",
+   "url": "https://doi.org/10.1257/aer.20240669",
+   "title": "Increasing Degree Attainment among Low-Income Students: The Role of Intensive Advising and College Quality",
+   "authors": [
+    "A. C. Barr",
+    "Benjamin Castleman"
+   ],
+   "year": 2025,
+   "date": "2025-10-30",
+   "summary": "Using a multisite randomized controlled trial combined with administrative and survey data, we demonstrate that… Our results suggest that strategies targeting college choice may be a more effective and efficient means of increasing degree attainment than those focused solely on affordability.",
+   "summary_source": "abstract",
+   "venue": "American Economic Review",
+   "venue_short": "AER",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1162/rest.a.1622",
+   "url": "https://doi.org/10.1162/rest.a.1622",
+   "title": "Conscientiousness in the Workplace: Evidence from a Field Experiment in West Africa",
+   "authors": [
+    "Mathias Allemand",
+    "Martina Kirchberger",
+    "Sveta Milusheva",
+    "Carol Newman",
+    "Brent W. Roberts",
+    "Vincent Thorne"
+   ],
+   "year": 2025,
+   "date": "2025-10-29",
+   "summary": "We conducted a randomized controlled trial with low-skilled employed workers in Senegal where workers were randomly assigned to receive a training… We found that treated workers were significantly more likely to stay in their job, had higher earnings and better performance grades post intervention.",
+   "summary_source": "abstract",
+   "venue": "The Review of Economics and Statistics",
+   "venue_short": "REStat",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/pol.20240183",
+   "url": "https://doi.org/10.1257/pol.20240183",
+   "title": "Social Welfare Portability and Migration: Evidence from India’s Public Distribution System",
+   "authors": [
+    "Travis Baseler",
+    "Ambar Narayan",
+    "Odyssia Ng",
+    "Sutirtha Sinha Roy"
+   ],
+   "year": 2025,
+   "date": "2025-10-29",
+   "summary": "We then inform households about the program—and barriers to using it—through a cluster randomized controlled trial. Treatment impacts on beliefs about entitlement portability were initially positive but later turned negative following a general rise in beliefs.",
+   "summary_source": "abstract",
+   "venue": "American Economic Journal: Economic Policy",
+   "venue_short": "AEJ: Policy",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/orsc.2023.18464",
+   "url": "https://doi.org/10.1287/orsc.2023.18464",
+   "title": "Race, Sexual Orientation, and Intersectionality in Distributive Negotiation Outcomes for Men",
+   "authors": [
+    "Edward H. Chang",
+    "Erika Kirgios",
+    "Julian Jake Zlatev"
+   ],
+   "year": 2025,
+   "date": "2025-10-29",
+   "summary": "To contribute to (1) our understanding of how identity influences negotiations and (2) research on intersectionality, we test how race (Black versus East Asian versus White) and sexual orientation… Sellers were 7.7 percentage points (22.4%) less likely to respond to gay versus straight White men.",
+   "summary_source": "abstract",
+   "venue": "Organization Science",
+   "venue_short": "OrgSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/pol.20230568",
+   "url": "https://doi.org/10.1257/pol.20230568",
+   "title": "The Semblance of Success in Nudging Consumers to Pay Down Credit Card Debt",
+   "authors": [
+    "Benedict Guttman‐Kenney",
+    "Paul Adams",
+    "Stefan Hunt",
+    "David Laibson",
+    "Neil Stewart",
+    "Jesse Leary"
+   ],
+   "year": 2025,
+   "date": "2025-10-29",
+   "summary": "We test a nudge in a field experiment on credit cards. After six months, the nudge decreases the fraction of cardholders who only pay exactly the minimum by 23 percent.",
+   "summary_source": "abstract",
+   "venue": "American Economic Journal: Economic Policy",
+   "venue_short": "AEJ: Policy",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/10591478251392331",
+   "url": "https://doi.org/10.1177/10591478251392331",
+   "title": "Is It Beneficial to Recommend Differently Priced Products? Experimental Evidence From Online Recommender Systems",
+   "authors": [
+    "Xiang Wan",
+    "Anuj Kumar",
+    "Xitong Li"
+   ],
+   "year": 2025,
+   "date": "2025-10-22",
+   "summary": "We examine the impact of price differences between the RP and FP on product sales using a randomized field experiment on a US apparel retailer's website. We find that recommending a differently priced RP on the FP's page reduces its purchase probability by 21%.",
+   "summary_source": "abstract",
+   "venue": "Production and Operations Management",
+   "venue_short": "POM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2025.103662",
+   "url": "https://doi.org/10.1016/j.jdeveco.2025.103662",
+   "title": "Unlocking young women’s potential? The impact of a low-cost career guidance program",
+   "authors": [
+    "Ankush Asri",
+    "Viola Asri",
+    "Anke Hoeffler"
+   ],
+   "year": 2025,
+   "date": "2025-10-16",
+   "summary": "This study evaluates a low-cost, 10-hour career exploration intervention through a pre-registered, school-level, clustered randomized controlled… These findings suggest that while scalable interventions can shift aspirations and planning, structural barriers constrain longer-term behavioral change.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/msom.2022.0224",
+   "url": "https://doi.org/10.1287/msom.2022.0224",
+   "title": "The Impact of Customer Information on Service Supply and Demand: Evidence from a Large Live-Streaming Experiment",
+   "authors": [
+    "Zhiyu Zeng",
+    "Nicholas Clyde",
+    "Hengchen Dai",
+    "Dennis Zhang",
+    "Zhiwei Xu",
+    "Zuo‐Jun Max Shen"
+   ],
+   "year": 2025,
+   "date": "2025-10-16",
+   "summary": "Methodology/results: We conducted a field experiment on a live-streaming platform that connects hundreds of millions of viewers with individual broadcasters.",
+   "summary_source": "abstract",
+   "venue": "Manufacturing & Service Operations Management",
+   "venue_short": "M&SOM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2025.103665",
+   "url": "https://doi.org/10.1016/j.jdeveco.2025.103665",
+   "title": "Digital revitalization or useless effort? Public e-commerce support and local specialty sales",
+   "authors": [
+    "Xintong Han",
+    "Jan Victor Dee",
+    "Shaojia Wang",
+    "Kefan Chen"
+   ],
+   "year": 2025,
+   "date": "2025-10-15",
+   "summary": "We examine how a government-initiated e-commerce platform (GEP) affects sales of a local… The results reveal significant substitution effects: access to the GEP increases online sales by 16.649% and decreases offline sales by 15.549%, indicating an overall shift from offline to online sales.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2022.04085",
+   "url": "https://doi.org/10.1287/mnsc.2022.04085",
+   "title": "No Gifts Returned: Surprise Bonuses Reduce Productivity in a Natural Field Experiment",
+   "authors": [
+    "Francesco Bogliacino",
+    "Gianluca Grimalda",
+    "David Pipke"
+   ],
+   "year": 2025,
+   "date": "2025-10-10",
+   "summary": "This paper tests this hypothesis in a natural field experiment where one or both workers in a pair received a discretionary bonus after an initial round of data entry tasks.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1086/739021",
+   "url": "https://doi.org/10.1086/739021",
+   "title": "Closing the Gender Gap in Salary Increases: Evidence from a Field Experiment on Promoting Pay Equity",
+   "authors": [
+    "Jakob Alfitian",
+    "Marvin Deversi",
+    "Dirk Sliwka"
+   ],
+   "year": 2025,
+   "date": "2025-10-08",
+   "summary": "Field experiment in economics, published in Journal of Labor Economics. No abstract is openly available, so no description could be extracted.",
+   "summary_source": "metadata",
+   "venue": "Journal of Labor Economics",
+   "venue_short": "JOLE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.2308/tar-2025-0479",
+   "url": "https://doi.org/10.2308/tar-2025-0479",
+   "title": "Tax Research in Accounting: A Look Forward",
+   "authors": [
+    "Michelle Hanlon"
+   ],
+   "year": 2025,
+   "date": "2025-10-06",
+   "summary": "The increasing access to administrative data, the use of field experiments and field studies, and employing survey methods to obtain data should expand the settings available to study and improve identification.",
+   "summary_source": "abstract",
+   "venue": "The Accounting Review",
+   "venue_short": "TAR",
+   "venue_kind": "journal",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2024.06312",
+   "url": "https://doi.org/10.1287/mnsc.2024.06312",
+   "title": "Retargeting Social Media Outreach for SNAP Take-Up",
+   "authors": [
+    "Parker Rogers"
+   ],
+   "year": 2025,
+   "date": "2025-10-06",
+   "summary": "Despite leveraging ad content developed in collaboration with nonprofit and government partners, the campaign did not produce statistically or economically significant increases in enrollment, even when considering the extreme values of estimated confidence intervals.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/10591478251388172",
+   "url": "https://doi.org/10.1177/10591478251388172",
+   "title": "Unveiling the Human Touch: Enhancing Customer Satisfaction Through Personal Profiles of Social Media Customer Service Agents",
+   "authors": [
+    "Huai-Tzu Cheng",
+    "Yang Pan",
+    "Rudy Hirschheim"
+   ],
+   "year": 2025,
+   "date": "2025-10-04",
+   "summary": "Leveraging this exogenous change, we investigate how these personal profiles affect customer… The results show that implementing personal profiles for customer service agents increases positive sentiment in customer tweets, reduces the likelihood of complaints, and improves overall satisfaction.",
+   "summary_source": "abstract",
+   "venue": "Production and Operations Management",
+   "venue_short": "POM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/msom.2022.0451",
+   "url": "https://doi.org/10.1287/msom.2022.0451",
+   "title": "Leveraging Consensus Effect to Optimize Ranking in Online Discussion Boards",
+   "authors": [
+    "Gad Allon",
+    "Joseph Carlstein",
+    "Yonatan Gur"
+   ],
+   "year": 2025,
+   "date": "2025-10-03",
+   "summary": "In a randomized experiment consisting of eight discussion groups in an education setting, our proposed algorithm outperformed the approach used in current practice (that does not actively manage the level of consensus).",
+   "summary_source": "abstract",
+   "venue": "Manufacturing & Service Operations Management",
+   "venue_short": "M&SOM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2022.03920",
+   "url": "https://doi.org/10.1287/mnsc.2022.03920",
+   "title": "Engaging Customers with AI in Online Chats: Evidence from a Randomized Field Experiment",
+   "authors": [
+    "Shunyuan Zhang",
+    "Das Narayandas"
+   ],
+   "year": 2025,
+   "date": "2025-10-01",
+   "summary": "We examine how artificial intelligence (AI) affected the productivity of customer service agents and customer sentiment in online interactions.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/aer.20240151",
+   "url": "https://doi.org/10.1257/aer.20240151",
+   "title": "Politics at Work",
+   "authors": [
+    "Emanuele Colonnelli",
+    "Valdemar Pinho Neto",
+    "Edoardo Teso"
+   ],
+   "year": 2025,
+   "date": "2025-09-30",
+   "summary": "We study how individual political views shape firm behavior and labor market outcomes using new microdata from Brazil. We first show that business owners are considerably more likely to employ copartisan workers.",
+   "summary_source": "abstract",
+   "venue": "American Economic Review",
+   "venue_short": "AER",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1086/738880",
+   "url": "https://doi.org/10.1086/738880",
+   "title": "Shaping Identity: Evidence from a Large-Scale Field Experiment",
+   "authors": [
+    "Sebastian Tonke"
+   ],
+   "year": 2025,
+   "date": "2025-09-29",
+   "summary": "Field experiment in economics, published in Journal of Political Economy Microeconomics. No abstract is openly available, so no description could be extracted.",
+   "summary_source": "metadata",
+   "venue": "Journal of Political Economy Microeconomics",
+   "venue_short": "JPE Micro",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1177/10591478251386162",
+   "url": "https://doi.org/10.1177/10591478251386162",
+   "title": "Reducing Patient Tardiness: From Experiment to Implementation",
+   "authors": [
+    "Wei Gu",
+    "Meng Li",
+    "Shichen Zhang"
+   ],
+   "year": 2025,
+   "date": "2025-09-26",
+   "summary": "Specifically, we evaluate two types of penalties: the last-place penalty (i.e., assigning late-arriving patients to the end of the… In contrast, the last-place penalty significantly reduces patients’ late rate and encourages earlier arrival, particularly when no time recommendation is provided.",
+   "summary_source": "abstract",
+   "venue": "Production and Operations Management",
+   "venue_short": "POM",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/rfs/hhaf054",
+   "url": "https://doi.org/10.1093/rfs/hhaf054",
+   "title": "Willingness to Pay for Carbon Mitigation: Field Evidence from the Market for Carbon Offsets",
+   "authors": [
+    "Matthias Rodemeier"
+   ],
+   "year": 2025,
+   "date": "2025-09-23",
+   "summary": "This paper estimates willingness to pay (WTP) for carbon mitigation from demand for carbon offsets in a field experiment with an online supermarket. If the firm informs consumers that it contributes to the offset costs, WTP increases to 16 EUR/tCO$ {}_{2} $.",
+   "summary_source": "abstract",
+   "venue": "The Review of Financial Studies",
+   "venue_short": "RFS",
+   "venue_kind": "journal",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jdeveco.2025.103633",
+   "url": "https://doi.org/10.1016/j.jdeveco.2025.103633",
+   "title": "Migration and sources of discrimination in a social context: Experimental evidence from 15 Latin American countries",
+   "authors": [
+    "Carlos Gómez‐González",
+    "Gwen-Jirō Clochard",
+    "Helmut Dietl",
+    "Juan Cruz Duhalde"
+   ],
+   "year": 2025,
+   "date": "2025-09-22",
+   "summary": "We conduct a large-scale correspondence study in 15 Latin American countries in the context of sports to test their influence on individual… We find no evidence of discrimination against immigrants overall, but we observe het- erogeneity that is consistent with individual statistical discrimination.",
+   "summary_source": "abstract",
+   "venue": "Journal of Development Economics",
+   "venue_short": "JDE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/orsc.2023.18204",
+   "url": "https://doi.org/10.1287/orsc.2023.18204",
+   "title": "Complementarity in Future Selves: How Networks of Future-Oriented Cognitive Representations Influence Individuals’ Ability to Proactively and Adaptively Manage Their Career",
+   "authors": [
+    "Karoline Strauss",
+    "Julija Mell",
+    "Frederik Anseel",
+    "Annemijn C. Loermans",
+    "David M. Sluss"
+   ],
+   "year": 2025,
+   "date": "2025-09-19",
+   "summary": "We investigate how the complementarity of a future self impacts an individual’s efforts to work toward their desired future career.",
+   "summary_source": "abstract",
+   "venue": "Organization Science",
+   "venue_short": "OrgSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1002/smj.70017",
+   "url": "https://doi.org/10.1002/smj.70017",
+   "title": "Deskilling technology affords work amenity, increases labor supply",
+   "authors": [
+    "Pinchuan Ong",
+    "Ivan Png"
+   ],
+   "year": 2025,
+   "date": "2025-09-19",
+   "summary": "Research Summary We investigate how deskilling technology (map apps) affects the choice of individuals to provide ride‐hail service. In the context of ride‐hail drivers, we show that navigation technology affords an amenity.",
+   "summary_source": "abstract",
+   "venue": "Strategic Management Journal",
+   "venue_short": "SMJ",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.5465/amj.2023.1307",
+   "url": "https://doi.org/10.5465/amj.2023.1307",
+   "title": "Would Archimedes Shout “Eureka” with Algorithms? The Hidden Hand of Algorithmic Design in Idea Generation, the Creation of Ideation Bubbles, and How Experts Can Burst Them",
+   "authors": [
+    "Moran Lazar",
+    "Hila Lifshitz",
+    "Charles Ayoubi",
+    "Hen Emuna"
+   ],
+   "year": 2025,
+   "date": "2025-09-17",
+   "summary": "We test our theory in a laboratory study and a field experiment through a global ideation challenge in sustainability launched on Freelancer.",
+   "summary_source": "abstract",
+   "venue": "Academy of Management Journal",
+   "venue_short": "AMJ",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2024.04908",
+   "url": "https://doi.org/10.1287/mnsc.2024.04908",
+   "title": "Vaccines at Work: Experimental Evidence from a Firm Campaign",
+   "authors": [
+    "Manuel Hoffmann",
+    "Roberto Mosquera",
+    "Adrian Chadi"
+   ],
+   "year": 2025,
+   "date": "2025-09-16",
+   "summary": "We ran a natural field experiment with a bank in Ecuador, where we employed a… Using rich administrative records merged with employee survey data, we find strong evidence that opportunity costs to participate in the campaign and peer behavior in the firm matter to increase vaccination take-up.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2024.07524",
+   "url": "https://doi.org/10.1287/mnsc.2024.07524",
+   "title": "Should Human Capital Development Programs be Mandatory or Voluntary? Evidence from a Field Experiment on Mentorship",
+   "authors": [
+    "Jason Sandvik",
+    "Richard E. Saouma",
+    "Nathan Seegert",
+    "Christopher Stanton"
+   ],
+   "year": 2025,
+   "date": "2025-09-15",
+   "summary": "In a field experiment, we find that a mandatory mentorship program raises worker productivity, whereas a voluntary version of the program does not.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2022.03144",
+   "url": "https://doi.org/10.1287/mnsc.2022.03144",
+   "title": "Social Audience Size as a Reference Point: Evidence from a Field Experiment",
+   "authors": [
+    "Xingchen Xu",
+    "Qili Wang",
+    "Yizhi Liu",
+    "Liangfei Qiu"
+   ],
+   "year": 2025,
+   "date": "2025-09-08",
+   "summary": "Utilizing data from a company-led randomized field experiment conducted on a prominent… Additionally, we observe an extra adverse effect when traders experience a reduction in the digit magnitude of follower counts, supporting our hypothesis about social audience size serving as a reference point.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mksc.2024.0793",
+   "url": "https://doi.org/10.1287/mksc.2024.0793",
+   "title": "How Does Prepopulating Search Bars with Keywords Affect Online Consumer Behavior? A Field Experiment",
+   "authors": [
+    "Chenshuo Sun"
+   ],
+   "year": 2025,
+   "date": "2025-09-08",
+   "summary": "In this study, I design and run a randomized field experiment on a large e-commerce platform involving 72,587 consumers who were randomly exposed to three types of keywords prefilled in the search bar.",
+   "summary_source": "abstract",
+   "venue": "Marketing Science",
+   "venue_short": "MktSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1017/s0022109025102159",
+   "url": "https://doi.org/10.1017/s0022109025102159",
+   "title": "Irrational Beliefs May Drive the Disposition Effect: Evidence from Financial Professionals",
+   "authors": [
+    "Jianying Qiu",
+    "Gijs van de Kuilen",
+    "Utz Weitzel",
+    "Yilong Xu"
+   ],
+   "year": 2025,
+   "date": "2025-09-05",
+   "summary": "Our experimental results suggest that, when faced with new information about their asset’s performance, financial professionals failed to update their beliefs sufficiently leading them to sell the asset that gained (lost) value more (less) readily.",
+   "summary_source": "abstract",
+   "venue": "Journal of Financial and Quantitative Analysis",
+   "venue_short": "JFQA",
+   "venue_kind": "journal",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1016/j.jpubeco.2025.105449",
+   "url": "https://doi.org/10.1016/j.jpubeco.2025.105449",
+   "title": "Frictions in recovering unclaimed property: Evidence from a large-scale natural field experiment",
+   "authors": [
+    "Alejandro Zentner",
+    "Justin Holz"
+   ],
+   "year": 2025,
+   "date": "2025-09-01",
+   "summary": "Field experiment in economics, published in Journal of Public Economics. No abstract is openly available, so no description could be extracted.",
+   "summary_source": "metadata",
+   "venue": "Journal of Public Economics",
+   "venue_short": "JPubE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1017/eec.2026.10045",
+   "url": "https://doi.org/10.1017/eec.2026.10045",
+   "title": "The role of social norms in zero price effects",
+   "authors": [
+    "Xian Zhang",
+    "Tom Lane",
+    "José M. Grisolía"
+   ],
+   "year": 2025,
+   "date": "2025-09-01",
+   "summary": "We then ran a natural field experiment in the same contexts to observe actual taking behavior. Results show that the social appropriateness of consuming high quantities is significantly lower when goods are offered for free than when they are sold at 1 cent.",
+   "summary_source": "abstract",
+   "venue": "Experimental Economics",
+   "venue_short": "ExpEcon",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mksc.2023.0392",
+   "url": "https://doi.org/10.1287/mksc.2023.0392",
+   "title": "Estimating Position and Social Influence Effects in Online Search",
+   "authors": [
+    "Ata Jameei Osgouei",
+    "Andrew T. Ching",
+    "Brian T. Ratchford",
+    "Shervin Shahrokhi Tehrani"
+   ],
+   "year": 2025,
+   "date": "2025-08-29",
+   "summary": "This paper estimates position and social influence effects in online search using a structural model and field experiment data.",
+   "summary_source": "abstract",
+   "venue": "Marketing Science",
+   "venue_short": "MktSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/aer.20240119",
+   "url": "https://doi.org/10.1257/aer.20240119",
+   "title": "Drivers of Change: Employment Responses to the Lifting of the Saudi Female Driving Ban",
+   "authors": [
+    "Chaza Abou Daher",
+    "Erica Field",
+    "Kendal Swanson",
+    "Kate Vyborny"
+   ],
+   "year": 2025,
+   "date": "2025-08-28",
+   "summary": "We conduct a field experiment to quantify the impact of the lifting of the Saudi women's driving ban on women's employment by randomizing rationed spaces in… Treated women are 41 percent more likely to be employed yet are 19 percent less likely to be able to make purchases without family permission.",
+   "summary_source": "abstract",
+   "venue": "American Economic Review",
+   "venue_short": "AER",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2024.04405",
+   "url": "https://doi.org/10.1287/mnsc.2024.04405",
+   "title": "Does Q&A Boost Engagement? Health Messaging Experiments in the United States and Ghana",
+   "authors": [
+    "Erika Kirgios",
+    "Susan Athey",
+    "Angela Duckworth",
+    "Dean Karlan",
+    "Michael Luca",
+    "Katherine L. Milkman",
+    "Molly Offer‐Westort"
+   ],
+   "year": 2025,
+   "date": "2025-08-28",
+   "summary": "To test this, we shared identical information about COVID-19 in either question-and-answer format or via direct statements across two preregistered field experiments in Ghana and Michigan (total n = 49,395).",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1257/aeri.20240298",
+   "url": "https://doi.org/10.1257/aeri.20240298",
+   "title": "Discrimination in the Formation of Academic Networks: A Field Experiment on #EconTwitter",
+   "authors": [
+    "Nicolás Ajzenman",
+    "Bruno Ferman",
+    "Pedro C. Sant'Anna"
+   ],
+   "year": 2025,
+   "date": "2025-08-27",
+   "summary": "This paper documents discrimination in the formation of professional networks among academic economists. We created 80 bot accounts that claim to be PhD students differing in three characteristics: gender (male or female), race (Black or White), and university affiliation (top- or lower-ranked).",
+   "summary_source": "abstract",
+   "venue": "American Economic Review: Insights",
+   "venue_short": "AER:I",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1287/mnsc.2022.03918",
+   "url": "https://doi.org/10.1287/mnsc.2022.03918",
+   "title": "My Advisor, Her AI, and Me: Evidence from a Field Experiment on Human–AI Collaboration and Investment Decisions",
+   "authors": [
+    "Liu Yang",
+    "Kevin Bauer",
+    "Xitong Li",
+    "Oliver Hinz"
+   ],
+   "year": 2025,
+   "date": "2025-08-25",
+   "summary": "On the production side, contrary to concerns that humans might inefficiently override AI output, our findings show that having a human banker in the loop of AI-based financial advisory by giving her the final say over the advice provided does not compromise the quality of the advice.",
+   "summary_source": "abstract",
+   "venue": "Management Science",
+   "venue_short": "MgmtSci",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1093/jcr/ucaf049",
+   "url": "https://doi.org/10.1093/jcr/ucaf049",
+   "title": "The Confirmation Nudge: Prompts to Change or Confirm Initial Preferences Steer Consumer Choice",
+   "authors": [
+    "Kellen Mrkva",
+    "Shannon M Duncan",
+    "Marissa Sharif",
+    "Stanley Zuo"
+   ],
+   "year": 2025,
+   "date": "2025-08-22",
+   "summary": "Across two field experiments and several preregistered lab experiments, we demonstrate that confirmation nudges, which ask… Confirmation nudges increased subscribers’ choice of the annual subscription by over 8 percentage points—an effect size similar to default effects tested by the same company.",
+   "summary_source": "abstract",
+   "venue": "Journal of Consumer Research",
+   "venue_short": "JCR",
+   "venue_kind": "journal",
+   "discipline": "management",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1111/1911-3846.13076",
+   "url": "https://doi.org/10.1111/1911-3846.13076",
+   "title": "Motivating low performers with input‐based relative performance feedback",
+   "authors": [
+    "Rainer Michael Rilke",
+    "Victor van Pelt",
+    "Sebastian Lehnen",
+    "Christina Guenther"
+   ],
+   "year": 2025,
+   "date": "2025-08-21",
+   "summary": "In our field experiment, we examine the impact of an often‐overlooked form of relative performance feedback (RPF) that emphasizes comparing employees based on… Our results indicate that input‐based RPF enhances the input performance of low performers without adversely affecting high performers.",
+   "summary_source": "abstract",
+   "venue": "Contemporary Accounting Research",
+   "venue_short": "CAR",
+   "venue_kind": "journal",
+   "discipline": "accounting",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1086/738251",
+   "url": "https://doi.org/10.1086/738251",
+   "title": "Exercise Improves Academic Performance",
+   "authors": [
+    "Alexander W. Cappelen",
+    "Gary Charness",
+    "Mathias Ekström",
+    "Uri Gneezy",
+    "Bertil Tungodden"
+   ],
+   "year": 2025,
+   "date": "2025-08-20",
+   "summary": "In a randomized controlled trial, we test whether removal of a barrier to exercise can improve academic performance. We find strong support for this hypothesis: university students who were provided with a free gym card exercised more and had a significant improvement in academic performance.",
+   "summary_source": "abstract",
+   "venue": "Journal of Political Economy",
+   "venue_short": "JPE",
+   "venue_kind": "journal",
+   "discipline": "economics",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  },
+  {
+   "doi": "10.1111/jofi.13476",
+   "url": "https://doi.org/10.1111/jofi.13476",
+   "title": "The Impact of the Financial Education of Executives on the Financial Practices of Medium and Large Enterprises",
+   "authors": [
+    "Cláudia Custódio",
+    "Diogo Mendes",
+    "Daniel Metzger"
+   ],
+   "year": 2025,
+   "date": "2025-08-18",
+   "summary": "We study the impact of an MBA‐style executive education course in finance on corporate policies and firm performance targeting top managers of medium and… Using a randomized controlled trial, we find that the educational treatment induces changes in financial policies that improve firm performance.",
+   "summary_source": "abstract",
+   "venue": "The Journal of Finance",
+   "venue_short": "JF",
+   "venue_kind": "journal",
+   "discipline": "finance",
+   "verified_in": [
+    "crossref",
+    "openalex"
+   ],
+   "cited_by_count": 0
+  }
+ ]
+}

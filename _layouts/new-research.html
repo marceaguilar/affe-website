@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+<h1 class="page-title">New Research</h1>
+<p class="page-intro">
+  New field experiments in accounting, finance, economics and business, gathered
+  from SSRN and from the field&rsquo;s main journals. Every entry is matched against
+  two bibliographic databases before it appears here, so each title, author list
+  and year below is confirmed by an independent source.
+</p>
+
+<link rel="stylesheet" href="{{ '/assets/css/new-research.css' | relative_url }}">
+
+<div class="nr" id="new-research" data-feed="{{ '/assets/data/new-research.json' | relative_url }}">
+
+  <div class="nr-toolbar">
+    <div class="nr-search">
+      <label class="nr-visually-hidden" for="nr-q">Search papers</label>
+      <input type="search" id="nr-q" placeholder="Search title, author, or topic&hellip;" autocomplete="off">
+    </div>
+
+    <div class="nr-filter-group" role="group" aria-label="Filter by field">
+      <span class="nr-filter-label">Field</span>
+      <div class="nr-chips" data-filter="discipline">
+        <button class="nr-chip is-active" data-value="all">All</button>
+        <button class="nr-chip" data-value="accounting">Accounting</button>
+        <button class="nr-chip" data-value="finance">Finance</button>
+        <button class="nr-chip" data-value="economics">Economics</button>
+        <button class="nr-chip" data-value="management">Management</button>
+      </div>
+    </div>
+
+    <div class="nr-filter-group" role="group" aria-label="Filter by source">
+      <span class="nr-filter-label">Source</span>
+      <div class="nr-chips" data-filter="venue_kind">
+        <button class="nr-chip is-active" data-value="all">All</button>
+        <button class="nr-chip" data-value="journal">Journals</button>
+        <button class="nr-chip" data-value="ssrn">SSRN</button>
+      </div>
+    </div>
+
+    <div class="nr-filter-group" role="group" aria-label="Filter by period">
+      <span class="nr-filter-label">Posted</span>
+      <div class="nr-chips" data-filter="window">
+        <button class="nr-chip" data-value="30">Last 30 days</button>
+        <button class="nr-chip" data-value="90">Last 3 months</button>
+        <button class="nr-chip" data-value="365">Last year</button>
+        <button class="nr-chip is-active" data-value="all">All</button>
+      </div>
+    </div>
+
+    <div class="nr-filter-group nr-sort-group">
+      <label class="nr-filter-label" for="nr-sort">Sort</label>
+      <select id="nr-sort">
+        <option value="newest">Newest first</option>
+        <option value="oldest">Oldest first</option>
+        <option value="title">Title A&ndash;Z</option>
+        <option value="cited">Most cited</option>
+      </select>
+    </div>
+  </div>
+
+  <p class="nr-status" id="nr-status" role="status" aria-live="polite">Loading papers&hellip;</p>
+
+  <ul class="nr-list" id="nr-list"></ul>
+
+  <div class="nr-empty" id="nr-empty" hidden>
+    <p>No papers match these filters.</p>
+    <button class="nr-reset" id="nr-reset">Clear filters</button>
+  </div>
+
+  <div class="nr-more-wrap">
+    <button class="nr-more" id="nr-more" hidden>Show more</button>
+  </div>
+
+  <section class="nr-method">
+    <h2>How this list is built</h2>
+    <p>
+      Journal articles come from <a href="https://openalex.org" target="_blank" rel="noopener noreferrer">OpenAlex</a>,
+      restricted to an explicit list of accounting, finance, economics and business journals.
+      Working papers come from <a href="https://www.crossref.org" target="_blank" rel="noopener noreferrer">Crossref</a>,
+      restricted to SSRN&rsquo;s DOI prefix.
+    </p>
+    <p>
+      A paper is kept only if its title or abstract contains an explicit field-experiment
+      term, such as <em>field experiment</em>, <em>randomized controlled trial</em>,
+      <em>audit study</em> or <em>correspondence study</em>, and only if it sits in one of
+      the four fields above. Descriptions are drawn from the paper&rsquo;s own abstract.
+    </p>
+    <p class="nr-method-verify">
+      <strong>Verification.</strong> Nothing is published until its DOI resolves in both
+      OpenAlex and Crossref and the two databases report the same title. Records that
+      appear in only one database are dropped.
+    </p>
+    <p class="nr-method-foot">
+      <span id="nr-generated"></span>
+      <a id="nr-json" href="{{ '/assets/data/new-research.json' | relative_url }}" target="_blank" rel="noopener noreferrer">Download the data as JSON</a>.
+      Spotted something missing or wrong? Write to
+      <a href="mailto:affe-committee@googlegroups.com">affe-committee@googlegroups.com</a>.
+    </p>
+  </section>
+
+  {{ content }}
+</div>
+
+<script src="{{ '/assets/js/new-research.js' | relative_url }}" defer></script>

@@ -32,6 +32,8 @@ navigation:
     url: "/about"
   - title: "Working Papers"
     url: "/working-papers"
+  - title: "New Research"
+    url: "/new-research"
   - title: "Experimental Designs"
     url: "/submit-experimental-design"
   - title: "Webinars"
@@ -48,4 +50,8 @@ exclude:
   - vendor
   - README.md
   - affe-website
+  # Repo documentation and the New Research data pipeline. These are build-time
+  # tooling, not site content, and must not be published.
+  - CLAUDE.md
+  - tools
 

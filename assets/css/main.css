@@ -736,6 +736,9 @@ body {
 }
 
 .conference-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
   margin-top: 1.75rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--color-parchment);
@@ -843,6 +846,31 @@ body {
 .conference-section-card p {
   color: var(--color-text-light);
   margin-bottom: 1.25rem;
+}
+
+.conference-section-card p:last-child {
+  margin-bottom: 0;
+}
+
+.conference-section-card ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+.conference-section-card li {
+  margin-bottom: 0.4rem;
+}
+
+.conference-section-card a {
+  color: var(--color-bark);
+  font-weight: 600;
+}
+
+.conference-section-card strong {
+  color: var(--color-olivewood);
+  font-weight: 600;
 }
 
 .participants-grid {
@@ -1017,6 +1045,18 @@ body {
 
 .notification-button:hover svg:last-child {
   transform: translate(3px, -3px);
+}
+
+/* Conferences page sections */
+.conferences-section-title {
+  color: var(--color-olivewood);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 1rem 0 0;
+}
+
+.conferences-container + .conferences-section-title {
+  margin-top: 0.5rem;
 }
 
 /* Past Conferences */

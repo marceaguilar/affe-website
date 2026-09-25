@@ -3,6 +3,48 @@ layout: announcements
 title: Announcements
 permalink: /announcements
 announcements:
+  - date: "September 25, 2026"
+    title: "Third Field Experiments in Accounting and Finance Conference"
+    collapsible: true
+    summary: |
+      <p style="font-size: 1.1em; margin-bottom: 0; line-height: 1.7; color: var(--color-text);">We are excited to announce the <strong>third Field Experiments in Accounting and Finance Conference</strong>, to be held at <strong>Duke University</strong> on <strong>January 27–28, 2027</strong>.</p>
+    content: |
+      <div style="background: var(--color-parchment); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--color-sage);">
+        <h3 style="margin-top: 0; color: var(--color-bark); font-size: 1.2em; margin-bottom: 1rem;">Conference Details</h3>
+        <ul style="margin: 0.75rem 0; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Dates:</strong> January 27–28, 2027</li>
+          <li><strong>Location:</strong> Duke University</li>
+          <li><strong>Wednesday, January 27:</strong> presentations begin at 1:30 pm</li>
+          <li><strong>Thursday, January 28:</strong> presentations end at 12:30 pm</li>
+          <li><strong>Registration fee:</strong> $260 to cover logistics and refreshments</li>
+        </ul>
+      </div>
+
+      <div style="margin: 1.5rem 0;">
+        <h3 style="color: var(--color-bark); font-size: 1.2em; margin-bottom: 1rem;">About the Conference</h3>
+        <p style="margin-bottom: 1rem; line-height: 1.7;">As in prior years, the goal of the conference is to bring together scholars in accounting and finance who are currently doing research using field experiments, or who have an interest in conducting field experiments in future work. The conference is also meant for scholars with an intellectual interest in field experiments even if they have no prior background in the area.</p>
+        <p style="margin: 0 0 1rem; line-height: 1.7;">Please consider attending even if you have no prior experience with field experiments. Part of the goal is to increase exposure and encourage collaboration among scholars interested in this type of research.</p>
+        <p style="margin: 0; line-height: 1.7;">Organized by Eric Floyd, Gilles Hilary, and Henry Eyring.</p>
+      </div>
+
+      <div style="background: var(--color-parchment); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--color-sage);">
+        <h3 style="margin-top: 0; color: var(--color-bark); font-size: 1.2em; margin-bottom: 1rem;">Call for Presentations</h3>
+        <p style="margin: 0.5rem 0 1rem; line-height: 1.7;">If you have a field experiment you would like to present, we encourage you to submit it for consideration. Because field experiments benefit from feedback prior to implementation, the presentation need not be of an already completed field experiment.</p>
+        <ul style="margin: 0.75rem 0 0; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Deadline:</strong> November 30, 2026</li>
+        </ul>
+        <p style="margin: 1.25rem 0 0;"><a href="https://field-experiments-acctg-conf.squarespace.com/submissions" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: var(--color-sage); color: var(--color-white); padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold;">Submit a Paper</a></p>
+      </div>
+
+      <div style="background: var(--color-parchment); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; border-left: 4px solid var(--color-sage);">
+        <h3 style="margin-top: 0; color: var(--color-bark); font-size: 1.2em; margin-bottom: 1rem;">Registration</h3>
+        <p style="margin: 0 0 1rem; line-height: 1.7;">There is a registration fee of $260 to cover logistics and refreshments.</p>
+        <p style="margin: 0;"><a href="https://signup.fuqua.duke.edu/nextevent/modernevent/cfea2026" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: var(--color-sage); color: var(--color-white); padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold;">Register</a></p>
+      </div>
+
+      <div style="margin: 1.5rem 0 0; text-align: center; padding-top: 0.5rem;">
+        <p style="margin: 0;"><a href="/conference-2027" style="color: var(--color-bark); text-decoration: underline; font-weight: 700;">View conference details →</a></p>
+      </div>
   - date: "June 15, 2026"
     title: "AFFE Design Workshop Series Now Open"
     content: |

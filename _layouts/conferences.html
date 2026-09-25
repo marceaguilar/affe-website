@@ -31,17 +31,33 @@ layout: default
             <span>{{ conference.deadline }}</span>
           </div>
         {% endif %}
-        {% if conference.link %}
+        {% if conference.register_link or conference.submit_link or conference.link %}
           <div class="conference-actions">
-            <a href="{{ conference.link | relative_url }}"
-               {% if conference.link contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}
-               class="conference-link">
-              {% if conference.link_text %}{{ conference.link_text }}{% else %}Learn More{% endif %}
-              <svg class="link-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 10L10 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M6 6H10V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
+            {% if conference.register_link %}
+              <a href="{{ conference.register_link }}"
+                 target="_blank" rel="noopener noreferrer"
+                 class="conference-link">
+                {% if conference.register_text %}{{ conference.register_text }}{% else %}Register{% endif %}
+              </a>
+            {% endif %}
+            {% if conference.submit_link %}
+              <a href="{{ conference.submit_link }}"
+                 target="_blank" rel="noopener noreferrer"
+                 class="conference-link">
+                {% if conference.submit_text %}{{ conference.submit_text }}{% else %}Submit a Paper{% endif %}
+              </a>
+            {% endif %}
+            {% if conference.link %}
+              <a href="{{ conference.link | relative_url }}"
+                 {% if conference.link contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}
+                 class="conference-link">
+                {% if conference.link_text %}{{ conference.link_text }}{% else %}Learn More{% endif %}
+                <svg class="link-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 10L10 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6H10V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            {% endif %}
           </div>
         {% endif %}
       </article>

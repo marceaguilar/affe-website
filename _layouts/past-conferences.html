@@ -2,8 +2,73 @@
 layout: default
 ---
 
-<h1 class="page-title">Past Conferences</h1>
+<h1 class="page-title">Conferences</h1>
 
+{% if page.upcoming_conferences %}
+  <h2 class="conferences-section-title">Upcoming</h2>
+  <div class="conferences-container">
+    {% for conference in page.upcoming_conferences %}
+      <article class="conference-card">
+        <div class="conference-header">
+          <h2 class="conference-title">{{ conference.title }}</h2>
+          {% if conference.date %}
+            <div class="conference-date">
+              <svg class="date-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2H4C2.89543 2 2 2.89543 2 4V12C2 13.1046 2.89543 14 4 14H12C13.1046 14 14 13.1046 14 12V4C14 2.89543 13.1046 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 6H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M5 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>{{ conference.date }}</span>
+            </div>
+          {% endif %}
+        </div>
+        {% if conference.location %}
+          <div class="conference-description">
+            <p style="margin: 0; color: var(--color-text);">
+              <svg style="display: inline-block; vertical-align: middle; margin-right: 0.5rem; width: 16px; height: 16px;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 8.5C9.10457 8.5 10 7.60457 10 6.5C10 5.39543 9.10457 4.5 8 4.5C6.89543 4.5 6 5.39543 6 6.5C6 7.60457 6.89543 8.5 8 8.5Z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M2.5 6.5C2.5 9.5 8 13.5 8 13.5C8 13.5 13.5 9.5 13.5 6.5C13.5 4.01472 11.4853 2 9 2C6.51472 2 4.5 4.01472 4.5 6.5H2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{ conference.location }}
+            </p>
+          </div>
+        {% endif %}
+        {% if conference.register_link or conference.submit_link or conference.link %}
+          <div class="conference-actions">
+            {% if conference.register_link %}
+              <a href="{{ conference.register_link }}"
+                 target="_blank" rel="noopener noreferrer"
+                 class="conference-link">
+                {% if conference.register_text %}{{ conference.register_text }}{% else %}Register{% endif %}
+              </a>
+            {% endif %}
+            {% if conference.submit_link %}
+              <a href="{{ conference.submit_link }}"
+                 target="_blank" rel="noopener noreferrer"
+                 class="conference-link">
+                {% if conference.submit_text %}{{ conference.submit_text }}{% else %}Submit a Paper{% endif %}
+              </a>
+            {% endif %}
+            {% if conference.link %}
+              <a href="{{ conference.link | relative_url }}"
+                 {% if conference.link contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}
+                 class="conference-link">
+                {% if conference.link_text %}{{ conference.link_text }}{% else %}View Conference Details{% endif %}
+                <svg class="link-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 10L10 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 6H10V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+{% endif %}
+
+<h2 class="conferences-section-title">Past Conferences</h2>
 <div class="conferences-container">
   {% if page.past_conferences %}
     {% for conference in page.past_conferences %}

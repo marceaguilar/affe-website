@@ -58,15 +58,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   document.querySelectorAll('.webinar-abstract-toggle').forEach(function(button) {
+    const label = button.querySelector('.webinar-abstract-toggle-label');
+    const collapsedLabel = label ? label.textContent : 'Read more';
+
     button.addEventListener('click', function() {
       const abstract = button.previousElementSibling;
       const isExpanded = button.getAttribute('aria-expanded') === 'true';
-      const label = button.querySelector('.webinar-abstract-toggle-label');
 
       if (isExpanded) {
         abstract.classList.add('is-collapsed');
         button.setAttribute('aria-expanded', 'false');
-        if (label) label.textContent = 'Read abstract';
+        if (label) label.textContent = collapsedLabel;
       } else {
         abstract.classList.remove('is-collapsed');
         button.setAttribute('aria-expanded', 'true');

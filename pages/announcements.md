@@ -3,6 +3,11 @@ layout: announcements
 title: Announcements
 permalink: /announcements
 announcements:
+  - date: "October 9, 2026"
+    title: "January Webinar with Sally Sadoff"
+    content: |
+      <p style="font-size: 1.1em; margin-bottom: 1rem; line-height: 1.7; color: #333;">We are pleased to announce our next webinar: <strong>Discrimination in U.S. Small Business Lending: Preliminary Results from a Field Experiment</strong>, presented by <strong>Sally Sadoff</strong> (University of California, San Diego) on <strong>Friday, January 15, 2027, at 11:00 AM (Central Standard Time, US)</strong>.</p>
+      <p style="margin: 0.75rem 0 0; line-height: 1.7;">For the overview and full webinar schedule, please visit the <a href="/webinars" style="color: #5A4A3A; text-decoration: underline; font-weight: 600;">Webinars</a> tab.</p>
   - date: "September 25, 2026"
     title: "Third Field Experiments in Accounting and Finance Conference"
     collapsible: true

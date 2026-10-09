@@ -4,16 +4,19 @@ title: Webinars
 permalink: /webinars
 ---
 
-## Virtual Workshop Schedule 2026
-
 Join our virtual webinar series for periodic methodological webinars on field experiments! Stay updated by registering with the community.
+
+<h2 class="webinars-section-title" id="upcoming">Upcoming</h2>
 
 <div class="webinar-featured">
   <div class="webinar-speaker-photo">
     <img src="/assets/img/john_list.png" alt="John A. List" loading="lazy">
   </div>
   <div class="webinar-details">
-    <div class="webinar-date">Friday, November 20, 2026 – 9:00 AM (Central Standard Time, US)</div>
+    <div class="webinar-date">
+      <span>Friday, November 20, 2026 – 9:00 AM (Central Standard Time, US)</span>
+      <span class="webinar-badge">Next</span>
+    </div>
     <h3 class="webinar-title">Experimental Economics: Theory and Practice</h3>
     <p class="webinar-meta"><strong>Book:</strong> <em>Experimental Economics: Theory and Practice</em></p>
     <p class="webinar-meta"><strong>Speaker:</strong> John A. List, Kenneth C. Griffin Distinguished Service Professor in Economics, University of Chicago</p>
@@ -30,6 +33,28 @@ Join our virtual webinar series for periodic methodological webinars on field ex
 </div>
 
 <div class="webinar-featured">
+  <div class="webinar-speaker-photo">
+    <img src="/assets/img/sally_sadoff.jpg" alt="Sally Sadoff" loading="lazy">
+  </div>
+  <div class="webinar-details">
+    <div class="webinar-date">Friday, January 15, 2027 – 11:00 AM (Central Standard Time, US)</div>
+    <h3 class="webinar-title">Discrimination in U.S. Small Business Lending: Preliminary Results from a Field Experiment</h3>
+    <p class="webinar-meta"><strong>Speaker:</strong> Sally Sadoff, Professor of Economics and Strategy, University of California, San Diego</p>
+    <div class="webinar-abstract-wrap">
+      <p class="webinar-abstract is-collapsed"><strong>Overview:</strong> Access to credit is critical for small business growth, yet disparities in financing persist across different groups of entrepreneurs. This webinar presents preliminary findings from a field experiment examining discrimination in the U.S. small business lending market. The study investigates whether lenders respond differently to prospective borrowers, focusing on potential barriers during the early stages of the lending process. By examining how lenders engage with small business owners seeking financing, the research provides insights into the role of discrimination in shaping access to capital and its implications for entrepreneurship, financial inclusion, and economic opportunity.</p>
+      <button type="button" class="webinar-abstract-toggle" aria-expanded="false">
+        <span class="webinar-abstract-toggle-label">Read overview</span>
+        <svg class="webinar-abstract-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<h2 class="webinars-section-title" id="past">Past</h2>
+
+<div class="webinar-featured webinar-featured--past">
   <div class="webinar-speaker-photo">
     <img src="/assets/img/david_mckenzie.jpg" alt="David McKenzie" loading="lazy">
   </div>

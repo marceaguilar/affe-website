@@ -25,9 +25,21 @@ layout: default
   color: var(--color-olivewood);
 }
 
+.webinars-section-title {
+  max-width: 900px;
+  margin: 2.75rem auto 0;
+  color: var(--color-olivewood);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.webinars-section-title:first-of-type {
+  margin-top: 2rem;
+}
+
 .webinar-featured {
   max-width: 900px;
-  margin: 2.5rem auto 3rem;
+  margin: 1.25rem auto 2rem;
   padding: 2.25rem 2.5rem;
   border-radius: 14px;
   border: 1px solid rgba(184, 183, 148, 0.6);
@@ -59,11 +71,30 @@ layout: default
 }
 
 .webinar-date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 600;
   color: var(--color-text-light);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+
+.webinar-badge {
+  letter-spacing: 0.04em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background-color: var(--color-sage);
+  color: var(--color-white);
+}
+
+.webinar-featured--past {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  border-color: rgba(184, 183, 148, 0.4);
 }
 
 .webinar-title {

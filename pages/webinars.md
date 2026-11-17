@@ -20,6 +20,13 @@ Join our virtual webinar series for periodic methodological webinars on field ex
     <h3 class="webinar-title">Experimental Economics: Theory and Practice</h3>
     <p class="webinar-meta"><strong>Book:</strong> <em>Experimental Economics: Theory and Practice</em></p>
     <p class="webinar-meta"><strong>Speaker:</strong> John A. List, Kenneth C. Griffin Distinguished Service Professor in Economics, University of Chicago</p>
+    <a class="webinar-join" href="https://uchicago.zoom.us/j/91677883895?pwd=TAmSqqGZ0T6cEcCrM6Jx2rPQ4aqeJT.1" target="_blank" rel="noopener noreferrer">
+      <svg class="webinar-join-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M4.5 8.25A2.25 2.25 0 0 1 6.75 6h6A2.25 2.25 0 0 1 15 8.25v7.5A2.25 2.25 0 0 1 12.75 18h-6A2.25 2.25 0 0 1 4.5 15.75v-7.5Z" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M15 10.2 19.2 8.1A.9.9 0 0 1 20.5 8.9v6.2a.9.9 0 0 1-1.3.8L15 13.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Join Zoom</span>
+    </a>
     <div class="webinar-abstract-wrap">
       <p class="webinar-abstract is-collapsed"><strong>Abstract:</strong> Experimental economics has become a central tool for understanding human decisions, motivations, and outcomes, offering researchers a powerful way to identify causal effects in both laboratory and real-world settings. Drawing on more than three decades of experience designing and conducting experiments, John A. List discusses the ideas behind his new book, <em>Experimental Economics: Theory and Practice</em>. The book provides a practical framework for developing, implementing, and interpreting economic experiments, covering topics from experimental design and execution to administrative and ethical considerations. Combining methodological guidance with lessons from field and laboratory research, List highlights what researchers can learn from both successful experiments and the challenges that arise along the way.</p>
       <button type="button" class="webinar-abstract-toggle" aria-expanded="false">

@@ -119,6 +119,34 @@ layout: default
   color: var(--color-bark);
 }
 
+.webinar-join {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.7rem 1.25rem;
+  width: fit-content;
+  background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-olive) 100%);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  box-shadow: 0 2px 8px rgba(143, 168, 143, 0.3);
+  transition: all 0.3s ease;
+}
+
+.webinar-join:hover {
+  background: linear-gradient(135deg, var(--color-bark) 0%, var(--color-olivewood) 100%);
+  color: var(--color-white);
+  box-shadow: 0 4px 12px rgba(90, 74, 58, 0.4);
+  transform: translateY(-1px);
+}
+
+.webinar-join-icon {
+  flex-shrink: 0;
+}
+
 .webinar-abstract {
   margin-top: 0;
   line-height: 1.9;

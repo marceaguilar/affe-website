@@ -14,7 +14,7 @@ Join our virtual webinar series for periodic methodological webinars on field ex
   </div>
   <div class="webinar-details">
     <div class="webinar-date">
-      <span>Friday, November 20, 2026 – 9:00 AM (Central Standard Time, US)</span>
+      <span>Friday, November 20, 2026 – 10:00 AM (Central Standard Time, US)</span>
       <span class="webinar-badge">Next</span>
     </div>
     <h3 class="webinar-title">Experimental Economics: Theory and Practice</h3>

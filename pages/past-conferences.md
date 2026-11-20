@@ -12,6 +12,11 @@ upcoming_conferences:
     submit_text: "Submit a Paper"
     link: "/conference-2027"
     link_text: "View Conference Details"
+  - title: "2027 - A Multi-Disciplinary Conference on Field Experiments in Business"
+    date: "February 5–6, 2027"
+    location: "Rady School of Management, University of California San Diego"
+    link: "https://sites.google.com/ucsd.edu/experiments"
+    link_text: "Visit Conference Website"
 past_conferences:
   - title: "2026 - CUHK Shenzhen/UCSD/Waseda Joint Conference on Field Experiments in Accounting and Economics"
     location: "Waseda University, Tokyo, Japan"
